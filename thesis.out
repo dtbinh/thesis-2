@@ -1,0 +1,116 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Problem Statement}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Key Contributions and Scope of this Thesis}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Organization of the Report}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Multidisciplinary Nature}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Current Understanding of Human Behavior in Egress}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{How does it all begin?}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.2}{Crowd behavior}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.3}{What about stress and time constraints?}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.4}{Summary}{section.2.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Engineering Models}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.3.1}{What are the components required by a computational model of egress}{section.2.3}% 13
+\BOOKMARK [3][-]{subsubsection.2.3.1.1}{A model of the environment or location}{subsection.2.3.1}% 14
+\BOOKMARK [3][-]{subsubsection.2.3.1.2}{A fire or smoke model}{subsection.2.3.1}% 15
+\BOOKMARK [3][-]{subsubsection.2.3.1.3}{A model of individuals engaging in egress}{subsection.2.3.1}% 16
+\BOOKMARK [3][-]{subsubsection.2.3.1.4}{A model of management}{subsection.2.3.1}% 17
+\BOOKMARK [2][-]{subsection.2.3.2}{Some existing models and their strengths and weaknesses}{section.2.3}% 18
+\BOOKMARK [3][-]{subsubsection.2.3.2.1}{Network or Queuing Theory based approaches}{subsection.2.3.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.3.2.2}{Flow models}{subsection.2.3.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.3.2.3}{Smart environments}{subsection.2.3.2}% 21
+\BOOKMARK [4][-]{paragraph.2.3.2.3.1}{Cellular Automata based approaches:}{subsubsection.2.3.2.3}% 22
+\BOOKMARK [4][-]{paragraph.2.3.2.3.2}{Lattice Gas models:}{subsubsection.2.3.2.3}% 23
+\BOOKMARK [4][-]{paragraph.2.3.2.3.3}{Floor field models:}{subsubsection.2.3.2.3}% 24
+\BOOKMARK [3][-]{subsubsection.2.3.2.4}{Multi agent based approaches}{subsection.2.3.2}% 25
+\BOOKMARK [3][-]{subsubsection.2.3.2.5}{Hybrid approaches}{subsection.2.3.2}% 26
+\BOOKMARK [2][-]{subsection.2.3.3}{A few models in detail}{section.2.3}% 27
+\BOOKMARK [3][-]{subsubsection.2.3.3.1}{Pires's model of pre-evacuation behavior}{subsection.2.3.3}% 28
+\BOOKMARK [3][-]{subsubsection.2.3.3.2}{Legion}{subsection.2.3.3}% 29
+\BOOKMARK [3][-]{subsubsection.2.3.3.3}{MACES + PMFServ}{subsection.2.3.3}% 30
+\BOOKMARK [3][-]{subsubsection.2.3.3.4}{Collective Panic Behavior Model}{subsection.2.3.3}% 31
+\BOOKMARK [3][-]{subsubsection.2.3.3.5}{Exodus}{subsection.2.3.3}% 32
+\BOOKMARK [3][-]{subsubsection.2.3.3.6}{ESCAPES}{subsection.2.3.3}% 33
+\BOOKMARK [3][-]{subsubsection.2.3.3.7}{MASSEgress}{subsection.2.3.3}% 34
+\BOOKMARK [2][-]{subsection.2.3.4}{Summary}{section.2.3}% 35
+\BOOKMARK [1][-]{section.2.4}{Summary of Literature Review}{chapter.2}% 36
+\BOOKMARK [0][-]{chapter.3}{Information Based Evacuation Agent Architecture: IBEVAC}{}% 37
+\BOOKMARK [1][-]{section.3.1}{The Six Building Blocks of Crowd Behavior during Egress}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.1.1}{Perception}{section.3.1}% 39
+\BOOKMARK [2][-]{subsection.3.1.2}{Event identification}{section.3.1}% 40
+\BOOKMARK [2][-]{subsection.3.1.3}{Knowledge Base}{section.3.1}% 41
+\BOOKMARK [2][-]{subsection.3.1.4}{Communication}{section.3.1}% 42
+\BOOKMARK [2][-]{subsection.3.1.5}{Navigation}{section.3.1}% 43
+\BOOKMARK [2][-]{subsection.3.1.6}{Task management}{section.3.1}% 44
+\BOOKMARK [1][-]{section.3.2}{The Agent Architecture}{chapter.3}% 45
+\BOOKMARK [2][-]{subsection.3.2.1}{Information Based Perception \(IBP\) Module}{section.3.2}% 46
+\BOOKMARK [2][-]{subsection.3.2.2}{Knowledge Base}{section.3.2}% 47
+\BOOKMARK [3][-]{subsubsection.3.2.2.1}{Environment Knowledge Module}{subsection.3.2.2}% 48
+\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Event Knowledge Module}{subsection.3.2.2}% 49
+\BOOKMARK [2][-]{subsection.3.2.3}{Agent Description Module \(ADM\)}{section.3.2}% 50
+\BOOKMARK [2][-]{subsection.3.2.4}{Planning Module}{section.3.2}% 51
+\BOOKMARK [2][-]{subsection.3.2.5}{Communication Module}{section.3.2}% 52
+\BOOKMARK [2][-]{subsection.3.2.6}{Navigation Module}{section.3.2}% 53
+\BOOKMARK [1][-]{section.3.3}{Summary}{chapter.3}% 54
+\BOOKMARK [0][-]{chapter.4}{Information Based Perception}{}% 55
+\BOOKMARK [1][-]{section.4.1}{Limits of Human Perception}{chapter.4}% 56
+\BOOKMARK [1][-]{section.4.2}{Navigation Systems}{chapter.4}% 57
+\BOOKMARK [1][-]{section.4.3}{The Information Based Perception Model}{chapter.4}% 58
+\BOOKMARK [2][-]{subsection.4.3.1}{Clustering}{section.4.3}% 59
+\BOOKMARK [2][-]{subsection.4.3.2}{Sensing}{section.4.3}% 60
+\BOOKMARK [2][-]{subsection.4.3.3}{Filtering}{section.4.3}% 61
+\BOOKMARK [1][-]{section.4.4}{Results}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.4.1}{Group Based Perception}{section.4.4}% 63
+\BOOKMARK [2][-]{subsection.4.4.2}{Effects of multi layered clustering}{section.4.4}% 64
+\BOOKMARK [2][-]{subsection.4.4.3}{Filtering necessitates Group Based Perception}{section.4.4}% 65
+\BOOKMARK [2][-]{subsection.4.4.4}{Effect of filtering of percept information}{section.4.4}% 66
+\BOOKMARK [1][-]{section.4.5}{Summary and Future Work}{chapter.4}% 67
+\BOOKMARK [0][-]{chapter.5}{Modelling Pre Evacuation Behavior in Agent Based Simulations Of Crowds}{}% 68
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 69
+\BOOKMARK [1][-]{section.5.2}{Related Work}{chapter.5}% 70
+\BOOKMARK [2][-]{subsection.5.2.1}{Pre-evacuation Behavior}{section.5.2}% 71
+\BOOKMARK [2][-]{subsection.5.2.2}{Existing Models}{section.5.2}% 72
+\BOOKMARK [1][-]{section.5.3}{The IBEVAC Model}{chapter.5}% 73
+\BOOKMARK [1][-]{section.5.4}{Event Identification and Pre-evacuation behavior}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.5}{Results}{chapter.5}% 75
+\BOOKMARK [2][-]{subsection.5.5.1}{Experiment 1: The effect of fire alarm clarity}{section.5.5}% 76
+\BOOKMARK [2][-]{subsection.5.5.2}{Experiment 2: The importance of communication}{section.5.5}% 77
+\BOOKMARK [1][-]{section.5.6}{Conclusion and Future Work}{chapter.5}% 78
+\BOOKMARK [0][-]{chapter.6}{Modelling Spatial Knowledge}{}% 79
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 80
+\BOOKMARK [1][-]{section.6.2}{Literature Review}{chapter.6}% 81
+\BOOKMARK [2][-]{subsection.6.2.1}{Working Memory}{section.6.2}% 82
+\BOOKMARK [2][-]{subsection.6.2.2}{The building blocks of spatial knowledge}{section.6.2}% 83
+\BOOKMARK [2][-]{subsection.6.2.3}{Indoor Way-finding}{section.6.2}% 84
+\BOOKMARK [1][-]{section.6.3}{Experiment Performed}{chapter.6}% 85
+\BOOKMARK [2][-]{subsection.6.3.1}{The minecraft gaming environment}{section.6.3}% 86
+\BOOKMARK [2][-]{subsection.6.3.2}{The game}{section.6.3}% 87
+\BOOKMARK [1][-]{section.6.4}{Experiment details}{chapter.6}% 88
+\BOOKMARK [1][-]{section.6.5}{Analysis of Experiment Results}{chapter.6}% 89
+\BOOKMARK [2][-]{subsection.6.5.1}{Calculation of random walks}{section.6.5}% 90
+\BOOKMARK [2][-]{subsection.6.5.2}{Room visit frequencies}{section.6.5}% 91
+\BOOKMARK [3][-]{subsubsection.6.5.2.1}{Calculation}{subsection.6.5.2}% 92
+\BOOKMARK [3][-]{subsubsection.6.5.2.2}{Discussion}{subsection.6.5.2}% 93
+\BOOKMARK [2][-]{subsection.6.5.3}{Markov data analysis}{section.6.5}% 94
+\BOOKMARK [3][-]{subsubsection.6.5.3.1}{Calculation of markov data}{subsection.6.5.3}% 95
+\BOOKMARK [3][-]{subsubsection.6.5.3.2}{Types Of Exploring agents}{subsection.6.5.3}% 96
+\BOOKMARK [3][-]{subsubsection.6.5.3.3}{Expected Coverage Given Number Of Hops}{subsection.6.5.3}% 97
+\BOOKMARK [3][-]{subsubsection.6.5.3.4}{Expected Hops Given Coverage}{subsection.6.5.3}% 98
+\BOOKMARK [2][-]{subsection.6.5.4}{Empirical Analysis}{section.6.5}% 99
+\BOOKMARK [3][-]{subsubsection.6.5.4.1}{Existence of decision points}{subsection.6.5.4}% 100
+\BOOKMARK [3][-]{subsubsection.6.5.4.2}{Location recognition and memory}{subsection.6.5.4}% 101
+\BOOKMARK [1][-]{section.6.6}{Conclusion}{chapter.6}% 102
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 103
+\BOOKMARK [1][-]{section.7.1}{Summary and Conclusion}{chapter.7}% 104
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 105
+\BOOKMARK [2][-]{subsection.7.2.1}{Model design}{section.7.2}% 106
+\BOOKMARK [2][-]{subsection.7.2.2}{Implementation and simulation}{section.7.2}% 107
+\BOOKMARK [3][-]{subsubsection.7.2.2.1}{The MASON frameworok}{subsection.7.2.2}% 108
+\BOOKMARK [3][-]{subsubsection.7.2.2.2}{DEPATHSS}{subsection.7.2.2}% 109
+\BOOKMARK [3][-]{subsubsection.7.2.2.3}{Time frame for model implementation}{subsection.7.2.2}% 110
+\BOOKMARK [2][-]{subsection.7.2.3}{Validation}{section.7.2}% 111
+\BOOKMARK [3][-]{subsubsection.7.2.3.1}{Validation}{subsection.7.2.3}% 112
+\BOOKMARK [0][-]{appendix.A}{Model Class Structure}{}% 113
+\BOOKMARK [0][-]{appendix.B}{Validity check for Markov analysis}{}% 114
+\BOOKMARK [1][-]{subsection.B.0.4}{Effect of dataset size}{appendix.B}% 115
+\BOOKMARK [2][-]{subsection.B.0.5}{Decision base size at decision points}{subsection.B.0.4}% 116

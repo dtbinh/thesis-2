@@ -1,0 +1,18 @@
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": ".",
+            "file_include_patterns":
+            [
+                "*.tex",
+                "*.sublime-project",
+                "*.txt",
+                "*.bib",
+                "*.png",
+                "*.jpeg"
+            ]
+        }
+    ]
+}
