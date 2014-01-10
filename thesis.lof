@@ -1,70 +1,70 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Strategies for Egress}}{16}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces EXODUS model}}{31}{figure.2.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Strategies for Egress}}{14}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces EXODUS model}}{29}{figure.2.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The Process of Evacuation}}{38}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The Agent Architecture}}{46}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The Process of Evacuation}}{36}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The Agent Architecture}}{44}{figure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Navigation Architecture}}{51}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Perception and Acting}}{53}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Breakdown of the Perception Process}}{54}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces A Multi-layered Clustering Approach}}{56}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Distance Score}}{57}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Angle Score}}{58}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Experiment 1: Group Based Perception}}{60}{figure.4.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Traditional Circular Sensor Range}}}{60}{subfigure.7.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Group Based Perception}}}{60}{subfigure.7.2}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Experiment 2: Effect of multi layered clustering}}{61}{figure.4.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Using traditional sensing}}}{61}{subfigure.8.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Using Group Based Perception}}}{61}{subfigure.8.2}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Experiment 2: Quantitative Analysis}}{63}{figure.4.9}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Black Agent- Effort}}}{63}{subfigure.9.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Black Agent- Inconvenience}}}{63}{subfigure.9.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Remaining Agents- Effort}}}{63}{subfigure.9.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Remaining Agents- Inconvenience}}}{63}{subfigure.9.4}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Experiment 3: The necessity of Group Based Perception}}{64}{figure.4.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial Scenario}}}{64}{subfigure.10.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Info limit of 4, without GBP}}}{64}{subfigure.10.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Complete knowledge, without GBP}}}{64}{subfigure.10.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Info limit of 1, with GBP}}}{64}{subfigure.10.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Info limit of 4, with GBP}}}{64}{subfigure.10.5}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Experiment 4: Effect of filtering of percept information}}{65}{figure.4.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial Scenario}}}{65}{subfigure.11.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {InfoLimit 3: Step 1}}}{65}{subfigure.11.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {InfoLimit 5: Step 1}}}{65}{subfigure.11.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {InfoLimit 3: Step 2}}}{65}{subfigure.11.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {InfoLimit 5: Step 2}}}{65}{subfigure.11.5}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Navigation Architecture}}{49}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Perception and Acting}}{51}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Breakdown of the Perception Process}}{52}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A Multi-layered Clustering Approach}}{54}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Distance Score}}{55}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Angle Score}}{56}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Experiment 1: Group Based Perception}}{58}{figure.4.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Traditional Circular Sensor Range}}}{58}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Group Based Perception}}}{58}{subfigure.7.2}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Experiment 2: Effect of multi layered clustering}}{59}{figure.4.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Using traditional sensing}}}{59}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Using Group Based Perception}}}{59}{subfigure.8.2}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Experiment 2: Quantitative Analysis}}{61}{figure.4.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Black Agent- Effort}}}{61}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Black Agent- Inconvenience}}}{61}{subfigure.9.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Remaining Agents- Effort}}}{61}{subfigure.9.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Remaining Agents- Inconvenience}}}{61}{subfigure.9.4}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Experiment 3: The necessity of Group Based Perception}}{62}{figure.4.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial Scenario}}}{62}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Info limit of 4, without GBP}}}{62}{subfigure.10.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Complete knowledge, without GBP}}}{62}{subfigure.10.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Info limit of 1, with GBP}}}{62}{subfigure.10.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Info limit of 4, with GBP}}}{62}{subfigure.10.5}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Experiment 4: Effect of filtering of percept information}}{63}{figure.4.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial Scenario}}}{63}{subfigure.11.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {InfoLimit 3: Step 1}}}{63}{subfigure.11.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {InfoLimit 5: Step 1}}}{63}{subfigure.11.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {InfoLimit 3: Step 2}}}{63}{subfigure.11.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {InfoLimit 5: Step 2}}}{63}{subfigure.11.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The Agent Architecture}}{70}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The Environment Layout}}{72}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Observations from 100 replications of each setting of the IBEVAC Simulation}}{73}{figure.5.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Survival Rate}}}{73}{subfigure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Last Agent Start Time}}}{73}{subfigure.3.2}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The Agent Architecture}}{68}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The Environment Layout}}{70}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Observations from 100 replications of each setting of the IBEVAC Simulation}}{71}{figure.5.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Survival Rate}}}{71}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Last Agent Start Time}}}{71}{subfigure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Floor Plans of the three floors. The X indicates the starting point. The blue color indicates the prisoner locations.}}{81}{figure.6.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground Floor}}}{81}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {First Floor}}}{81}{subfigure.1.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Second Floor}}}{81}{subfigure.1.3}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Room Layout Graph}}{82}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Map scaled by normalized number of visits}}{83}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Map scaled by floor normalized number of visits}}{84}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Coverage for 300 hops}}{87}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Minimum hops required for obtaining given coverage}}{89}{figure.6.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hops for 88\% coverage.}}}{89}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hops for 50\% coverage}}}{89}{subfigure.6.2}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Behavior at simple corridors. There are definite decision points during exploration}}{90}{figure.6.7}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Layout of the relevant corridor}}{90}{figure.6.8}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Behavior at \emph {junction A2} during tasks}}{91}{figure.6.9}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Behavior at \emph {Dorm Corridor} during tasks}}{91}{figure.6.10}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Floor Plans of the three floors. The X indicates the starting point. The blue color indicates the prisoner locations.}}{79}{figure.6.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground Floor}}}{79}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {First Floor}}}{79}{subfigure.1.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Second Floor}}}{79}{subfigure.1.3}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Room Layout Graph}}{80}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Map scaled by normalized number of visits}}{81}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Map scaled by floor normalized number of visits}}{82}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Coverage for 300 hops}}{85}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Minimum hops required for obtaining given coverage}}{87}{figure.6.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hops for 88\% coverage.}}}{87}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hops for 50\% coverage}}}{87}{subfigure.6.2}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Behavior at simple corridors. There are definite decision points during exploration}}{88}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Layout of the relevant corridor}}{88}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Behavior at \emph {junction A2} during tasks}}{89}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Behavior at \emph {Dorm Corridor} during tasks}}{89}{figure.6.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces DEPATHSS Screenshot}}{97}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Planned Schedule}}{102}{figure.7.2}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces DEPATHSS Screenshot}}{95}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Planned Schedule}}{100}{figure.7.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Overall Class Structure}}{105}{figure.A.1}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Agent Class Structure}}{106}{figure.A.2}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Overall Class Structure}}{103}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Agent Class Structure}}{104}{figure.A.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Hop and coverage graphs different size of datasets. Seems to indicate that the peak is not dependent on data size}}{108}{figure.B.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hop and coverage for 44 players}}}{108}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hop and coverage for 22 players}}}{108}{subfigure.1.2}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Comparison of the decision bases}}{109}{figure.B.2}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Hop and coverage graphs different size of datasets. Seems to indicate that the peak is not dependent on data size}}{106}{figure.B.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hop and coverage for 44 players}}}{106}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hop and coverage for 22 players}}}{106}{subfigure.1.2}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Comparison of the decision bases}}{107}{figure.B.2}

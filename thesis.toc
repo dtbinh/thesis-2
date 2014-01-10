@@ -1,116 +1,116 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Problem Statement}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Key Contributions and Scope of this Thesis}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Organization of the Report}{5}{section.1.3}
-\contentsline {chapter}{\numberline {2}Literature Review}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Multidisciplinary Nature}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}Current Understanding of Human Behavior in Egress}{9}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}How does it all begin?}{10}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Crowd behavior}{12}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}What about stress and time constraints?}{17}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Summary}{18}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Engineering Models}{20}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}What are the components required by a computational model of egress}{20}{subsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.1.1}A model of the environment or location}{20}{subsubsection.2.3.1.1}
-\contentsline {subsubsection}{\numberline {2.3.1.2}A fire or smoke model}{20}{subsubsection.2.3.1.2}
-\contentsline {subsubsection}{\numberline {2.3.1.3}A model of individuals engaging in egress}{21}{subsubsection.2.3.1.3}
-\contentsline {subsubsection}{\numberline {2.3.1.4}A model of management}{21}{subsubsection.2.3.1.4}
-\contentsline {subsection}{\numberline {2.3.2}Some existing models and their strengths and weaknesses}{22}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}Network or Queuing Theory based approaches}{23}{subsubsection.2.3.2.1}
-\contentsline {subsubsection}{\numberline {2.3.2.2}Flow models}{23}{subsubsection.2.3.2.2}
-\contentsline {subsubsection}{\numberline {2.3.2.3}Smart environments}{24}{subsubsection.2.3.2.3}
-\contentsline {paragraph}{\numberline {2.3.2.3.1}Cellular Automata based approaches:}{24}{paragraph.2.3.2.3.1}
-\contentsline {paragraph}{\numberline {2.3.2.3.2}Lattice Gas models:}{25}{paragraph.2.3.2.3.2}
-\contentsline {paragraph}{\numberline {2.3.2.3.3}Floor field models:}{25}{paragraph.2.3.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.2.4}Multi agent based approaches}{26}{subsubsection.2.3.2.4}
-\contentsline {subsubsection}{\numberline {2.3.2.5}Hybrid approaches}{26}{subsubsection.2.3.2.5}
-\contentsline {subsection}{\numberline {2.3.3}A few models in detail}{26}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}Pires's model of pre-evacuation behavior}{27}{subsubsection.2.3.3.1}
-\contentsline {subsubsection}{\numberline {2.3.3.2}Legion}{27}{subsubsection.2.3.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3.3}MACES + PMFServ}{28}{subsubsection.2.3.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.4}Collective Panic Behavior Model}{29}{subsubsection.2.3.3.4}
-\contentsline {subsubsection}{\numberline {2.3.3.5}Exodus}{31}{subsubsection.2.3.3.5}
-\contentsline {subsubsection}{\numberline {2.3.3.6}ESCAPES}{33}{subsubsection.2.3.3.6}
-\contentsline {subsubsection}{\numberline {2.3.3.7}MASSEgress}{34}{subsubsection.2.3.3.7}
-\contentsline {subsection}{\numberline {2.3.4}Summary}{35}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Summary of Literature Review}{36}{section.2.4}
-\contentsline {chapter}{\numberline {3}Information Based Evacuation Agent Architecture: IBEVAC}{37}{chapter.3}
-\contentsline {section}{\numberline {3.1}The Six Building Blocks of Crowd Behavior during Egress}{38}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Perception}{38}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Event identification}{39}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Knowledge Base}{39}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Communication}{40}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Navigation}{40}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Task management}{40}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}The Agent Architecture}{42}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Information Based Perception\nobreakspace {}(IBP) Module}{42}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Knowledge Base}{42}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Environment Knowledge Module}{42}{subsubsection.3.2.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Event Knowledge Module}{43}{subsubsection.3.2.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Agent Description Module\nobreakspace {}(ADM)}{43}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Planning Module}{43}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Communication Module}{44}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Navigation Module}{44}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}Summary}{45}{section.3.3}
-\contentsline {chapter}{\numberline {4}Information Based Perception}{47}{chapter.4}
-\contentsline {section}{\numberline {4.1}Limits of Human Perception}{48}{section.4.1}
-\contentsline {section}{\numberline {4.2}Navigation Systems}{50}{section.4.2}
-\contentsline {section}{\numberline {4.3}The Information Based Perception Model}{52}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Clustering}{53}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Sensing}{55}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Filtering}{56}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Results}{59}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Group Based Perception}{59}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Effects of multi layered clustering}{61}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Filtering necessitates Group Based Perception}{63}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Effect of filtering of percept information}{64}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}Summary and Future Work}{66}{section.4.5}
-\contentsline {chapter}{\numberline {5}Modelling Pre Evacuation Behavior in Agent Based Simulations Of Crowds}{67}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{67}{section.5.1}
-\contentsline {section}{\numberline {5.2}Related Work}{68}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Pre-evacuation Behavior}{68}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Existing Models}{69}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}The IBEVAC Model}{70}{section.5.3}
-\contentsline {section}{\numberline {5.4}Event Identification and Pre-evacuation behavior}{71}{section.5.4}
-\contentsline {section}{\numberline {5.5}Results}{72}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Experiment 1: The effect of fire alarm clarity}{72}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Experiment 2: The importance of communication}{72}{subsection.5.5.2}
-\contentsline {section}{\numberline {5.6}Conclusion and Future Work}{73}{section.5.6}
-\contentsline {chapter}{\numberline {6}Modelling Spatial Knowledge}{75}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{75}{section.6.1}
-\contentsline {section}{\numberline {6.2}Literature Review}{76}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Working Memory}{76}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}The building blocks of spatial knowledge}{77}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Indoor Way-finding}{78}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Experiment Performed}{79}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}The minecraft gaming environment}{79}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}The game}{79}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Experiment details}{81}{section.6.4}
-\contentsline {section}{\numberline {6.5}Analysis of Experiment Results}{82}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Calculation of random walks}{82}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Room visit frequencies}{82}{subsection.6.5.2}
-\contentsline {subsubsection}{\numberline {6.5.2.1}Calculation}{82}{subsubsection.6.5.2.1}
-\contentsline {subsubsection}{\numberline {6.5.2.2}Discussion}{83}{subsubsection.6.5.2.2}
-\contentsline {subsection}{\numberline {6.5.3}Markov data analysis}{84}{subsection.6.5.3}
-\contentsline {subsubsection}{\numberline {6.5.3.1}Calculation of markov data}{85}{subsubsection.6.5.3.1}
-\contentsline {subsubsection}{\numberline {6.5.3.2}Types Of Exploring agents}{86}{subsubsection.6.5.3.2}
-\contentsline {subsubsection}{\numberline {6.5.3.3}Expected Coverage Given Number Of Hops}{87}{subsubsection.6.5.3.3}
-\contentsline {subsubsection}{\numberline {6.5.3.4}Expected Hops Given Coverage}{87}{subsubsection.6.5.3.4}
-\contentsline {subsection}{\numberline {6.5.4}Empirical Analysis}{88}{subsection.6.5.4}
-\contentsline {subsubsection}{\numberline {6.5.4.1}Existence of decision points}{88}{subsubsection.6.5.4.1}
-\contentsline {subsubsection}{\numberline {6.5.4.2}Location recognition and memory}{89}{subsubsection.6.5.4.2}
-\contentsline {section}{\numberline {6.6}Conclusion}{90}{section.6.6}
-\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{93}{chapter.7}
-\contentsline {section}{\numberline {7.1}Summary and Conclusion}{93}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{94}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Model design}{94}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Implementation and simulation}{96}{subsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.2.1}The MASON frameworok}{96}{subsubsection.7.2.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2.2}DEPATHSS}{96}{subsubsection.7.2.2.2}
-\contentsline {subsubsection}{\numberline {7.2.2.3}Time frame for model implementation}{98}{subsubsection.7.2.2.3}
-\contentsline {subsection}{\numberline {7.2.3}Validation}{99}{subsection.7.2.3}
-\contentsline {subsubsection}{\numberline {7.2.3.1}Validation}{100}{subsubsection.7.2.3.1}
-\contentsline {chapter}{\numberline {A}Model Class Structure}{103}{appendix.A}
-\contentsline {chapter}{\numberline {B}Validity check for Markov analysis}{107}{appendix.B}
-\contentsline {subsection}{\numberline {B.0.4}Effect of dataset size}{107}{subsection.B.0.4}
-\contentsline {subsection}{\numberline {B.0.5}Decision base size at decision points}{107}{subsection.B.0.5}
+\contentsline {section}{\numberline {1.2}Key Contributions and Scope of this Thesis}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Organization of the Report}{4}{section.1.3}
+\contentsline {chapter}{\numberline {2}Literature Review}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Multidisciplinary Nature}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Current Understanding of Human Behavior in Egress}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}How does it all begin?}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Crowd behavior}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}The effect of stress and time constraints}{15}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Summary}{16}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Engineering Models}{17}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}What are the components required by a computational model of egress}{18}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}A model of the environment or location}{18}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}A fire or smoke model}{18}{subsubsection.2.3.1.2}
+\contentsline {subsubsection}{\numberline {2.3.1.3}A model of individuals engaging in egress}{18}{subsubsection.2.3.1.3}
+\contentsline {subsubsection}{\numberline {2.3.1.4}A model of management}{19}{subsubsection.2.3.1.4}
+\contentsline {subsection}{\numberline {2.3.2}Some existing models and their strengths and weaknesses}{20}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Network or Queuing Theory based approaches}{21}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Flow models}{21}{subsubsection.2.3.2.2}
+\contentsline {subsubsection}{\numberline {2.3.2.3}Environment Control Based Models}{21}{subsubsection.2.3.2.3}
+\contentsline {paragraph}{\numberline {2.3.2.3.1}Cellular Automata based approaches:}{22}{paragraph.2.3.2.3.1}
+\contentsline {paragraph}{\numberline {2.3.2.3.2}Lattice gas models:}{23}{paragraph.2.3.2.3.2}
+\contentsline {paragraph}{\numberline {2.3.2.3.3}Floor field models:}{23}{paragraph.2.3.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.2.4}Agent based approaches}{24}{subsubsection.2.3.2.4}
+\contentsline {subsubsection}{\numberline {2.3.2.5}Hybrid approaches}{24}{subsubsection.2.3.2.5}
+\contentsline {subsection}{\numberline {2.3.3}Detailed Discussion of Signinificant Computational Models}{24}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}Pires's model of pre-evacuation behavior}{24}{subsubsection.2.3.3.1}
+\contentsline {subsubsection}{\numberline {2.3.3.2}Legion}{25}{subsubsection.2.3.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3.3}MACES + PMFServ}{26}{subsubsection.2.3.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.4}Collective Panic Behavior Model}{27}{subsubsection.2.3.3.4}
+\contentsline {subsubsection}{\numberline {2.3.3.5}Exodus}{29}{subsubsection.2.3.3.5}
+\contentsline {subsubsection}{\numberline {2.3.3.6}ESCAPES}{31}{subsubsection.2.3.3.6}
+\contentsline {subsubsection}{\numberline {2.3.3.7}MASSEgress}{32}{subsubsection.2.3.3.7}
+\contentsline {subsection}{\numberline {2.3.4}Summary}{33}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Summary of Literature Review}{34}{section.2.4}
+\contentsline {chapter}{\numberline {3}Information Based Evacuation Agent Architecture: IBEVAC}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}The Six Building Blocks of Crowd Behavior during Egress}{36}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Perception}{36}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Event identification}{37}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Knowledge Base}{37}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Communication}{38}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Navigation}{38}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Task management}{38}{subsection.3.1.6}
+\contentsline {section}{\numberline {3.2}The Agent Architecture}{40}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Information Based Perception\nobreakspace {}(IBP) Module}{40}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Knowledge Base}{40}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Environment Knowledge Module}{40}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Event Knowledge Module}{41}{subsubsection.3.2.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Agent Description Module\nobreakspace {}(ADM)}{41}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Planning Module}{41}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Communication Module}{42}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Navigation Module}{42}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Summary}{43}{section.3.3}
+\contentsline {chapter}{\numberline {4}Information Based Perception}{45}{chapter.4}
+\contentsline {section}{\numberline {4.1}Limits of Human Perception}{46}{section.4.1}
+\contentsline {section}{\numberline {4.2}Navigation Systems}{48}{section.4.2}
+\contentsline {section}{\numberline {4.3}The Information Based Perception Model}{50}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Clustering}{51}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Sensing}{53}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Filtering}{54}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Results}{57}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Group Based Perception}{57}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Effects of multi layered clustering}{59}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Filtering necessitates Group Based Perception}{61}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Effect of filtering of percept information}{62}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}Summary and Future Work}{64}{section.4.5}
+\contentsline {chapter}{\numberline {5}Modelling Pre Evacuation Behavior in Agent Based Simulations Of Crowds}{65}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{65}{section.5.1}
+\contentsline {section}{\numberline {5.2}Related Work}{66}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Pre-evacuation Behavior}{66}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Existing Models}{67}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}The IBEVAC Model}{68}{section.5.3}
+\contentsline {section}{\numberline {5.4}Event Identification and Pre-evacuation behavior}{69}{section.5.4}
+\contentsline {section}{\numberline {5.5}Results}{70}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Experiment 1: The effect of fire alarm clarity}{70}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Experiment 2: The importance of communication}{70}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Conclusion and Future Work}{71}{section.5.6}
+\contentsline {chapter}{\numberline {6}Modelling Spatial Knowledge}{73}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{73}{section.6.1}
+\contentsline {section}{\numberline {6.2}Literature Review}{74}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Working Memory}{74}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}The building blocks of spatial knowledge}{75}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Indoor Way-finding}{76}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Experiment Performed}{77}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}The minecraft gaming environment}{77}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}The game}{77}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Experiment details}{79}{section.6.4}
+\contentsline {section}{\numberline {6.5}Analysis of Experiment Results}{80}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Calculation of random walks}{80}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Room visit frequencies}{80}{subsection.6.5.2}
+\contentsline {subsubsection}{\numberline {6.5.2.1}Calculation}{80}{subsubsection.6.5.2.1}
+\contentsline {subsubsection}{\numberline {6.5.2.2}Discussion}{81}{subsubsection.6.5.2.2}
+\contentsline {subsection}{\numberline {6.5.3}Markov data analysis}{82}{subsection.6.5.3}
+\contentsline {subsubsection}{\numberline {6.5.3.1}Calculation of markov data}{83}{subsubsection.6.5.3.1}
+\contentsline {subsubsection}{\numberline {6.5.3.2}Types Of Exploring agents}{84}{subsubsection.6.5.3.2}
+\contentsline {subsubsection}{\numberline {6.5.3.3}Expected Coverage Given Number Of Hops}{85}{subsubsection.6.5.3.3}
+\contentsline {subsubsection}{\numberline {6.5.3.4}Expected Hops Given Coverage}{85}{subsubsection.6.5.3.4}
+\contentsline {subsection}{\numberline {6.5.4}Empirical Analysis}{86}{subsection.6.5.4}
+\contentsline {subsubsection}{\numberline {6.5.4.1}Existence of decision points}{86}{subsubsection.6.5.4.1}
+\contentsline {subsubsection}{\numberline {6.5.4.2}Location recognition and memory}{87}{subsubsection.6.5.4.2}
+\contentsline {section}{\numberline {6.6}Conclusion}{88}{section.6.6}
+\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{91}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary and Conclusion}{91}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{92}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Model design}{92}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Implementation and simulation}{94}{subsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.2.1}The MASON frameworok}{94}{subsubsection.7.2.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2.2}DEPATHSS}{94}{subsubsection.7.2.2.2}
+\contentsline {subsubsection}{\numberline {7.2.2.3}Time frame for model implementation}{96}{subsubsection.7.2.2.3}
+\contentsline {subsection}{\numberline {7.2.3}Validation}{97}{subsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.2.3.1}Validation}{98}{subsubsection.7.2.3.1}
+\contentsline {chapter}{\numberline {A}Model Class Structure}{101}{appendix.A}
+\contentsline {chapter}{\numberline {B}Validity check for Markov analysis}{105}{appendix.B}
+\contentsline {subsection}{\numberline {B.0.4}Effect of dataset size}{105}{subsection.B.0.4}
+\contentsline {subsection}{\numberline {B.0.5}Decision base size at decision points}{105}{subsection.B.0.5}

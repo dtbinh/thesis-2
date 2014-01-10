@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.5.2)  3 JAN 2014 10:34
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/W32TeX) (format=pdflatex 2013.4.2)  9 JAN 2014 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**thesis.tex -recorder
+**thesis.tex
 (./thesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
@@ -16,9 +16,9 @@ kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
  piedmontese, polish, portuguese, romanian, romansh, russian, sanskrit, serbian
 , serbianc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, u
 ppersorbian, welsh, loaded.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/report.cls
+(c:/texlive/2012/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size12.clo
+(c:/texlive/2012/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -34,29 +34,29 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def
+(c:/texlive/2012/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2012/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+(c:/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(c:/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(c:/texlive/2012/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(c:/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
@@ -72,27 +72,27 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+(c:/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(c:/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(c:/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(c:/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(c:/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count91
@@ -100,10 +100,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/multirow/multirow.sty
+(c:/texlive/2012/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen113
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/array.sty
+(c:/texlive/2012/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen114
 \extrarowheight=\dimen115
@@ -111,7 +111,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/tabularx.sty
+(c:/texlive/2012/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@col@width=\dimen116
 \TX@old@table=\dimen117
@@ -121,7 +121,7 @@ Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@cols=\count92
 \TX@ftn=\toks17
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/booktabs/booktabs.sty
+(c:/texlive/2012/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen121
 \lightrulewidth=\dimen122
@@ -141,19 +141,20 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count96
 \@thisrulewidth=\dimen133
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/ltxmisc/topcapt.sty
+(c:/texlive/2012/texmf-dist/tex/latex/ltxmisc/topcapt.sty
 Package: topcapt 2004/12/11 v1.2 Caption at top of float
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/setspace/setspace.sty
+(c:/texlive/2012/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+(c:/texlive/2012/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box26
-) (/usr/local/texlive/2012/texmf-dist/tex/latex/subfig/subfig.sty
+)
+(c:/texlive/2012/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption3.sty
+(c:/texlive/2012/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/02/03 v1.5-62 caption3 kernel (AR)
 \captionmargin=\dimen134
 \captionmargin@=\dimen135
@@ -176,10 +177,10 @@ Package: caption3 2013/02/03 v1.5-62 caption3 kernel (AR)
 \c@lotdepth=\count103
 \sf@top=\skip48
 \sf@bottom=\skip49
-)
-(./rotating.sty
+) (./rotating.sty
 Package: rotating 2009/03/28 v2.16b rotated objects in LaTeX
- (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
+
+(c:/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count104
@@ -187,21 +188,22 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rotFPbot=\skip51
 \rot@float@box=\box27
 \rot@mess@toks=\toks18
-) (/usr/local/texlive/2012/texmf-dist/tex/latex/natbib/natbib.sty
+)
+(c:/texlive/2012/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip52
 \bibsep=\skip53
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count105
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(c:/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(c:/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -240,22 +242,22 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(c:/texlive/2012/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(c:/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen142
 \Hy@linkcounter=\count106
 \Hy@pagecounter=\count107
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def
+(c:/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count108
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(c:/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -267,7 +269,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count109
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
+(c:/texlive/2012/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -292,19 +294,19 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hpdftex.def
+(c:/texlive/2012/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count114
 \c@bookmark@seq@number=\count115
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(c:/texlive/2012/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip54
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/paralist/paralist.sty
+(c:/texlive/2012/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
 \pltopsep=\skip55
 \plpartopsep=\skip56
@@ -312,7 +314,7 @@ Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
 \plparsep=\skip58
 \pl@lab=\toks19
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(c:/texlive/2012/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip59
 \f@ncyO@elh=\skip60
 \f@ncyO@erh=\skip61
@@ -322,8 +324,8 @@ Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
 \f@ncyO@erf=\skip65
 \f@ncyO@olf=\skip66
 \f@ncyO@orf=\skip67
-)
-(./thesis.aux (./Introduction.aux)
+) (./thesis.aux
+(./Introduction.aux)
 
 LaTeX Warning: Label `fig:AgentArchitecture' multiply defined.
 
@@ -392,7 +394,7 @@ Package geometry Warning: The marginal notes overrun the paper.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+(c:/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count116
 \scratchdimen=\dimen146
@@ -405,10 +407,10 @@ Package geometry Warning: The marginal notes overrun the paper.
 \MPnumerator=\count120
 \makeMPintoPDFobject=\count121
 \everyMPtoPDFconversion=\toks21
-) (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (c:/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+(c:/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -416,7 +418,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(c:/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -426,10 +428,10 @@ Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box29
 Package hyperref Info: Link coloring OFF on input line 89.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(c:/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count122
@@ -451,41 +453,19 @@ Package pdftex.def Info: figures/ntulogo.pdf used on input line 102.
 
 [1
 
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figur
-es/ntulogo.pdf>] (./abstract.tex [1]pdfTeX warning (ext4): destination with the
- same identifier (name{page.i}) has been already used, duplicate ignored
+{c:/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/ntulo
+go.pdf>] (./abstract.tex [1]pdfTeX warning (ext4): destination with the same id
+entifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.11 \end{abstract}
                     [1]) (./acknow.tex [2]
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 \\
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 \hspace
-           {0in}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
  []
 
@@ -531,157 +511,205 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  (./Introduction.tex
 Chapter 1.
 
+Package natbib Warning: Citation `FIND_PAPER' on page 1 undefined on input line
+ 17.
+
+
 Underfull \vbox (badness 1728) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 O
-      ne such example of an abstraction often applied to models of crowds is...
-[1
+l.22 
+      [1
 
 
 ]
+
+Package natbib Warning: Citation `Zhou:2010:CMS:1842722.1842725' on page 2 unde
+fined on input line 23.
+
+
+Package natbib Warning: Citation `Gwynne1999741' on page 2 undefined on input l
+ine 23.
+
+
+Package natbib Warning: Citation `Reynolds:1987vm' on page 2 undefined on input
+ line 23.
+
+
+Package natbib Warning: Citation `Snape:2012' on page 2 undefined on input line
+ 23.
+
+
+Package natbib Warning: Citation `ageOfEmpires:2013' on page 2 undefined on inp
+ut line 23.
+
+
+Package natbib Warning: Citation `PhysRevE.51.4282' on page 2 undefined on inpu
+t line 23.
+
+
+Package natbib Warning: Citation `PEDFull:2011' on page 2 undefined on input li
+ne 23.
+
+
+Package natbib Warning: Citation `Mordvintsev:2012' on page 2 undefined on inpu
+t line 23.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
 
-Package natbib Warning: Citation `Takima:2002wr' on page 3 undefined on input l
-ine 27.
-
-
 Package natbib Warning: Citation `Klupfel:2003wa' on page 3 undefined on input 
-line 34.
+line 47.
 
-[3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
- (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+
+Overfull \hbox (5.01532pt too wide) in paragraph at lines 47--48
+[]\T1/cmr/m/n/12 However, ex-ist-ing com-pu-ta-tional mod-els make sev-eral as-
+sump-tions about
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 59.
+(c:/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
- [4]
-
-LaTeX Warning: Reference `chapter:TheRemainingModules' on page 5 undefined on i
-nput line 61.
-
-) [5] (./LiteratureReview.tex [6
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
+ [3]) [4]
+(./LiteratureReview.tex
+Chapter 2.
+[5
 
 
 ]
-Chapter 2.
-[7]
 Underfull \vbox (badness 4242) has occurred while \output is active []
 
- [8]
-[9]
+ [6]
+[7]
 
-Package natbib Warning: Citation `Latane:1969wm' on page 10 undefined on input 
-line 46.
+Package natbib Warning: Citation `Latane:1969wm' on page 8 undefined on input l
+ine 47.
 
-[10]
+[8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-Overfull \hbox (5.91557pt too wide) in paragraph at lines 60--111
+ [9]
+Overfull \hbox (5.91557pt too wide) in paragraph at lines 61--112
  [] 
  []
 
-[12] [13] [14]
+[10] [11] [12] [13]
 
-pdfTeX warning: pdflatex (file ./figures/EgressStrategies.pdf): PDF inclusion: 
-found PDF version <1.6>, but at most version <1.5> allowed
-<figures/EgressStrategies.pdf, id=976, 554.15031pt x 431.42178pt>
+pdfTeX warning: pdflatex.exe (file ./figures/EgressStrategies.pdf): PDF inclusi
+on: found PDF version <1.6>, but at most version <1.5> allowed
+<figures/EgressStrategies.pdf, id=970, 554.15031pt x 431.42178pt>
 File: figures/EgressStrategies.pdf Graphic file (type pdf)
 
 <use figures/EgressStrategies.pdf>
-Package pdftex.def Info: figures/EgressStrategies.pdf used on input line 145.
+Package pdftex.def Info: figures/EgressStrategies.pdf used on input line 146.
 (pdftex.def)             Requested size: 435.33873pt x 289.084pt.
- [15] [16 <./figures/EgressStrategies.pdf>]
-[17] [18] [19]
+ [14 <./figures/EgressStrategies.pdf>]
+[15] [16] [17]
 
-Package natbib Warning: Citation `Klupfel:2003wa' on page 20 undefined on input
- line 209.
+Package natbib Warning: Citation `Klupfel:2003wa' on page 18 undefined on input
+ line 210.
 
+[18]
 
-Underfull \vbox (badness 1603) has occurred while \output is active []
-
- [20]
-
-Package natbib Warning: Citation `Nagai:2004kl' on page 21 undefined on input l
-ine 221.
+Package natbib Warning: Citation `Nagai:2004kl' on page 19 undefined on input l
+ine 222.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
-[21]
-Overfull \hbox (0.86049pt too wide) in paragraph at lines 234--234
+
+Overfull \hbox (0.86049pt too wide) in paragraph at lines 235--235
 []\T1/cmr/bx/n/14.4 Some ex-ist-ing mod-els and their strengths and weak-nesses
  
  []
 
-[22]
-Underfull \vbox (badness 3189) has occurred while \output is active []
+[19] [20] [21]
 
- [23]
-
-Package natbib Warning: Citation `Yuan:2007ja' on page 24 undefined on input li
-ne 266.
+Package natbib Warning: Citation `Hoekstra:2010' on page 22 undefined on input 
+line 267.
 
 
-Package natbib Warning: Citation `Yamamoto:2007dc' on page 24 undefined on inpu
-t line 267.
+Overfull \hbox (0.64693pt too wide) in paragraph at lines 267--268
+ \T1/cmr/bx/n/12 2.3.2.3.1 Cel-lu-lar Au-tomata based ap-proaches:[][] \T1/cmr/
+m/n/12 A Cel-lu-lar Au-toma-tion (CA)
+ []
 
 
-Package natbib Warning: Citation `Klein:2009' on page 24 undefined on input lin
-e 267.
+Package natbib Warning: Citation `Yuan:2007ja' on page 22 undefined on input li
+ne 270.
 
 
-Package natbib Warning: Citation `Klupfel:2003wa' on page 24 undefined on input
- line 268.
-
-[24]
-
-Package natbib Warning: Citation `Nagai:2004kl' on page 25 undefined on input l
-ine 273.
+Package natbib Warning: Citation `Yamamoto:2007dc' on page 22 undefined on inpu
+t line 272.
 
 
-Package natbib Warning: Citation `Qi:2011kv' on page 25 undefined on input line
- 278.
+Package natbib Warning: Citation `Klein:2009' on page 22 undefined on input lin
+e 272.
 
-[25] [26] [27]
-Overfull \hbox (10.00293pt too wide) in paragraph at lines 323--324
+
+Package natbib Warning: Citation `Klupfel:2003wa' on page 22 undefined on input
+ line 274.
+
+
+Package natbib Warning: Citation `Marconi2002' on page 22 undefined on input li
+ne 281.
+
+
+Package natbib Warning: Citation `Nagai:2004kl' on page 22 undefined on input l
+ine 281.
+
+
+Underfull \vbox (badness 4673) has occurred while \output is active []
+
+ [22]
+
+Package natbib Warning: Citation `nishinari2004extended' on page 23 undefined o
+n input line 286.
+
+
+Package natbib Warning: Citation `Qi:2011kv' on page 23 undefined on input line
+ 286.
+
+[23]
+Overfull \hbox (0.89839pt too wide) in paragraph at lines 299--299
+[]\T1/cmr/bx/n/14.4 Detailed Dis-cus-sion of Signinif-i-cant Com-pu-ta-tional M
+od-
+ []
+
+[24] [25]
+Overfull \hbox (10.00293pt too wide) in paragraph at lines 332--333
 \T1/cmr/m/n/12 li-brary of well-established and data-grounded Per-for-mance Mod
 -er-a-tor Func-tions (PMFs)
  []
 
-[28] [29] [30] <figures/exodus.pdf, id=1192, 729.72626pt x 435.6275pt>
+[26] [27] [28] <figures/exodus.pdf, id=1181, 729.72626pt x 435.6275pt>
 File: figures/exodus.pdf Graphic file (type pdf)
 
 <use figures/exodus.pdf>
-Package pdftex.def Info: figures/exodus.pdf used on input line 355.
+Package pdftex.def Info: figures/exodus.pdf used on input line 364.
 (pdftex.def)             Requested size: 435.32718pt x 259.87627pt.
- [31 <./figures/exodus.pdf>]
-Overfull \hbox (17.8775pt too wide) in paragraph at lines 371--372
-\T1/cmr/m/n/12 mod-eled the ef-fect of time pres-sure and stress on evac-uees w
-as in-tro-duced into buildingEX-
- []
-
-
+ [29 <./figures/exodus.pdf>]
 Underfull \vbox (badness 4242) has occurred while \output is active []
 
- [32]
-[33] [34] [35]) (./InfoBasedArchitecture.tex [36]
+ [30]
+[31] [32] [33]) (./InfoBasedArchitecture.tex [34]
 Chapter 3.
-<figures/fig-ProcessOfEvacuation.pdf, id=1258, 440.64626pt x 541.02126pt>
+<figures/fig-ProcessOfEvacuation.pdf, id=1248, 440.64626pt x 541.02126pt>
 File: figures/fig-ProcessOfEvacuation.pdf Graphic file (type pdf)
 
 <use figures/fig-ProcessOfEvacuation.pdf>
@@ -691,10 +719,10 @@ Package pdftex.def Info: figures/fig-ProcessOfEvacuation.pdf used on input line
 
 Underfull \vbox (badness 2495) has occurred while \output is active []
 
- [37
+ [35
 
 ]
-[38 <./figures/fig-ProcessOfEvacuation.pdf>] [39] [40]
+[36 <./figures/fig-ProcessOfEvacuation.pdf>] [37] [38]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
@@ -767,8 +795,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--71
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
-<figures/fig-AgentArchitecture.pdf, id=1327, 2339.74126pt x 853.1875pt>
+ [39]
+<figures/fig-AgentArchitecture.pdf, id=1318, 2339.74126pt x 853.1875pt>
 File: figures/fig-AgentArchitecture.pdf Graphic file (type pdf)
 
 <use figures/fig-AgentArchitecture.pdf>
@@ -777,28 +805,28 @@ Package pdftex.def Info: figures/fig-AgentArchitecture.pdf used on input line 8
 (pdftex.def)             Requested size: 731.23584pt x 266.64647pt.
 
 
-LaTeX Warning: Reference `CFW:EnvironmentKnowledgeModule' on page 42 undefined 
+LaTeX Warning: Reference `CFW:EnvironmentKnowledgeModule' on page 40 undefined 
 on input line 100.
 
 
-LaTeX Warning: Reference `CFW:EventIdentification' on page 42 undefined on inpu
+LaTeX Warning: Reference `CFW:EventIdentification' on page 40 undefined on inpu
 t line 104.
+
+[40]
+
+LaTeX Warning: Reference `CFW:ADM' on page 41 undefined on input line 109.
+
+
+LaTeX Warning: Reference `CFW:Planner' on page 41 undefined on input line 113.
+
+[41]
+
+LaTeX Warning: Reference `CFW:CommunicationModule' on page 42 undefined on inpu
+t line 119.
 
 [42]
 
-LaTeX Warning: Reference `CFW:ADM' on page 43 undefined on input line 109.
-
-
-LaTeX Warning: Reference `CFW:Planner' on page 43 undefined on input line 113.
-
-[43]
-
-LaTeX Warning: Reference `CFW:CommunicationModule' on page 44 undefined on inpu
-t line 119.
-
-[44]
-
-LaTeX Warning: Reference `CFW:NavigationModule' on page 45 undefined on input l
+LaTeX Warning: Reference `CFW:NavigationModule' on page 43 undefined on input l
 ine 133.
 
 
@@ -807,23 +835,23 @@ Overfull \hbox (0.53732pt too wide) in paragraph at lines 133--134
 de-tail in Sect. [] 
  []
 
-) (./InfoBasedPerception.tex [45] [46 <./figures/fig-AgentArchitecture.pdf>]
+) (./InfoBasedPerception.tex [43] [44 <./figures/fig-AgentArchitecture.pdf>]
 Chapter 4.
 
 Underfull \vbox (badness 1728) has occurred while \output is active []
 
- [47
+ [45
 
 ]
-[48]
+[46]
 Underfull \vbox (badness 4242) has occurred while \output is active []
 
- [49]
+ [47]
 
-LaTeX Warning: Reference `CFW:NavigationModule' on page 50 undefined on input l
+LaTeX Warning: Reference `CFW:NavigationModule' on page 48 undefined on input l
 ine 42.
 
-<figures/fig-NavigationArchitecture.pdf, id=1616, 371.3875pt x 451.6875pt>
+<figures/fig-NavigationArchitecture.pdf, id=1606, 371.3875pt x 451.6875pt>
 File: figures/fig-NavigationArchitecture.pdf Graphic file (type pdf)
 
 <use figures/fig-NavigationArchitecture.pdf>
@@ -832,24 +860,24 @@ ine 46.
 (pdftex.def)             Requested size: 237.69852pt x 289.07999pt.
 
 
-Package natbib Warning: Citation `Klein:2009' on page 50 undefined on input lin
+Package natbib Warning: Citation `Klein:2009' on page 48 undefined on input lin
 e 51.
 
-[50]
+[48]
 
-Package natbib Warning: Citation `Klein:2009' on page 51 undefined on input lin
+Package natbib Warning: Citation `Klein:2009' on page 49 undefined on input lin
 e 59.
 
-[51 <./figures/fig-NavigationArchitecture.pdf>]
-<figures/PerceptionAndActing.pdf, id=1697, 406.51875pt x 150.5625pt>
+[49 <./figures/fig-NavigationArchitecture.pdf>]
+<figures/PerceptionAndActing.pdf, id=1687, 406.51875pt x 150.5625pt>
 File: figures/PerceptionAndActing.pdf Graphic file (type pdf)
 
 <use figures/PerceptionAndActing.pdf>
 Package pdftex.def Info: figures/PerceptionAndActing.pdf used on input line 77.
 
 (pdftex.def)             Requested size: 406.51775pt x 150.56212pt.
- [52]
-<figures/ClusterProcessing.pdf, id=1710, 438.63875pt x 298.11375pt>
+ [50]
+<figures/ClusterProcessing.pdf, id=1700, 438.63875pt x 298.11375pt>
 File: figures/ClusterProcessing.pdf Graphic file (type pdf)
 
 <use figures/ClusterProcessing.pdf>
@@ -860,31 +888,31 @@ Overfull \hbox (3.31049pt too wide) in paragraph at lines 101--102
  [][] 
  []
 
-[53 <./figures/PerceptionAndActing.pdf>]
+[51 <./figures/PerceptionAndActing.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54 <./figures/ClusterProcessing.pdf>]
+ [52 <./figures/ClusterProcessing.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 125.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 125.
 
-<figures/AttemptedClusterLayer.pdf, id=1825, 552.0625pt x 331.2375pt>
+<figures/AttemptedClusterLayer.pdf, id=1814, 552.0625pt x 331.2375pt>
 File: figures/AttemptedClusterLayer.pdf Graphic file (type pdf)
 
 <use figures/AttemptedClusterLayer.pdf>
 Package pdftex.def Info: figures/AttemptedClusterLayer.pdf used on input line 1
 38.
 (pdftex.def)             Requested size: 435.3496pt x 252.94601pt.
- [55] [56 <./figures/AttemptedClusterLayer.pdf>] <figures/distanceScore.pdf, id
-=1986, 291.0875pt x 286.06876pt>
+ [53] [54 <./figures/AttemptedClusterLayer.pdf>] <figures/distanceScore.pdf, id
+=1976, 291.0875pt x 286.06876pt>
 File: figures/distanceScore.pdf Graphic file (type pdf)
 
 <use figures/distanceScore.pdf>
 Package pdftex.def Info: figures/distanceScore.pdf used on input line 165.
 (pdftex.def)             Requested size: 291.08678pt x 286.06805pt.
- [57 <./figures/distanceScore.pdf>]
-<figures/angleScore.pdf, id=2013, 291.0875pt x 286.06876pt>
+ [55 <./figures/distanceScore.pdf>]
+<figures/angleScore.pdf, id=2003, 291.0875pt x 286.06876pt>
 File: figures/angleScore.pdf Graphic file (type pdf)
 
 <use figures/angleScore.pdf>
@@ -893,7 +921,7 @@ Package pdftex.def Info: figures/angleScore.pdf used on input line 177.
 
 Underfull \vbox (badness 1874) has occurred while \output is active []
 
- [58 <./figures/angleScore.pdf>] <figures/Exp1_RVO.jpg, id=2044, 1304.875pt x 3
+ [56 <./figures/angleScore.pdf>] <figures/Exp1_RVO.jpg, id=2034, 1304.875pt x 3
 01.125pt>
 File: figures/Exp1_RVO.jpg Graphic file (type jpg)
 
@@ -901,40 +929,40 @@ File: figures/Exp1_RVO.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/Exp1_RVO.jpg used on input line 204.
 (pdftex.def)             Requested size: 435.32718pt x 100.46051pt.
 
-<figures/Exp1_GBP.jpg, id=2045, 1032.85875pt x 251.94125pt>
+<figures/Exp1_GBP.jpg, id=2035, 1032.85875pt x 251.94125pt>
 File: figures/Exp1_GBP.jpg Graphic file (type jpg)
 
 <use figures/Exp1_GBP.jpg>
 Package pdftex.def Info: figures/Exp1_GBP.jpg used on input line 206.
 (pdftex.def)             Requested size: 435.32718pt x 106.1875pt.
- [59]
+ [57]
 Overfull \hbox (4.70392pt too wide) in paragraph at lines 219--219
  []|[]| 
  []
 
-[60 <./figures/Exp1_RVO.jpg> <./figures/Exp1_GBP.jpg>]
-<figures/Exp2_RVO2.pdf, id=2069, 1003.75pt x 1104.125pt>
+[58 <./figures/Exp1_RVO.jpg> <./figures/Exp1_GBP.jpg>]
+<figures/Exp2_RVO2.pdf, id=2058, 1003.75pt x 1104.125pt>
 File: figures/Exp2_RVO2.pdf Graphic file (type pdf)
 
 <use figures/Exp2_RVO2.pdf>
 Package pdftex.def Info: figures/Exp2_RVO2.pdf used on input line 239.
 (pdftex.def)             Requested size: 213.39743pt x 341.43283pt.
 
-<figures/Exp2_GBP.pdf, id=2070, 1003.75pt x 1304.875pt>
+<figures/Exp2_GBP.pdf, id=2059, 1003.75pt x 1304.875pt>
 File: figures/Exp2_GBP.pdf Graphic file (type pdf)
 
 <use figures/Exp2_GBP.pdf>
 Package pdftex.def Info: figures/Exp2_GBP.pdf used on input line 241.
 (pdftex.def)             Requested size: 213.39743pt x 341.42978pt.
- [61 <./figures/Exp2_RVO2.pdf> <./figures/Exp2_GBP.pdf>] <figures/Exp2_Black_Ef
-fort.png, id=2110, 456.7464pt x 258.7266pt>
+ [59 <./figures/Exp2_RVO2.pdf> <./figures/Exp2_GBP.pdf>] <figures/Exp2_Black_Ef
+fort.png, id=2099, 456.7464pt x 258.7266pt>
 File: figures/Exp2_Black_Effort.png Graphic file (type png)
 
 <use figures/Exp2_Black_Effort.png>
 Package pdftex.def Info: figures/Exp2_Black_Effort.png used on input line 256.
 (pdftex.def)             Requested size: 213.39543pt x 142.26451pt.
 
-<figures/Exp2_Black_Inconvenience.png, id=2112, 455.7828pt x 258.7266pt>
+<figures/Exp2_Black_Inconvenience.png, id=2101, 455.7828pt x 258.7266pt>
 File: figures/Exp2_Black_Inconvenience.png Graphic file (type png)
 
 <use figures/Exp2_Black_Inconvenience.png>
@@ -942,7 +970,7 @@ Package pdftex.def Info: figures/Exp2_Black_Inconvenience.png used on input lin
 e 258.
 (pdftex.def)             Requested size: 213.39034pt x 142.26451pt.
 
-<figures/Exp2_Remaining_Effort.png, id=2113, 457.71pt x 257.763pt>
+<figures/Exp2_Remaining_Effort.png, id=2102, 457.71pt x 257.763pt>
 File: figures/Exp2_Remaining_Effort.png Graphic file (type png)
 
 <use figures/Exp2_Remaining_Effort.png>
@@ -950,7 +978,7 @@ Package pdftex.def Info: figures/Exp2_Remaining_Effort.png used on input line 2
 60.
 (pdftex.def)             Requested size: 213.39168pt x 142.26959pt.
 
-<figures/Exp2_Remaining_Inconvenience.png, id=2114, 456.7464pt x 257.763pt>
+<figures/Exp2_Remaining_Inconvenience.png, id=2103, 456.7464pt x 257.763pt>
 File: figures/Exp2_Remaining_Inconvenience.png Graphic file (type png)
 
 <use figures/Exp2_Remaining_Inconvenience.png>
@@ -960,68 +988,68 @@ Package pdftex.def Info: figures/Exp2_Remaining_Inconvenience.png used on input
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62]
-<figures/Exp3_initial.png, id=2128, 752.8125pt x 451.6875pt>
+ [60]
+<figures/Exp3_initial.png, id=2118, 752.8125pt x 451.6875pt>
 File: figures/Exp3_initial.png Graphic file (type png)
 
 <use figures/Exp3_initial.png>
 Package pdftex.def Info: figures/Exp3_initial.png used on input line 274.
 (pdftex.def)             Requested size: 237.10272pt x 142.26378pt.
 
-<figures/Exp3_4_RVO.png, id=2129, 752.8125pt x 451.6875pt>
+<figures/Exp3_4_RVO.png, id=2119, 752.8125pt x 451.6875pt>
 File: figures/Exp3_4_RVO.png Graphic file (type png)
 
 <use figures/Exp3_4_RVO.png>
 Package pdftex.def Info: figures/Exp3_4_RVO.png used on input line 276.
 (pdftex.def)             Requested size: 213.3936pt x 113.81068pt.
 
-<figures/Exp3_full_RVO.png, id=2130, 752.8125pt x 451.6875pt>
+<figures/Exp3_full_RVO.png, id=2120, 752.8125pt x 451.6875pt>
 File: figures/Exp3_full_RVO.png Graphic file (type png)
 
 <use figures/Exp3_full_RVO.png>
 Package pdftex.def Info: figures/Exp3_full_RVO.png used on input line 278.
 (pdftex.def)             Requested size: 213.3936pt x 113.81068pt.
 
-<figures/Exp3_1_GBP.png, id=2131, 752.8125pt x 451.6875pt>
+<figures/Exp3_1_GBP.png, id=2121, 752.8125pt x 451.6875pt>
 File: figures/Exp3_1_GBP.png Graphic file (type png)
 
 <use figures/Exp3_1_GBP.png>
 Package pdftex.def Info: figures/Exp3_1_GBP.png used on input line 280.
 (pdftex.def)             Requested size: 213.3936pt x 113.81068pt.
 
-<figures/Exp3_4_GBP.png, id=2132, 752.8125pt x 451.6875pt>
+<figures/Exp3_4_GBP.png, id=2122, 752.8125pt x 451.6875pt>
 File: figures/Exp3_4_GBP.png Graphic file (type png)
 
 <use figures/Exp3_4_GBP.png>
 Package pdftex.def Info: figures/Exp3_4_GBP.png used on input line 282.
 (pdftex.def)             Requested size: 213.3936pt x 113.81068pt.
 
-<figures/Exp4_initial.png, id=2138, 883.3pt x 321.2pt>
+<figures/Exp4_initial.png, id=2128, 883.3pt x 321.2pt>
 File: figures/Exp4_initial.png Graphic file (type png)
 
 <use figures/Exp4_initial.png>
 Package pdftex.def Info: figures/Exp4_initial.png used on input line 293.
 (pdftex.def)             Requested size: 391.22751pt x 142.26378pt.
 
-<figures/Exp4_3_1.png, id=2139, 883.3pt x 321.2pt>
+<figures/Exp4_3_1.png, id=2129, 883.3pt x 321.2pt>
 File: figures/Exp4_3_1.png Graphic file (type png)
  <use figures/Exp4_3_1.png>
 Package pdftex.def Info: figures/Exp4_3_1.png used on input line 295.
 (pdftex.def)             Requested size: 213.38457pt x 113.8087pt.
 
-<figures/Exp4_5_1.png, id=2140, 883.3pt x 321.2pt>
+<figures/Exp4_5_1.png, id=2130, 883.3pt x 321.2pt>
 File: figures/Exp4_5_1.png Graphic file (type png)
  <use figures/Exp4_5_1.png>
 Package pdftex.def Info: figures/Exp4_5_1.png used on input line 297.
 (pdftex.def)             Requested size: 213.38457pt x 113.8087pt.
 
-<figures/Exp4_3_2.png, id=2141, 883.3pt x 321.2pt>
+<figures/Exp4_3_2.png, id=2131, 883.3pt x 321.2pt>
 File: figures/Exp4_3_2.png Graphic file (type png)
  <use figures/Exp4_3_2.png>
 Package pdftex.def Info: figures/Exp4_3_2.png used on input line 299.
 (pdftex.def)             Requested size: 213.38457pt x 113.8087pt.
 
-<figures/Exp4_5_2.png, id=2142, 883.3pt x 321.2pt>
+<figures/Exp4_5_2.png, id=2132, 883.3pt x 321.2pt>
 File: figures/Exp4_5_2.png Graphic file (type png)
  <use figures/Exp4_5_2.png>
 Package pdftex.def Info: figures/Exp4_5_2.png used on input line 301.
@@ -1029,22 +1057,22 @@ Package pdftex.def Info: figures/Exp4_5_2.png used on input line 301.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63 <./figures/Exp2_Black_Effort.png> <./figures/Exp2_Black_Inconvenience.png>
+ [61 <./figures/Exp2_Black_Effort.png> <./figures/Exp2_Black_Inconvenience.png>
  <./figures/Exp2_Remaining_Effort.png> <./figures/Exp2_Remaining_Inconvenience.
 png>]
 Underfull \vbox (badness 4242) has occurred while \output is active []
 
- [64 <./figures/Exp3_initial.png (PNG copy)> <./figures/Exp3_4_RVO.png (PNG cop
+ [62 <./figures/Exp3_initial.png (PNG copy)> <./figures/Exp3_4_RVO.png (PNG cop
 y)> <./figures/Exp3_full_RVO.png (PNG copy)> <./figures/Exp3_1_GBP.png (PNG cop
-y)> <./figures/Exp3_4_GBP.png (PNG copy)>] [65 <./figures/Exp4_initial.png (PNG
+y)> <./figures/Exp3_4_GBP.png (PNG copy)>] [63 <./figures/Exp4_initial.png (PNG
  copy)> <./figures/Exp4_3_1.png (PNG copy)> <./figures/Exp4_5_1.png (PNG copy)>
  <./figures/Exp4_3_2.png (PNG copy)> <./figures/Exp4_5_2.png (PNG copy)>])
-(./PreEvacuation.tex [66]
+(./PreEvacuation.tex [64]
 Chapter 5.
-[67
+[65
 
-] [68]
-<figures/SimplifiedAgentArchitecture.png, id=2220, 1303.87125pt x 620.3175pt>
+] [66]
+<figures/SimplifiedAgentArchitecture.png, id=2209, 1303.87125pt x 620.3175pt>
 File: figures/SimplifiedAgentArchitecture.png Graphic file (type png)
 
 <use figures/SimplifiedAgentArchitecture.png>
@@ -1054,51 +1082,51 @@ line 46.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]
-[70 <./figures/SimplifiedAgentArchitecture.png>]
+ [67]
+[68 <./figures/SimplifiedAgentArchitecture.png>]
 Underfull \vbox (badness 6412) has occurred while \output is active []
 
- [71]
-<figures/layout.pdf, id=2245, 892.83563pt x 770.88pt>
+ [69]
+<figures/layout.pdf, id=2234, 892.83563pt x 770.88pt>
 File: figures/layout.pdf Graphic file (type pdf)
  <use figures/layout.pdf>
 Package pdftex.def Info: figures/layout.pdf used on input line 82.
 (pdftex.def)             Requested size: 209.25783pt x 180.67499pt.
 
-[72 <./figures/layout.pdf>]
-<figures/Exp1.pdf, id=2268, 589.00049pt x 444.4605pt>
+[70 <./figures/layout.pdf>]
+<figures/Exp1.pdf, id=2256, 589.00049pt x 444.4605pt>
 File: figures/Exp1.pdf Graphic file (type pdf)
  <use figures/Exp1.pdf>
 Package pdftex.def Info: figures/Exp1.pdf used on input line 115.
 (pdftex.def)             Requested size: 170.71588pt x 176.40431pt.
 
-<figures/Exp2.pdf, id=2269, 589.00049pt x 444.4605pt>
+<figures/Exp2.pdf, id=2257, 589.00049pt x 444.4605pt>
 File: figures/Exp2.pdf Graphic file (type pdf)
  <use figures/Exp2.pdf>
 Package pdftex.def Info: figures/Exp2.pdf used on input line 116.
 (pdftex.def)             Requested size: 170.71588pt x 176.40431pt.
 )
-(./SpatialKnowledgeModelling.tex [73 <./figures/Exp1.pdf> <./figures/Exp2.pdf>]
-[74
+(./SpatialKnowledgeModelling.tex [71 <./figures/Exp1.pdf> <./figures/Exp2.pdf>]
+[72
 
 ]
 Chapter 6.
-[75] [76] [77] [78] [79]
-<figures/floor0WithRooms.png, id=2443, 807.015pt x 663.22781pt>
+[73] [74] [75] [76] [77]
+<figures/floor0WithRooms.png, id=2430, 807.015pt x 663.22781pt>
 File: figures/floor0WithRooms.png Graphic file (type png)
 
 <use figures/floor0WithRooms.png>
 Package pdftex.def Info: figures/floor0WithRooms.png used on input line 104.
 (pdftex.def)             Requested size: 170.70955pt x 85.35231pt.
 
-<figures/floor1WithRooms.png, id=2444, 782.925pt x 666.23906pt>
+<figures/floor1WithRooms.png, id=2431, 782.925pt x 666.23906pt>
 File: figures/floor1WithRooms.png Graphic file (type png)
 
 <use figures/floor1WithRooms.png>
 Package pdftex.def Info: figures/floor1WithRooms.png used on input line 108.
 (pdftex.def)             Requested size: 170.71489pt x 85.35353pt.
 
-<figures/floor2WithRooms.png, id=2445, 481.8pt x 409.53pt>
+<figures/floor2WithRooms.png, id=2432, 481.8pt x 409.53pt>
 File: figures/floor2WithRooms.png Graphic file (type png)
 
 <use figures/floor2WithRooms.png>
@@ -1107,32 +1135,32 @@ Package pdftex.def Info: figures/floor2WithRooms.png used on input line 112.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
-[81 <./figures/floor0WithRooms.png> <./figures/floor1WithRooms.png> <./figures/
+ [78]
+[79 <./figures/floor0WithRooms.png> <./figures/floor1WithRooms.png> <./figures/
 floor2WithRooms.png>]
-<figures/unscaledRoomLayout.pdf, id=2464, 1411.2725pt x 455.7025pt>
+<figures/unscaledRoomLayout.pdf, id=2452, 1411.2725pt x 455.7025pt>
 File: figures/unscaledRoomLayout.pdf Graphic file (type pdf)
 
 <use figures/unscaledRoomLayout.pdf>
 Package pdftex.def Info: figures/unscaledRoomLayout.pdf used on input line 148.
 
 (pdftex.def)             Requested size: 435.32718pt x 140.56401pt.
- [82 <./figures/unscaledRoomLayout.pdf>]
-<figures/scaledGraph.pdf, id=2497, 1441.385pt x 527.9725pt>
+ [80 <./figures/unscaledRoomLayout.pdf>]
+<figures/scaledGraph.pdf, id=2485, 1441.385pt x 527.9725pt>
 File: figures/scaledGraph.pdf Graphic file (type pdf)
 
 <use figures/scaledGraph.pdf>
 Package pdftex.def Info: figures/scaledGraph.pdf used on input line 184.
 (pdftex.def)             Requested size: 435.32718pt x 159.45639pt.
 
-<figures/scaledGraphPerFloor.pdf, id=2500, 1441.385pt x 508.90125pt>
+<figures/scaledGraphPerFloor.pdf, id=2488, 1441.385pt x 508.90125pt>
 File: figures/scaledGraphPerFloor.pdf Graphic file (type pdf)
 
 <use figures/scaledGraphPerFloor.pdf>
 Package pdftex.def Info: figures/scaledGraphPerFloor.pdf used on input line 194
 .
 (pdftex.def)             Requested size: 435.32718pt x 153.69655pt.
- [83 <./figures/scaledGraph.pdf>] [84 <./figures/scaledGraphPerFloor.pdf>]
+ [81 <./figures/scaledGraph.pdf>] [82 <./figures/scaledGraphPerFloor.pdf>]
 Overfull \hbox (58.42781pt too wide) in paragraph at lines 224--244
 [][]
  []
@@ -1140,15 +1168,15 @@ Overfull \hbox (58.42781pt too wide) in paragraph at lines 224--244
 
 Underfull \vbox (badness 1642) has occurred while \output is active []
 
- [85]
-[86] <figures/coverage-300.PNG, id=2587, 1454.7951pt x 757.3896pt>
+ [83]
+[84] <figures/coverage-300.PNG, id=2575, 1454.7951pt x 757.3896pt>
 File: figures/coverage-300.PNG Graphic file (type png)
 
 <use figures/coverage-300.PNG>
 Package pdftex.def Info: figures/coverage-300.PNG used on input line 320.
 (pdftex.def)             Requested size: 435.32718pt x 226.62923pt.
- [87 <./figures/coverage-300.PNG>]
-<figures/hops-88.PNG, id=2599, 1495.2663pt x 750.1626pt>
+ [85 <./figures/coverage-300.PNG>]
+<figures/hops-88.PNG, id=2587, 1495.2663pt x 750.1626pt>
 File: figures/hops-88.PNG Graphic file (type png)
 
 <use figures/hops-88.PNG>
@@ -1159,14 +1187,14 @@ Overfull \hbox (3.91571pt too wide) in paragraph at lines 341--342
  [][] 
  []
 
-<figures/hops-50.PNG, id=2600, 1475.0307pt x 742.9356pt>
+<figures/hops-50.PNG, id=2588, 1475.0307pt x 742.9356pt>
 File: figures/hops-50.PNG Graphic file (type png)
 
 <use figures/hops-50.PNG>
 Package pdftex.def Info: figures/hops-50.PNG used on input line 343.
 (pdftex.def)             Requested size: 435.32718pt x 219.26613pt.
 
-<figures/simpleCorridorBehavior.png, id=2603, 1336.995pt x 758.835pt>
+<figures/simpleCorridorBehavior.png, id=2591, 1336.995pt x 758.835pt>
 File: figures/simpleCorridorBehavior.png Graphic file (type png)
 
 <use figures/simpleCorridorBehavior.png>
@@ -1174,7 +1202,7 @@ Package pdftex.def Info: figures/simpleCorridorBehavior.png used on input line
 369.
 (pdftex.def)             Requested size: 435.32718pt x 247.0816pt.
 
-<figures/dormCorrLayout.pdf, id=2604, 416.55624pt x 258.9675pt>
+<figures/dormCorrLayout.pdf, id=2592, 416.55624pt x 258.9675pt>
 File: figures/dormCorrLayout.pdf Graphic file (type pdf)
 
 <use figures/dormCorrLayout.pdf>
@@ -1183,8 +1211,8 @@ Package pdftex.def Info: figures/dormCorrLayout.pdf used on input line 381.
 
 Underfull \vbox (badness 5985) has occurred while \output is active []
 
- [88]
-<figures/CorrA2-tasks.png, id=2612, 1336.995pt x 758.835pt>
+ [86]
+<figures/CorrA2-tasks.png, id=2600, 1336.995pt x 758.835pt>
 File: figures/CorrA2-tasks.png Graphic file (type png)
 
 <use figures/CorrA2-tasks.png>
@@ -1193,49 +1221,49 @@ Package pdftex.def Info: figures/CorrA2-tasks.png used on input line 391.
 
 Underfull \vbox (badness 1215) has occurred while \output is active []
 
- [89 <./figures/hops-88.PNG> <./figures/hops-50.PNG>]
-<figures/DormCorr-tasks.png, id=2619, 1336.995pt x 758.835pt>
+ [87 <./figures/hops-88.PNG> <./figures/hops-50.PNG>]
+<figures/DormCorr-tasks.png, id=2607, 1336.995pt x 758.835pt>
 File: figures/DormCorr-tasks.png Graphic file (type png)
 
 <use figures/DormCorr-tasks.png>
 Package pdftex.def Info: figures/DormCorr-tasks.png used on input line 398.
 (pdftex.def)             Requested size: 435.33426pt x 144.5391pt.
- [90 <./figures/simpleCorridorBehavior.png> <./figures/dormCorrLayout.pdf>]
+ [88 <./figures/simpleCorridorBehavior.png> <./figures/dormCorrLayout.pdf>]
 Underfull \vbox (badness 1852) has occurred while \output is active []
 
- [91 <./figures/CorrA2-tasks.png> <./figures/DormCorr-tasks.png>]) (./Conclusio
+ [89 <./figures/CorrA2-tasks.png> <./figures/DormCorr-tasks.png>]) (./Conclusio
 n.tex
-[92]
+[90]
 Chapter 7.
 
-LaTeX Warning: Reference `chapter:TheRemainingModules' on page 93 undefined on 
+LaTeX Warning: Reference `chapter:TheRemainingModules' on page 91 undefined on 
 input line 5.
 
-[93
+[91
 
 ]
 
-LaTeX Warning: Reference `chapter:TheRemainingModules' on page 94 undefined on 
+LaTeX Warning: Reference `chapter:TheRemainingModules' on page 92 undefined on 
 input line 17.
 
-[94]
+[92]
 
-LaTeX Warning: Reference `CFW:EventIdentification' on page 95 undefined on inpu
+LaTeX Warning: Reference `CFW:EventIdentification' on page 93 undefined on inpu
 t line 35.
 
 
-LaTeX Warning: Reference `CFW:ADM' on page 95 undefined on input line 37.
+LaTeX Warning: Reference `CFW:ADM' on page 93 undefined on input line 37.
 
 
-LaTeX Warning: Reference `CFW:CognitiveMap' on page 95 undefined on input line 
+LaTeX Warning: Reference `CFW:CognitiveMap' on page 93 undefined on input line 
 39.
 
 
-LaTeX Warning: Reference `CFW:CommunicationModule' on page 95 undefined on inpu
+LaTeX Warning: Reference `CFW:CommunicationModule' on page 93 undefined on inpu
 t line 41.
 
 
-LaTeX Warning: Reference `CFW:Planner' on page 95 undefined on input line 43.
+LaTeX Warning: Reference `CFW:Planner' on page 93 undefined on input line 43.
 
 
 Underfull \hbox (badness 5022) in paragraph at lines 51--52
@@ -1245,8 +1273,8 @@ Underfull \hbox (badness 5022) in paragraph at lines 51--52
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [95]
-[96] <figures/HiekoSimulationMultiFloor.jpg, id=2728, 954.56625pt x 481.8pt>
+ [93]
+[94] <figures/HiekoSimulationMultiFloor.jpg, id=2715, 954.56625pt x 481.8pt>
 File: figures/HiekoSimulationMultiFloor.jpg Graphic file (type jpg)
 
 <use figures/HiekoSimulationMultiFloor.jpg>
@@ -1261,27 +1289,27 @@ Underfull \hbox (badness 5022) in paragraph at lines 112--113
 
 Underfull \vbox (badness 5817) has occurred while \output is active []
 
- [97 <./figures/HiekoSimulationMultiFloor.jpg>] [98]
+ [95 <./figures/HiekoSimulationMultiFloor.jpg>] [96]
 
-Package natbib Warning: Citation `Nagai:2004kl' on page 99 undefined on input l
+Package natbib Warning: Citation `Nagai:2004kl' on page 97 undefined on input l
 ine 144.
 
 
-Package natbib Warning: Citation `Pelechano:2008uo' on page 99 undefined on inp
+Package natbib Warning: Citation `Pelechano:2008uo' on page 97 undefined on inp
 ut line 146.
 
 
-Package natbib Warning: Citation `Pelechano:2008uo' on page 99 undefined on inp
+Package natbib Warning: Citation `Pelechano:2008uo' on page 97 undefined on inp
 ut line 146.
 
-[99]
+[97]
 
-Package natbib Warning: Citation `Pengfei:2011us' on page 100 undefined on inpu
-t line 154.
+Package natbib Warning: Citation `Pengfei:2011us' on page 98 undefined on input
+ line 154.
 
 
-Package natbib Warning: Citation `Nagai:2004kl' on page 100 undefined on input 
-line 156.
+Package natbib Warning: Citation `Nagai:2004kl' on page 98 undefined on input l
+ine 156.
 
 
 Underfull \hbox (badness 5022) in paragraph at lines 169--170
@@ -1289,18 +1317,18 @@ Underfull \hbox (badness 5022) in paragraph at lines 169--170
  []
 
 
-Package natbib Warning: Citation `Pengfei:2011us' on page 100 undefined on inpu
-t line 186.
+Package natbib Warning: Citation `Pengfei:2011us' on page 98 undefined on input
+ line 186.
 
-[100] <figures/GanttChart.pdf, id=2770, 752.57161pt x 324.2514pt>
+[98] <figures/GanttChart.pdf, id=2757, 752.57161pt x 324.2514pt>
 File: figures/GanttChart.pdf Graphic file (type pdf)
 
 <use figures/GanttChart.pdf>
 Package pdftex.def Info: figures/GanttChart.pdf used on input line 193.
 (pdftex.def)             Requested size: 731.23584pt x 315.05783pt.
-) (./appendixa.tex [101] [102 <./figures/GanttChart.pdf>]
+) (./appendixa.tex [99] [100 <./figures/GanttChart.pdf>]
 Appendix A.
-<figures/OverallClassStructure.pdf, id=2790, 794.97pt x 614.295pt>
+<figures/OverallClassStructure.pdf, id=2777, 794.97pt x 614.295pt>
 File: figures/OverallClassStructure.pdf Graphic file (type pdf)
 
 <use figures/OverallClassStructure.pdf>
@@ -1312,7 +1340,7 @@ Overfull \hbox (63.75647pt too wide) in paragraph at lines 8--9
  [][] 
  []
 
-<figures/AgentClassStructure.pdf, id=2792, 794.97pt x 614.295pt>
+<figures/AgentClassStructure.pdf, id=2779, 794.97pt x 614.295pt>
 File: figures/AgentClassStructure.pdf Graphic file (type pdf)
 
 <use figures/AgentClassStructure.pdf>
@@ -1324,52 +1352,52 @@ Overfull \hbox (63.75647pt too wide) in paragraph at lines 17--18
  [][] 
  []
 
-) (./appendixb.tex [103
+) (./appendixb.tex [101
 
-] [104] [105 <./figures/OverallClassStructure.pdf, page is rotated 90 degrees>]
- [106 <./figures/AgentClassStructure.pdf, page is rotated 90 degrees>]
+] [102] [103 <./figures/OverallClassStructure.pdf, page is rotated 90 degrees>]
+ [104 <./figures/AgentClassStructure.pdf, page is rotated 90 degrees>]
 Appendix B.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 5.
 
-<figures/44.PNG, id=2835, 1445.4pt x 867.24pt>
+<figures/44.PNG, id=2823, 1445.4pt x 867.24pt>
 File: figures/44.PNG Graphic file (type png)
  <use figures/44.PNG>
 Package pdftex.def Info: figures/44.PNG used on input line 9.
 (pdftex.def)             Requested size: 435.32718pt x 261.19295pt.
 
-<figures/22.PNG, id=2836, 1445.4pt x 867.24pt>
+<figures/22.PNG, id=2824, 1445.4pt x 867.24pt>
 File: figures/22.PNG Graphic file (type png)
  <use figures/22.PNG>
 Package pdftex.def Info: figures/22.PNG used on input line 11.
 (pdftex.def)             Requested size: 435.32718pt x 261.19295pt.
 
-<figures/decision-base-comparison.PNG, id=2838, 898.10532pt x 579.66562pt>
+<figures/decision-base-comparison.PNG, id=2826, 898.10532pt x 579.66562pt>
 File: figures/decision-base-comparison.PNG Graphic file (type png)
 
 <use figures/decision-base-comparison.PNG>
 Package pdftex.def Info: figures/decision-base-comparison.PNG used on input lin
 e 26.
 (pdftex.def)             Requested size: 435.32718pt x 280.96942pt.
-) (./thesis.bbl [107
+) (./thesis.bbl [105
 
-] [108 <./figures/44.PNG> <./figures/22.PNG>] [109 <./figures/decision-base-com
+] [106 <./figures/44.PNG> <./figures/22.PNG>] [107 <./figures/decision-base-com
 parison.PNG>]
-[110
+[108
 
-] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120] [121])
+] [109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119])
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
-[122]
+[120]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
  (./thesis.aux (./Introduction.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9AC7C173FD919B7D17C08E0C50B58524;9012.
+(rerunfilecheck)             Checksum: DB966F31E05F33A0380A00D81E05305E;9057.
 
 
 LaTeX Warning: There were undefined references.
@@ -1380,42 +1408,39 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
  ) 
 Here is how much of TeX's memory you used:
- 8908 strings out of 493481
- 138881 string characters out of 3140966
- 225089 words of memory out of 3000000
- 11531 multiletter control sequences out of 15000+200000
+ 8917 strings out of 493481
+ 138168 string characters out of 3144420
+ 225123 words of memory out of 3000000
+ 11542 multiletter control sequences out of 15000+200000
  17770 words of font info for 38 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,18n,48p,2268b,954s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
-ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
-2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
-2/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2012/te
-xmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2012/texm
-f-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2012/texmf-
-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2012/texmf-di
-st/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2012/texmf-dist
-/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2012/texmf-dist/f
-onts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2012/texmf-dist/fon
-ts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2012/texmf-dist/fonts
-/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
-ype1/public/cm-super/sfti1095.pfb></usr/local/texlive/2012/texmf-dist/fonts/typ
-e1/public/cm-super/sfti1200.pfb>
-Output written on thesis.pdf (135 pages, 5810301 bytes).
+ 36i,18n,48p,2258b,954s stack positions out of 5000i,500n,10000p,200000b,50000s
+{c:/texlive/2012/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2012/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2012/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2012/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2012/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/tex
+live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2012/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2012/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2012/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/c
+m-super/sfbx1095.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/cm-super/sf
+bx1200.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
+><c:/texlive/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texli
+ve/2012/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2012/te
+xmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2012/texmf-dist/f
+onts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2012/texmf-dist/fonts/type1
+/public/cm-super/sfrm1000.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/cm
+-super/sfrm1095.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/cm-super/sfr
+m1200.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
+<c:/texlive/2012/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on thesis.pdf (133 pages, 5806904 bytes).
 PDF statistics:
- 3118 PDF objects out of 3580 (max. 8388607)
- 2489 compressed objects within 25 object streams
- 486 named destinations out of 1000 (max. 500000)
+ 3106 PDF objects out of 3580 (max. 8388607)
+ 2479 compressed objects within 25 object streams
+ 484 named destinations out of 1000 (max. 500000)
  1194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
