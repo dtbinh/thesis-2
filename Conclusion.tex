@@ -72,7 +72,7 @@ Total  & 93\% & 51 days \\[3pt]
 The \emph{implementation} of a model refers to the process of converting the conceptual design into code, i.e.\ a computational model. The section presents some of the details of the implementation like the tools used and the existing work on which the model is built. Section~\ref{CFW:TimeFrame} then presents an estimated time-frame for completion of different implementation related tasks.
 
 
-\subsubsection{The MASON frameworok}
+\subsubsection{The MASON framework}
 \label{CFW:MASON}
 The IBEVAC model is implemented in Java using the MASON framework~\cite{Luke:2005wc}. MASON consists of a discrete event simulation core and visualization library that can be used for agent based simulations with a large number of agents. The framework provides features to allow modelers to run multiple replications and create checkpoints from which simulations can be restarted easily. The ease of implementation of inspectors to study particular agents or other aspects of the model and integration with java media framework library (for videos and snapshots), jGraph and java3D make MASON especially appealing for the purpose of this simulation. The framework internally adopts the model-view-controller pattern and completely decouples the view from the controller and the model and makes it easy for a modeler to adopt the same approach. This is critical for studying simulations because a visualization need only be used when particular parts of the simulation need to be observed and analyzed and at all other times more simulations can be run without the additional computational burden of visualization.
 

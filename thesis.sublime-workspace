@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Egress",
+				"IBEVAC:EgressProgress"
+			],
+			[
+				"chapter",
+				"chapter:PreEvacuationBehavior"
+			],
+			[
+				"Chapter",
+				"chapter:SpatialKnowledgeChapter"
+			],
+			[
 				"uploaded",
 				"uploaded_file	(local, instance)"
 			],
@@ -502,18 +514,6 @@
 			[
 				"max",
 				"max_length"
-			],
-			[
-				"registration",
-				"registration_open_date"
-			],
-			[
-				"clean",
-				"cleanData	(local, instance)"
-			],
-			[
-				"server",
-				"server_time	(local, instance)"
 			]
 		]
 	},
@@ -740,13 +740,26 @@
 	},
 	"file_history":
 	[
+		"/E/Dropbox/Tex/Thesis/Introduction.tex",
+		"/E/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
+		"/E/Dropbox/HuNan calculation/findDistanceAndLength.py",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/LiteratureReview.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/InfoBasedArchitecture.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/Introduction.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/Conclusion.tex",
+		"/Users/vaisagh/Dropbox/Tex/Thesis/TheRemainingModules.tex",
+		"/Users/vaisagh/Dropbox/Tex/Thesis/LiteratureReview.tex",
+		"/Users/vaisagh/Dropbox/Tex/Thesis/thesis.bib",
+		"/Users/vaisagh/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
+		"/Users/vaisagh/Dropbox/Tex/Thesis/Introduction.tex",
+		"/C/Users/vaisagh/Documents/StrategyGame/Assets/Resources/Player2Positions.txt",
+		"/E/Dropbox/Tex/epj/Comparison Paper/highligh of forthcoming epjb article",
 		"/E/Dropbox/Tex/QE Report/Introduction.tex",
 		"/E/Dropbox/Tex/Thesis/LiteratureReview.tex",
-		"/E/Dropbox/Tex/Thesis/Introduction.tex",
 		"/E/moplat/xml-resources/CrowdProperties/DeviceSettings/DeviceTestingFile.xml",
 		"/E/Dropbox/Tex/epj/Comparison Paper/Comparison Paper.tex",
 		"/E/Dropbox/Tex/PED 2012/PED Poster/PED Poster.tex",
-		"/E/Dropbox/Tex/epj/Comparison Paper/highligh of forthcoming epjb article",
 		"/E/Dropbox/Tex/Angela FYP Paper/angelaFYP.tex",
 		"/E/Dropbox/Tex/Angela FYP Paper/km.bib",
 		"/E/Dropbox/Tex/exploration journal paper/Exploration paper/apa/ExplorationPaper_apa.tex",
@@ -758,16 +771,12 @@
 		"/Users/vaisagh/Dropbox/Tex/Thesis/thesis.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/PreEvacuation.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/SpatialKnowledgeModelling.tex",
-		"/Users/vaisagh/Dropbox/Tex/Thesis/LiteratureReview.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/abstract.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/acknow.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/appendixa.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/appendixb.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/Conclusion.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/InfoBasedArchitecture.tex",
-		"/Users/vaisagh/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
-		"/Users/vaisagh/Dropbox/Tex/Thesis/Introduction.tex",
-		"/Users/vaisagh/Dropbox/Tex/Thesis/TheRemainingModules.tex",
 		"/Users/vaisagh/Dropbox/Tex/exploration journal paper/Exploration paper/Exploration Paper.tex",
 		"/Users/vaisaghvt/Dropbox/Tex/Angela FYP Paper/km.bib",
 		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/css/ideatory.css",
@@ -858,16 +867,7 @@
 		"/Users/vaisaghvt/djangoProjects/ideatory/templates/tutorials/base.html",
 		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/css/colorbox.css",
 		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/css/pro_slider.css",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/css/reset.css",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/images/drop.svg",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/images/nav.svg",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/scripts/js/flaunt.js",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/scripts/js/html5.js",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/account/verification_sent.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/wizards/password_reset.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/missions/stage_detail.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/missions/change_requirements.html",
-		"/Users/vaisaghvt/Downloads/html/explore.html"
+		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/css/reset.css"
 	],
 	"find":
 	{
@@ -875,7 +875,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 108.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"*.html",
@@ -923,6 +923,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"check",
+			"width=\\textwidth,",
+			"7.5cm",
 			"still",
 			"Wang:2009wh",
 			"Wang:2009",
@@ -1047,10 +1050,7 @@
 			"home-content-box",
 			"home-box",
 			"home-boc",
-			"form-button",
-			"home-content",
-			"videoWrapper",
-			"fb-wrap"
+			"form-button"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1151,6 +1151,30 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"intr",
+				"Introduction.tex"
+			],
+			[
+				"perc",
+				"InfoBasedPerception.tex"
+			],
+			[
+				"lit",
+				"LiteratureReview.tex"
+			],
+			[
+				"liter",
+				"LiteratureReview.tex"
+			],
+			[
+				"into",
+				"Introduction.tex"
+			],
+			[
+				"info",
+				"InfoBasedPerception.tex"
+			],
 			[
 				"intro",
 				"Introduction.tex"
@@ -1638,30 +1662,6 @@
 			[
 				"logou",
 				"templates/wizards/logout.html"
-			],
-			[
-				"regist",
-				"templates/missions/register_mission.html"
-			],
-			[
-				"fle",
-				"static/ideatory/css/flexslider.css"
-			],
-			[
-				"idaetor",
-				"static/ideatory/css/ideatory.css"
-			],
-			[
-				"missio",
-				"missions/templatetags/missions_extras.py"
-			],
-			[
-				"mis",
-				"templates/missions/mission_page.html"
-			],
-			[
-				"pro",
-				"static/ideatory/css/pro_slider.css"
 			]
 		],
 		"width": 0.0
@@ -1671,6 +1671,34 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/Users/vaisaghvt/Library/Application Support/Sublime Text 2/Packages/CheckTypos3/TypoCheck.sublime-project"
+			],
+			[
+				"chec",
+				"/Users/vaisaghvt/Library/Application Support/Sublime Text 2/Packages/CheckTypos3/TypoCheck.sublime-project"
+			],
+			[
+				"check",
+				"/Users/vaisaghvt/Library/Application Support/Sublime Text 2/Packages/CheckTypos3/TypoCheck.sublime-project"
+			],
+			[
+				"typo",
+				"/Users/vaisaghvt/Library/Application Support/Sublime Text 2/Packages/CheckTypos3/TypoCheck.sublime-project"
+			],
+			[
+				"typ",
+				"/Users/vaisaghvt/Library/Application Support/Sublime Text 2/Packages/CheckTypos3/TypoCheck.sublime-project"
+			],
+			[
+				"ide",
+				"/Users/vaisaghvt/djangoProjects/ideatory/ideatoryWebsite.sublime-project"
+			],
+			[
+				"my",
+				"/Users/vaisagh/djangoProjects/MyWebsite/MyWebsite.sublime-project"
+			],
 			[
 				"angel",
 				"/Users/vaisagh/Dropbox/Tex/angela fyp paper/Angela-FYP.sublime-project"
@@ -1685,10 +1713,6 @@
 			],
 			[
 				"expl",
-				"/Users/vaisaghvt/Dropbox/Tex/exploration journal paper/Exploration paper/Exploration Paper.sublime-project"
-			],
-			[
-				"",
 				"/Users/vaisaghvt/Dropbox/Tex/exploration journal paper/Exploration paper/Exploration Paper.sublime-project"
 			],
 			[
@@ -1741,7 +1765,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 209.0,
+	"side_bar_width": 133.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

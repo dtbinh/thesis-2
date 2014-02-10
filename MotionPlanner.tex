@@ -4,10 +4,10 @@
 \label{chapter:MotionPlannerComparison}
 
 
-% Crowd simulation is rapidly becoming a standard tool for evacuation planning and evaluation. However, the many crowd models in the literature are structurally different, and few have been rigorously calibrated against real-world egress data, especially in emergency situations. In this paper we describe a procedure to quantitatively compare different crowd models or between models and real-world data. We simulated three models: (1) the lattice gas model, (2) the social force model, and (3) the RVO2 model, and obtained the distributions of six observables: (1) evacuation time, (2) zoned evacuation time, (3) passage density, (4) total distance traveled, (5) inconvenience, and (6) flow rate. We then used the DISTATIS procedure to compute the compromise matrix of statistical distances between the three models. Projecting the three models onto the first two principal components of the compromise matrix, we find the lattice gas and RVO2 models are similar in terms of the evacuation time, passage density, and flow rates, whereas the social force and RVO2 models are similar in terms of the total distance traveled. Most importantly, we find that the zoned evacuation times of the three models to be very different from each other. Thus we propose to use this variable, if it can be measured, as the key test between different models, and also between models and the real world. Finally, we compared the model flow rates against the flow rate of an emergency evacuation during the May 2008 Sichuan earthquake, and found the social force model agrees best with this real data.
+Crowd simulation is rapidly becoming a standard tool for evacuation planning and evaluation. However, the many crowd models in the literature are structurally different, and few have been rigorously calibrated against real-world egress data, especially in emergency situations. In this paper we describe a procedure to quantitatively compare different crowd models or between models and real-world data. We simulated three models: (1) the lattice gas model, (2) the social force model, and (3) the RVO2 model, and obtained the distributions of six observables: (1) evacuation time, (2) zoned evacuation time, (3) passage density, (4) total distance traveled, (5) inconvenience, and (6) flow rate. We then used the DISTATIS procedure to compute the compromise matrix of statistical distances between the three models. Projecting the three models onto the first two principal components of the compromise matrix, we find the lattice gas and RVO2 models are similar in terms of the evacuation time, passage density, and flow rates, whereas the social force and RVO2 models are similar in terms of the total distance traveled. Most importantly, we find that the zoned evacuation times of the three models to be very different from each other. Thus we propose to use this variable, if it can be measured, as the key test between different models, and also between models and the real world. Finally, we compared the model flow rates against the flow rate of an emergency evacuation during the May 2008 Sichuan earthquake, and found the social force model agrees best with this real data.
 %
-\section{Introduction}
-\label{intro}
+% \section{Introduction}
+% \label{intro}
 
 Crowd simulation is an area that has been the subject of a significant amount of multidisciplinary work over the last few decades~\cite{Still:2000tp,Zhou:2010:CMS:1842722.1842725,Gwynne1999741}. Its applications range from simulating crowds for movies~\cite{Regelous:2011vt,Reynolds:1987vm} and games~\cite{Snape:2012,ageOfEmpires:2013} to analyzing pedestrian behavior~\cite{PhysRevE.51.4282,Viswanathan:ut,Guy:2010uv} and preparing for fire evacuations and similar emergencies~\cite{Klupfel:2005to,PEDFull:2011,Mordvintsev:2012}. The earliest attempts to simulate crowds generally adopted a macroscopic approach~\cite{Henderson:1974ve,WattsJr:1987tx}, where there is no explicit notion of an individual.
 %Rather, the emphasis was on analyzing macroscopic features of the crowd, such as the throughput and density-velocity correlations.
@@ -119,7 +119,8 @@ Where possible, we have used the same settings for all three models to ensure a 
 
 
 \begin{figure}[htbp]
-\includegraphics[width=3.4in]{ExperimentSetup}
+\centering
+\includegraphics[width=\textwidth]{ExperimentSetup}
 \caption{The environment setup used for the simulations in this paper.}
 \label{fig:experimentalSetup}
 \end{figure}
@@ -137,7 +138,7 @@ I_i=\frac{D_i}{D_{\min}}
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.5]{Zoning}
+\includegraphics[scale=1.0]{Zoning}
 \caption{In our simulations, agents are grouped into six zones based on their initial distances from the exit. The outer radii of Zones 1, 2, 3, 4, 5 and 6 are 5 m, 10 m, 15 m, 20 m, 25 m and 30 m respectively.}
 \label{fig:Zoning}
 \end{center}
@@ -190,25 +191,32 @@ Here we show the results for (1) evacuation time (Fig.~\ref{fig:EvacTime}) and (
 
 As Fig.~\ref{fig:EvacTime} shows, the evacuation time distributions for all models have a uniform sub-distribution in the middle of the evacuation, which signals congestion at the exit, once we have $N > 50$ agents. However, in the RVO2 model this uniform sub-distribution is flanked by two small peaks. These two small peaks suggest a higher evacuation rate \emph{just before} congestion sets in and \emph{just before} congestion dissipates in the RVO2 model. This is not observed in real crowds, and hence is clearly an artifact of the model.
 
-Comparing the three models, we find that the social force model has the longest evacuation times of up to five minutes. More importantly, careful inspection reveals fluid-like crowd dynamics around the exit in the RVO2 and lattice gas models. These can be seen in our  videos \url{http://www.youtube.com/watch?v=P64p3nlH_P4} and  \url{http://www.youtube.com/watch?v=vJ0Nzi5Bykw}. In the RVO2 model, an obvious back flow can also be seen during the sudden gush of agents toward the exit. Due to the strong repulsion forces, we see a solid-like behavior in the social force model when the exit becomes congested (see our video \url{http://www.youtube.com/watch?v=3Ot7m959_yo}).
-
-In addition, we divided the room into six zones, as shown in Fig.~\ref{fig:Zoning}, based on the distance to the exit, to determine how strongly the crowds mix in the three models. The distributions of zoned evacuation times are shown in Fig.~\ref{fig:ZoningEvac}. These tell us that mixing is strong in the lattice gas and RVO2 models, but weak in the social force model. This mixing dynamics can be seen more clearly from our videos \url{http://www.youtube.com/watch?v=qeoJotgEUxk} (lattice gas), \url{http://www.youtube.com/watch?v=uZpd5LODYZs} (RVO2), and \url{http://www.youtube.com/watch?v=wEB6Ya0o_yw} (social force).
-From the movies of the lattice gas and RVO2 simulations, we see that agents from the nearer zones get pushed to the side once there is congestion at the exit. In these two models, agents prefer to keep moving when it is possible for them to do so. Agents in the social force model behave differently: once the exit becomes congested, they will become nearly stationary and wait for their turn to go through the exit.
-
 % Evacuation Time Distribution
 \begin{figure*}[htbp]
-\subfloat[]{\includegraphics[width=6cm]{EvacTime/Lattice-EvacTime}\label{fig:LatticeEvacTime}}
-\subfloat[]{\includegraphics[width=6cm]{EvacTime/SocialForce-EvacTime}\label{fig:SocialForceEvacTime}}
-\subfloat[]{\includegraphics[width=6cm]{EvacTime/RVO2-EvacTime}\label{fig:RVO2EvacTime}}
+\centering
+\subfloat[]{\includegraphics[scale=0.35]{EvacTime/Lattice-EvacTime}\label{fig:LatticeEvacTime}}
+\hspace{1cm}
+\subfloat[]{\includegraphics[scale=0.35]{EvacTime/SocialForce-EvacTime}\label{fig:SocialForceEvacTime}}\\
+\subfloat[]{\includegraphics[scale=0.35]{EvacTime/RVO2-EvacTime}\label{fig:RVO2EvacTime}}
 \caption{Evacuation time distributions for the (a) lattice gas, (b) social force, and (c) RVO2 models for $N = 50, 100, 150, 200, 300, 500, 1000$ agents. For each model and $N$, the distribution is built from 100 simulations.}
 \label{fig:EvacTime}
 \end{figure*}
 
+Comparing the three models, we find that the social force model has the longest evacuation times of up to five minutes. More importantly, careful inspection reveals fluid-like crowd dynamics around the exit in the RVO2 and lattice gas models. These can be seen in our  videos \url{http://www.youtube.com/watch?v=P64p3nlH_P4} and  \url{http://www.youtube.com/watch?v=vJ0Nzi5Bykw}. In the RVO2 model, an obvious back flow can also be seen during the sudden gush of agents toward the exit. Due to the strong repulsion forces, we see a solid-like behavior in the social force model when the exit becomes congested (see our video \url{http://www.youtube.com/watch?v=3Ot7m959_yo}).
+
+In addition, we divided the room into six zones, as shown in Fig.~\ref{fig:Zoning}, based on the distance to the exit, to determine how strongly the crowds mix in the three models. The distributions of zoned evacuation times are shown in Fig.~\ref{fig:ZoningEvac}. These tell us that mixing is strong in the lattice gas and RVO2 models, but weak in the social force model. This mixing dynamics can be seen more clearly from our videos \url{http://www.youtube.com/watch?v=qeoJotgEUxk} (lattice gas), \url{http://www.youtube.com/watch?v=uZpd5LODYZs} (RVO2), and \url{http://www.youtube.com/watch?v=wEB6Ya0o_yw} (social force).
+
+From the movies of the lattice gas and RVO2 simulations, we see that agents from the nearer zones get pushed to the side once there is congestion at the exit. In these two models, agents prefer to keep moving when it is possible for them to do so. Agents in the social force model behave differently: once the exit becomes congested, they will become nearly stationary and wait for their turn to go through the exit.
+
+
+
 % Zoning Evacuation Distribution
 \begin{figure*}[htbp]
-\subfloat[]{\includegraphics[width=6cm]{ZoningEvac/Lattice1-1000-ZoningEvac}\label{fig:LatticeZoningEvac1000}}
-\subfloat[]{\includegraphics[width=6cm]{ZoningEvac/SocialForce1-1000-ZoningEvac}\label{fig:SocialForceZoningEvac1000}}
-\subfloat[]{\includegraphics[width=6cm]{ZoningEvac/RVO21-1000-ZoningEvac}\label{fig:RVO2ZoningEvac1000}}
+\centering
+\subfloat[]{\includegraphics[scale=0.35]{ZoningEvac/Lattice1-1000-ZoningEvac}\label{fig:LatticeZoningEvac1000}}
+\hspace{1cm}
+\subfloat[]{\includegraphics[scale=0.35]{ZoningEvac/SocialForce1-1000-ZoningEvac}\label{fig:SocialForceZoningEvac1000}}\\
+\subfloat[]{\includegraphics[scale=0.35]{ZoningEvac/RVO21-1000-ZoningEvac}\label{fig:RVO2ZoningEvac1000}}
 \caption{Zoned evacuation time distributions for the (a) lattice gas, (b) social force, and (c) RVO2 models for $N = 1000$ agents in six zones, with zone 1 closest to the exit and zone 6 furthest away (see Figure~\ref{fig:Zoning}). For each model, the distribution is averaged over 100 simulations.}
 \label{fig:ZoningEvac}
 \end{figure*}
@@ -222,9 +230,11 @@ From the movies of the lattice gas and RVO2 simulations, we see that agents from
 
 % Density map
 \begin{figure*}[htbp]
-\subfloat[]{\includegraphics[width=6cm]{DensityMap/Lattice1-1000DensityMap}\label{fig:LatticeDensityMap}}
-\subfloat[]{\includegraphics[width=6cm]{DensityMap/SocialForce1-1000DensityMap}\label{fig:SocialForceDensityMap}}
-\subfloat[]{\includegraphics[width=6cm]{DensityMap/RVO21-1000DensityMap}\label{fig:RVO2DensityMap}}
+\centering
+\subfloat[]{\includegraphics[scale=0.35]{DensityMap/Lattice1-1000DensityMap}\label{fig:LatticeDensityMap}}
+\hspace{2cm}
+\subfloat[]{\includegraphics[scale=0.35]{DensityMap/SocialForce1-1000DensityMap}\label{fig:SocialForceDensityMap}}\\
+\subfloat[]{\includegraphics[scale=0.35]{DensityMap/RVO21-1000DensityMap}\label{fig:RVO2DensityMap}}
 \caption{Passage density maps of $N = 1000$ agents averaged over 100 simulations for the (a) lattice gas, (b) social force, and (c) RVO2 models. In these color maps, the exit is located at the bottom.}
 \label{fig:DensityMap}
 \end{figure*}
@@ -248,18 +258,24 @@ However, when we compare the distributions of inconveniences in Fig.~\ref{fig:In
 
 % Travel Distance Distribution
 \begin{figure*}[htbp]
-\subfloat[]{\includegraphics[width=6cm]{TravDist/Lattice-TravDist}\label{fig:LatticeTravDist}}
-\subfloat[]{\includegraphics[width=6cm]{TravDist/SocialForce-TravDist}\label{fig:SocialForceTravDist}}
-\subfloat[]{\includegraphics[width=6cm]{TravDist/RVO2-TravDist}\label{fig:RVO2TravDist}}
+\centering
+\subfloat[]{\includegraphics[width=0.45\textwidth]{TravDist/Lattice-TravDist}\label{fig:LatticeTravDist}}
+\hspace{1cm}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{TravDist/SocialForce-TravDist}\label{fig:SocialForceTravDist}}
+\\
+\subfloat[]{\includegraphics[width=0.45\textwidth]{TravDist/RVO2-TravDist}\label{fig:RVO2TravDist}}
 \caption{Distributions of total distance traveled for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the distribution is averaged over 100 simulations.}
 \label{fig:TravelDist}
 \end{figure*}
 
 % Inconvenience
 \begin{figure*}[htbp]
-\subfloat[]{\includegraphics[width=6cm]{Incon/Lattice-Incon}\label{fig:LatticeIncon}}
-\subfloat[]{\includegraphics[width=6cm]{Incon/SocialForce-Incon}\label{fig:SocialForceIncon}}
-\subfloat[]{\includegraphics[width=6cm]{Incon/RVO2-Incon}\label{fig:RVO2Incon}}
+\centering
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Incon/Lattice-Incon}\label{fig:LatticeIncon}}
+\hspace{1cm}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Incon/SocialForce-Incon}\label{fig:SocialForceIncon}}
+\\
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Incon/RVO2-Incon}\label{fig:RVO2Incon}}
 \caption{Distributions of inconveniences for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the distribution is averaged over 100 simulations.}
 \label{fig:Incon}
 \end{figure*}
@@ -282,15 +298,18 @@ In \url{http://www.youtube.com/watch?v=e1yapP3z_L4}, students were evacuating th
 
 % Flow rate
 \begin{figure*}[htbp]
-
-\subfloat[]{\includegraphics[width=6cm]{FlowRate/Lattice-FlowRate}\label{fig:LatticeFlowRate}}
-\subfloat[]{\includegraphics[width=6cm]{FlowRate/SocialForce-FlowRate}\label{fig:SocialForceFlowRate}}
-\subfloat[]{\includegraphics[width=6cm]{FlowRate/RVO2-FlowRate}\label{fig:RVO2FlowRate}}
+\centering
+\subfloat[]{\includegraphics[width=0.45\textwidth]{FlowRate/Lattice-FlowRate}\label{fig:LatticeFlowRate}}
+\hspace{1cm}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{FlowRate/SocialForce-FlowRate}\label{fig:SocialForceFlowRate}}
+\\
+\subfloat[]{\includegraphics[width=0.45\textwidth]{FlowRate/RVO2-FlowRate}\label{fig:RVO2FlowRate}}
 \caption{Flow rates at the exit as functions of time for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the flow rate is averaged over 100 simulations.}
 \label{fig:FlowRate}
 \end{figure*}
 
 \begin{figure}[htbp]
+\centering
 \includegraphics[width=8cm]{figures/Flowrate}
 \caption{The flow rates for evacuation during the May 2008 Sichuan Earthquake: (top) through the check-out counters of a Walmart supermarket in Chengdu, China (\url{http://www.youtube.com/watch?v=-y38ebiAnQw}); and (bottom) through the narrow exit of a classroom in an elementary school in Sichuan, China (\url{http://www.youtube.com/watch?v=e1yapP3z_L4}).}
 \centering
@@ -305,7 +324,7 @@ In \url{http://www.youtube.com/watch?v=e1yapP3z_L4}, students were evacuating th
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.5]{DistatisFinalDistatisMat1-1000}
+\includegraphics[scale=0.8]{DistatisFinalDistatisMat1-1000}
 \caption{The DISTATIS analysis of the three models with $N = 1000$ agents. In this plot, $\tau$ is the quality of compromise, and $\lambda$ is the eigenvalue.}
 \label{fig:Distatis1000}
 \end{figure}

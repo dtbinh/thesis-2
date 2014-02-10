@@ -32,31 +32,33 @@ There have been several surveys, interviews and other studies of the factors tha
 Kuligowski categorized the factors that influence these phases into two types: occupant based factors and cue based factors. Occupant based factors are intrinsic characteristics of the evacuee like age, experience, gender, etc. One of the factors that encourage the programmatic implementation of cue based factors is the fact that the effect of a cue can be explained to be caused by the nature and characteristics of the cue rather than the specific cue. In other words, each cue can be described in terms of its ambiguity, consistency with other cues and its source and it is this description that determines the effect of the cue.
 
 
-\subsection{Existing Models}
+\subsection{Existing models}
 \label{ExistingModels}
 
 As mentioned in Section~\ref{intro}, there are very few existing models that take the pre-evacuation period into consideration. Pires~\cite{Pires:2005gs}  modeled the pre-evacuation decision making of an individual using a simple Bayesian Belief Network~(BBN). Fran{\c c}a et al.~\cite{Franca:2009wq} created a simulation model of the development of panic behavior during emergency egress. This model implemented the hysterical belief theory~\cite{Torres:2010tj} and modeled how panic first develops and then evacuation happens. It also had a basic communication system through which agents exchanged mood information (which is a key factor in the development of panic) by using the grid based environment as a medium for communicating messages. Despite pre-evacuation behavior being modeled in some detail, it is not possible to extend this model to replicate the heterogeneity in people's reaction to cues. ESCAPES~\cite{Tsai:2011tz} is a fairly recent model that takes into account some factors like the spread of knowledge, fear and emotion between the different evacuees. These factors are used to create a simplistic model of pre-evacuation behavior. The event identification and communication model proposed in this paper have been influenced by these models but is unique in the way that the diversity of cues and their effects can be considered.
 
-\section{The IBEVAC Model}
-\label{IBEVAC}
+% \section{The IBEVAC Model}
+% \label{IBEVAC}
 
 
-\begin{figure}[!tb]
-\centering
-\includegraphics[height=1.9in]{SimplifiedAgentArchitecture}
-\caption[The Agent Architecture]{An illustrated representation of the IBEVAC agent architecture}
-\label{fig:AgentArchitecture}
-\end{figure}
+% \begin{figure}[!tb]
+% \centering
+% \includegraphics[height=1.9in]{SimplifiedAgentArchitecture}
+% \caption[The Agent Architecture]{An illustrated representation of the IBEVAC agent architecture}
+% \label{fig:AgentArchitecture}
+% \end{figure}
 
-This section gives an overview of the modular IBEVAC agent architecture. Figure~\ref{fig:AgentArchitecture} shows this architecture. There are many objects or actions that an agent can sense or observe in the environment. We call these \emph{raw percepts}. According to their sources, they can be classified as \emph{observations} from the environment and \emph{messages} from other agents. The Information Based Perception~(IBP) Module is the only gateway through which the agent receives information from the environment. This module is explained in more detail in~\cite{Viswanathan:ut}. The IBP Module passes a percept to the Knowledge Base.
+% This section gives an overview of the modular IBEVAC agent architecture. Figure~\ref{fig:AgentArchitecture} shows this architecture. There are many objects or actions that an agent can sense or observe in the environment. We call these \emph{raw percepts}. According to their sources, they can be classified as \emph{observations} from the environment and \emph{messages} from other agents. The Information Based Perception~(IBP) Module is the only gateway through which the agent receives information from the environment. This module is explained in more detail in~\cite{Viswanathan:ut}. The IBP Module passes a percept to the Knowledge Base.
 
-The \emph{Environment Knowledge Module} stores a representation of the layout of the environment that is formed as a result of the observations of the agent. Information regarding accessibility of links is also stored. As a detailed discussion of this module is beyond the scope of this paper, all agents are assumed to have complete knowledge of the layout. However, agents can learn about inaccessible links only through direct observation or through messages from other agents. The {\em Event Knowledge Module} is the focus of research in this paper. It stores the agent's beliefs about the current state of the environment. Cue perception alters these beliefs and triggers a state change in the agent which is then handled by the Planning Module. This Module is explained in more detail in section~\ref{EventIdentification}.
+% The \emph{Environment Knowledge Module} stores a representation of the layout of the environment that is formed as a result of the observations of the agent. Information regarding accessibility of links is also stored. As a detailed discussion of this module is beyond the scope of this paper, all agents are assumed to have complete knowledge of the layout. However, agents can learn about inaccessible links only through direct observation or through messages from other agents. The {\em Event Knowledge Module} is the focus of research in this paper. It stores the agent's beliefs about the current state of the environment. Cue perception alters these beliefs and triggers a state change in the agent which is then handled by the Planning Module. This Module is explained in more detail in section~\ref{EventIdentification}.
 
-The intrinsic characteristics of the agent like the agent's size, speed, mass and social role are stored in the {\em Agent Description Module (ADM)}. It is also responsible for determining the strategies and actions taken by the Planning Module and in determining the effects of the cues on the Event Knowledge Module (Section~\ref{EventIdentification}). The {\em Planning Module} stores the current state of the agent i.e. whether it is exploring, milling or escaping and creates a plan of action for the agent as a set of goals. Each goal is a location that is passed to the Navigation Module. For the purpose of this paper, three kinds of behavior are modeled: normal behavior where the goal is the center of the \emph{home} room of the agent, for milling behavior the agent gathers with other agents at the nearest \emph{corridor} (See Figure~\ref{fig:layout}) and during escape the agent heads towards the nearest exit.
+% The intrinsic characteristics of the agent like the agent's size, speed, mass and social role are stored in the {\em Agent Description Module (ADM)}. It is also responsible for determining the strategies and actions taken by the Planning Module and in determining the effects of the cues on the Event Knowledge Module (Section~\ref{EventIdentification}). The {\em Planning Module} stores the current state of the agent i.e. whether it is exploring, milling or escaping and creates a plan of action for the agent as a set of goals. Each goal is a location that is passed to the Navigation Module.
+
+For the purpose of this paper, three kinds of behavior are modeled: normal behavior where the goal is the center of the \emph{home} room of the agent, for milling behavior the agent gathers with other agents at the nearest \emph{corridor} (See Figure~\ref{fig:layout}) and during escape the agent heads towards the nearest exit.
 
 Communication between agents is facilitated by the {\em Communication Module}. It transmits messages to agents within a communication range. The working of this communication is explained in more detail in Section~\ref{EventIdentification}. The {\em Navigation Module} uses a four level navigation system. At the highest level, a logical path is determined in terms of rooms to be crossed from the agents current location to the goal. From this logical path, spatial way points or locations are extracted by the next level. The third level determines a possible collision free path to the farthest visible spatial way point. Finally, a physics engine ensures that objects don't pass through other objects.
 
-\section{Event Identification and Pre-evacuation behavior}
+\section{Event Identification and Pre-evacuation Behavior}
 \label{EventIdentification}
 
 % First explain how cues are modeled
@@ -87,7 +89,7 @@ Experiments were conducted using IBEVAC to demonstrate the effect that cue perce
 
 % Explain the layout of the environment, the settings and parameters
 
-\subsection{Experiment 1:  The effect of fire alarm clarity}
+\subsection{Experiment 1: The effect of fire alarm clarity}
 \label{experiment1}
 
 In this experiment, the effect that fire alarm cue clarity and ambiguity has on egress was examined. It is assumed that the fire alarm can be heard clearly at every location on the map; so cues are placed in every room. A fire alarm with a simple ringing sound is much less clear and more ambiguous than a public announcement system that explicitly states that it is not a drill and gives real time updates about the situation. To examine the effect of this difference in clarity, the experiment was repeated for different values of ambiguity (from 0.0 - 1.0). The blue curves in Figure~\ref{Graph1} show the error plot of the survival percentage and the one in Figure~\ref{Graph2} the average time taken for last agent to start evacuating for this experiment. As expected there is a significant drop in number of survivors as the ambiguity of the alarm increases. Also, the later an agent starts evacuating, the lesser is his chance for survival.
