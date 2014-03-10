@@ -1,31 +1,37 @@
-%!TEX root = thesis.tex
+%!TEX root = vaisagh_thesis.tex
 
-\chapter{Modelling Pre Evacuation Behavior in Agent Based Simulations Of Crowds}
+\chapter{Modelling Pre Evacuation Behavior in Agent Based Simulations Of Crowds}\footnote{This chapter presents a method for modelling pre-evacuation behavior in emergency egress simulation. The model was presented as a poster and short paper at the Pedestrian and Evacuation Dynamics Conference in 2012~\cite{Viswanathan:2012vt}.}
 \label{chapter:PreEvacuationBehavior}
 
 \section{Introduction}
-\label{intro}
-Ideally, when a fire starts a fire alarm goes off; all occupants hear this alarm and use the nearest safe exit to leave the building. However, this is hardly the norm. In many cases, occupants are desensitized from hearing false alarms and often do not start to evacuate until they are completely sure that it is needed. On January 19, 2000, a fire in Boland Hall in Seton Hall University killed three students because they had ignored the fire alarms assuming they were false~\cite{Berry:2000us}. This uncertainty about the authenticity of the first sign of danger isn't an isolated incident~\cite{Proulx:2003tc,Purser:2001ts,Tong:1985wn}. Hence, when studying the behavior of evacuees, it is necessary to study and understand their actions from the time at which the fire started right up until the point where the last person evacuated~\cite{Tong:1985wn}. Modeling and simulation is one approach for analyzing and understanding egress behavior.
-
-Software that simulates crowd egress is necessarily very complex because crowd egress from a building is itself a very complex system with lots of interacting elements (people, fire, alarms, etc.) each of which can cause different complications in the system. One of the most popular methods for studying and modeling complex systems is through Agent Based Models (ABM). In ABM, a set of heterogeneous, intelligent entities called agents are programmed with behavior approximating humans and placed in a partially observable environment. Asynchronous interactions between agents result in macro-level dynamics which can help observers learn more about the system.
-
-Pre-evacuation uncertainty and investigation are features of human behavior during egress that are rarely considered in models. Pre-evacuation refers to the period of time that elapses after the start of the fire alarm before the person starts evacuating. While some models~\cite{Tsai:2011tz} do have a simplified model of pre-evacuation behavior, they fail to model it in enough detail to enable their extension to more general cases. For example, a fire alarm could have different effects based on the clarity and believability of the alarm~\cite{Kobes:2009jx,Paulsen:1984ti}. This variability is hard to model in existing models of pre-evacuation behavior. Also, during an evacuation people exchange event and environment related information with other evacuees. Evacuees are unlikely to follow blindly any and all messages that they receive. There is a variability in the \emph{trust} in messages received that can have different effects on egress. This is rarely considered in existing models.
+\label{PreEvac:intro}
+Ideally, when a fire starts a fire alarm goes off; all occupants hear this alarm and use the nearest safe exit to leave the building. However, this is hardly the norm. In many cases, occupants are desensitized from hearing false alarms and often do not start to evacuate until they are completely sure that it is needed. On January 19, 2000, a fire in Boland Hall in Seton Hall University killed three students because they had ignored the fire alarms assuming they were false~\cite{Berry:2000us}. This uncertainty about the authenticity of the first sign of danger isn't an isolated incident~\cite{Proulx:2003tc,Purser:2001ts,Tong:1985wn}. Hence, when studying the behavior of evacuees, it is necessary to study and understand their actions from the time at which the fire started right up until the point where the last person evacuated~\cite{Tong:1985wn}.
 
 
-In this paper, we present one aspect of a behavioral model for Agent Based Modeling of crowd egress which we call the IBEVAC (Information Based Evacuation) model. This behavioral model models evacuees as information processing entities. More specifically, in this paper we introduce the information-based event identification and communication system that is used in IBEVAC. The evacuees identify and process information in terms of event cues which exist throughout the environment. The importance of modeling pre-evacuation behavior and a communication system is illustrated through experimentation.
+
+As discussed in Chapters~\ref{chapter:LiteratureReview} and~\ref{chapter:IBEVAC}, pre-evacuation uncertainty and investigation are features of human behavior during egress that are rarely considered in existing models. To recap, \emph{pre-evacuation} refers to the period of time that elapses after the start of the fire alarm before the person starts evacuating. While some models~\cite{Tsai:2011tz} do have a simplified model of pre-evacuation behavior, they fail to model it in enough detail to enable their extension to more general cases. For example, a fire alarm could have different effects based on the clarity and believability of the alarm~\cite{Kobes:2009jx,Paulsen:1984ti}. This variability is hard to simulate in existing models of pre-evacuation behavior. Also, during an evacuation people exchange event and environment related information with others. Evacuees are unlikely to follow blindly any and all messages that they receive. There is a variability in the \emph{trust} in messages received that can have different effects on egress. This is rarely considered in existing models.
+
+
+In this chapter, we present a model for simulating pre-evacuation behavior and event identification in agent based simulations of crowds~\footnote{This}. In the model, the evacuees identify and process information in terms of event cues which exist throughout the environment. Section~\ref{PreEvac:Results} illustrates the importance of modeling pre-evacuation behavior and a communication system is illustrated through experimentation.
+
+% TODO : add outline of chapter
 
 \section{Related Work}
-\label{LitRev}
+\label{PreEvac:LitRev}
 
 
-A fire evacuation is a complex situation to model and simulate. One large component of this complexity is the need to understand the behavior and decision making of the people taking part in it. There are a lot of conflicting theories on how humans behave in emergencies and why they behave as they do. However, there are also certain parts of human nature that are generally accepted to be true, such as the constant search for information~\cite{Proulx:2003tc,Tong:1985wn,Ozel:2001tn,Sime:1983uy}. This section first summarizes the existing knowledge of human behavior during egress with special emphasis on pre-evacuation behavior. Following this, some existing models of pre-evacuation behavior and communication is presented.
+A fire evacuation is a complex situation to model and simulate. A large component of this complexity is the need to model the behavior and decision making of the people taking part in it. As discussed in Section~\ref{LiteratureReview:CurrentUnderstanding}, there are a lot of conflicting theories on how humans behave in emergencies and why they behave as they do. However, there are also certain parts of human nature that are generally accepted to be true, such as the constant search for information~\cite{Proulx:2003tc,Tong:1985wn,Ozel:2001tn,Sime:1983uy}. This section first summarizes the existing knowledge of human behavior during egress with special emphasis on pre-evacuation behavior. Following this, some existing models of pre-evacuation behavior and communication is presented.
 
-\subsection{Pre-evacuation Behavior}
-\label{PreEvacuationBehavior}
+\subsection{Pre-evacuation behavior}
+\label{PreEvac:PreEvacuationBehavior}
 
 Several studies of human behavior during emergency egress~\cite{Kuligowski:2005tt,Ozel:2001tn,Proulx:2007ul}, have shown that an evacuee's first reaction after realizing that there is an unusual situation is to investigate and gather more information about the situation. Evacuation starts only once the need for evacuation is established. \emph{Cues} are the key to understanding this transition from realization to investigation and, eventually, to evacuation. Cues are certain changes in the environment that indicate that something is wrong or different from normal~\cite{Sime:1983uy}. They come in a variety of different forms. Fire and smoke are the typical and most unambiguous cues for an evacuation. Fire alarms and people running about are examples of more ambiguous cues. According to Proulx~\cite{Proulx:2007ul}, an ambiguous cue by itself does not cause a person to initiate investigation. Rather, the cue has to persist for a period of time before investigation begins.
 
-There have been several surveys, interviews and other studies of the factors that influence evacuation and pre-evacuation behavior. Kuligowski~\cite{Kuligowski:2009un} summarized the key findings of these studies and compiled a list of factors that influence pre-evacuation behavior. She suggested that the period that we term as pre-evacuation itself consists of two phases. Phase 1 is called \emph{perception}. This refers to the perception of some unusualness in the current situation. Kuligowski calls the next phase \emph{interpretation}. During this phase, the person searches for more information to verify whether a fire has actually started and if it actually poses a threat that needs to be handled. Several others~\cite{Ozel:2001tn,Proulx:2007ul,Tong:1985wn} have also emphasised the importance of this phase though sometimes under different names. Regardless of what it is called, this phase consists of two parts~(1) defining the situation as a fire and~(2) defining the risk that the situation poses.
+There have been several surveys, interviews and other studies of the factors that influence evacuation and pre-evacuation behavior. Kuligowski~\cite{Kuligowski:2009un} summarized the key findings of these studies and compiled a list of factors that influence pre-evacuation behavior (Table~\ref{tab:Cues}). She suggested that the period that we term as pre-evacuation itself consists of two phases. Phase 1 is called \emph{perception}; this refers to the perception of some unusualness in the current situation. Kuligowski calls the next phase \emph{interpretation}; during this phase, the person searches for more information to verify whether a fire has actually started and if it actually poses a threat that needs to be handled. Several others~\cite{Ozel:2001tn,Proulx:2007ul,Tong:1985wn} have also emphasised the importance of this phase though sometimes under different names. Regardless of what it is called, this phase consists of two parts:
+\begin{inparaenum}
+\item defining the situation as a fire and
+\item defining the risk that the situation poses.
+\end{inparaenum}
 
 % Explaing milling somewhere here.
 
@@ -33,9 +39,9 @@ Kuligowski categorized the factors that influence these phases into two types: o
 
 
 \subsection{Existing models}
-\label{ExistingModels}
+\label{PreEvac:ExistingModels}
 
-As mentioned in Section~\ref{intro}, there are very few existing models that take the pre-evacuation period into consideration. Pires~\cite{Pires:2005gs}  modeled the pre-evacuation decision making of an individual using a simple Bayesian Belief Network~(BBN). Fran{\c c}a et al.~\cite{Franca:2009wq} created a simulation model of the development of panic behavior during emergency egress. This model implemented the hysterical belief theory~\cite{Torres:2010tj} and modeled how panic first develops and then evacuation happens. It also had a basic communication system through which agents exchanged mood information (which is a key factor in the development of panic) by using the grid based environment as a medium for communicating messages. Despite pre-evacuation behavior being modeled in some detail, it is not possible to extend this model to replicate the heterogeneity in people's reaction to cues. ESCAPES~\cite{Tsai:2011tz} is a fairly recent model that takes into account some factors like the spread of knowledge, fear and emotion between the different evacuees. These factors are used to create a simplistic model of pre-evacuation behavior. The event identification and communication model proposed in this paper have been influenced by these models but is unique in the way that the diversity of cues and their effects can be considered.
+As mentioned in Section~\ref{PreEvac:intro}, there are very few existing models that take the pre-evacuation period into consideration. Pires~\cite{Pires:2005gs}  modeled the pre-evacuation decision making of an individual using a simple Bayesian Belief Network~(BBN). Fran{\c c}a et al.~\cite{Franca:2009wq} created a simulation model of the development of panic behavior during emergency egress. This model implemented the hysterical belief theory~\cite{Torres:2010tj} and modeled how panic first develops and then evacuation happens. It also had a basic communication system through which agents exchanged mood information (which is a key factor in the development of panic) by using the grid based environment as a medium for communicating messages. Despite pre-evacuation behavior being modeled in some detail, it is not possible to extend this model to replicate the heterogeneity in people's reaction to cues. ESCAPES~\cite{Tsai:2011tz} is a fairly recent model that takes into account some factors like the spread of knowledge, fear and emotion between the different evacuees. These factors are used to create a simplistic model of pre-evacuation behavior. The event identification and communication model proposed in this paper have been influenced by these models but is unique in the way that the diversity of cues and their effects can be considered.
 
 % \section{The IBEVAC Model}
 % \label{IBEVAC}
@@ -54,12 +60,14 @@ As mentioned in Section~\ref{intro}, there are very few existing models that tak
 
 % The intrinsic characteristics of the agent like the agent's size, speed, mass and social role are stored in the {\em Agent Description Module (ADM)}. It is also responsible for determining the strategies and actions taken by the Planning Module and in determining the effects of the cues on the Event Knowledge Module (Section~\ref{EventIdentification}). The {\em Planning Module} stores the current state of the agent i.e. whether it is exploring, milling or escaping and creates a plan of action for the agent as a set of goals. Each goal is a location that is passed to the Navigation Module.
 
-For the purpose of this paper, three kinds of behavior are modeled: normal behavior where the goal is the center of the \emph{home} room of the agent, for milling behavior the agent gathers with other agents at the nearest \emph{corridor} (See Figure~\ref{fig:layout}) and during escape the agent heads towards the nearest exit.
+For the purpose of this paper, three kinds of behavior are modeled: normal behavior where the goal is the center of the \emph{home} room of the agent; \emph{milling} behavior where the agent gathers with other agents at the nearest \emph{corridor} (See Figure~\ref{fig:layout}); and \emph{evacuation} where the agent heads towards the nearest exit.
 
-Communication between agents is facilitated by the {\em Communication Module}. It transmits messages to agents within a communication range. The working of this communication is explained in more detail in Section~\ref{EventIdentification}. The {\em Navigation Module} uses a four level navigation system. At the highest level, a logical path is determined in terms of rooms to be crossed from the agents current location to the goal. From this logical path, spatial way points or locations are extracted by the next level. The third level determines a possible collision free path to the farthest visible spatial way point. Finally, a physics engine ensures that objects don't pass through other objects.
+Communication between agents is also modelled with agents being able to transmit messages within a fixed communication range. The working of this communication is explained in more detail in Section~\ref{PreEvac:EventIdentification}.
+
+To recap the discussion in Chapter~\ref{chapter:IBEVAC}, the planning system of the agent on identifying a goal passes this goal to the Navigation System that proceeds through a three-level process to determine the preferred velocity of the agent. At the highest level, a logical path is determined in terms of rooms to be crossed from the agents current location to the goal. From this logical path, spatial way points or locations are extracted by the next level. The third and final level determines a possible collision free path to the farthest visible spatial waypoint. In the experiments in this chapter, A-Star is used for path planning and RVO2 is used for the motion planning system.
 
 \section{Event Identification and Pre-evacuation Behavior}
-\label{EventIdentification}
+\label{PreEvac:EventIdentification}
 
 % First explain how cues are modeled
 It is known that the ambiguity, source and consistency of the cue~\cite{Kuligowski:2005tt,Sime:1983uy,Tong:1985wn} are the key factors (Section~\ref{PreEvacuationBehavior}) in determining the effect of a cue. In the IBEVAC model, this is used in modeling all cues in the same way. Each object or event that is to be perceived as a cue implements a \emph{Cue interface} which ensures that each cue can be explained in terms of its ambiguity, source and consistency. This is one of the key novelties of IBEVAC's approach to behavior modeling. Each cue is located at a particular location in the environment and is sensed by agents when within their perception range.
@@ -74,7 +82,7 @@ During an IBEVAC simulation, a cellular automata based fire model and a simple f
 
 
 \section{Results}
-\label{Results}
+\label{PreEvac:Results}
 
 % Outline what are the things that we expect to demonstrate
 Experiments were conducted using IBEVAC to demonstrate the effect that cue perception and communication can have on egress. Both experiments were conducted on the two floor office environment shown in Figure~\ref{fig:layout}. Simulations were conducted with 200 agents randomly distributed all over the environment and data was collected after averaging over 100 replications of the simulation.
@@ -89,8 +97,8 @@ Experiments were conducted using IBEVAC to demonstrate the effect that cue perce
 
 % Explain the layout of the environment, the settings and parameters
 
-\subsection{Experiment 1: The effect of fire alarm clarity}
-\label{experiment1}
+\subsection{Experiment 1: the effect of fire alarm clarity}
+\label{PreEvac:experiment1}
 
 In this experiment, the effect that fire alarm cue clarity and ambiguity has on egress was examined. It is assumed that the fire alarm can be heard clearly at every location on the map; so cues are placed in every room. A fire alarm with a simple ringing sound is much less clear and more ambiguous than a public announcement system that explicitly states that it is not a drill and gives real time updates about the situation. To examine the effect of this difference in clarity, the experiment was repeated for different values of ambiguity (from 0.0 - 1.0). The blue curves in Figure~\ref{Graph1} show the error plot of the survival percentage and the one in Figure~\ref{Graph2} the average time taken for last agent to start evacuating for this experiment. As expected there is a significant drop in number of survivors as the ambiguity of the alarm increases. Also, the later an agent starts evacuating, the lesser is his chance for survival.
 
@@ -98,8 +106,8 @@ In this experiment, the effect that fire alarm cue clarity and ambiguity has on 
 
 % Think about someway to plot the distribution of evacuation start time against ambiguity. This might be a better measure.
 
-\subsection{Experiment 2:  The importance of communication}
-\label{experiment2}
+\subsection{Experiment 2:  the importance of communication}
+\label{PreEvac:experiment2}
 
 In this experiment, the effect of message trustworthiness (ambiguity) is modeled. The fire alarm ambiguity is kept at 1.0 to minimize its interference with the effect of message cues. Similar to experiment 1 the cue ambiguity is varied from 0.0 to 1.0. The green curves in Figure~\ref{Graph1} and Figure~\ref{Graph2} show the results for this experiment. However, both these data are collected for agents in the lower floor only. This is because none of the agents on the higher floor start evacuating as they neither observe the fire nor get a message from other agents about the fire. A similar trend can be observed where the survival rate decreases with increasing ambiguity. The green curve in Figure~\ref{Graph2} flattens out towards the end because in both these cases, the agent's trust in other agents is so less that the only reason they start evacuating is because of the smoke or fire itself. Another thing to note is that even if all agents are completely trusted (ambiguity=0), the last agent still takes a long time to start evacuating because it takes a long time for the information to propagate to it. This can also explain why there is such a dramatic change in the effect of slight change in ambiguity of the fire alarm cue as opposed to a change in ambiguity of the message cue.
 
@@ -123,7 +131,7 @@ In this experiment, the effect of message trustworthiness (ambiguity) is modeled
 
 
 \section{Conclusion and Future Work}
-\label{ConclusionAndFutureWork}
+\label{PreEvac:ConclusionAndFutureWork}
 
 In this paper, the IBEVAC agent architecture for agent based simulation of emergency egress was introduced. A novel cue modeling and perception system which enables the detailed modeling of pre-evacuation behavior has been described and its working demonstrated.
 

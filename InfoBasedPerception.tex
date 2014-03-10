@@ -1,28 +1,28 @@
-%!TEX root = thesis.tex
+%!TEX root = vaisagh_thesis.tex
 
-\chapter{An Information Processing Based Approach Perception Modelling}
+\chapter{An Information Processing Based Approach Perception Modelling}\footnote{This chapter was presented at the Cyberworlds 2011 Conference~\cite{Viswanathan:2011uy} and further explored in the extended version published in the Transactions on Computational Science~\cite{Viswanathan:ut}. This chapter additionally contains some validation of the model against real world experimental data.}
 \label{chapter:IBP}
 
 % The aim of this thesis is to create an agent based fire egress simulation that models human behavior as accurately as possible.
-The first building block of a behavior model for egress simulation is a model of perception. This chapter introduces a novel agent based approach to modeling perception that takes into consideration the limitations of human perception.
+A model of perception is a core component of any behavior model for egress simulation. This chapter introduces a novel agent based approach to modeling perception that takes into consideration the limitations of human perception.
 
 Agent-Based Models (ABMs) consist of large-numbers of heterogeneous, autonomous entities inhabiting a spatially explicit, partially observable environment; macro level dynamics are said to emerge through the asynchronous interactions among these entities~\cite{Bonabeau:2002um,Epstein:1999vn}. Each of these individual entities will iterate through a sense-think-act cycle, where agents obtain information from their environment through {\em sensing}, make a decision through {\em thinking} and finally carry out their decision by {\em acting}. In many application areas in which ABMs have been applied, including crowd simulation, the emphasis is generally on describing thought processes accurately via rules. However, sensing is a critical aspect in the modeling process and can greatly impact both the individual and emergent properties of the system.
 
 The terms perception and sensing are often used interchangeably in simulation literature. For clarity in explanation, the term {\em perception} is used to define the complete process of obtaining a set of (possibly filtered) \emph{percepts}~\cite{Russel:1995vi} from the environment. {\em Sensing}, on the other hand, is defined as the process of obtaining raw information from the environment; in this definition, and in this model, sensing is a part of perception.
 
-The sense-think-act cycle is the process by which humans get information from the environment, process this information and finally, act based on the decision made. Rather than what a human sees, hears or smells, what is more important is what he can mentally process. In fact, the entire human perception system can simply be considered to be an information processing entity. In this chapter the perception system of the IBEVAC agent based on this idea that perception is the process of gathering information from the environment is presented. This is called an \emph{Information Based Perception}(IBP) system.
+The sense-think-act cycle is the process by which humans get information from the environment, process this information and finally, act based on the decision made. Rather than what a human sees, hears or smells, what is more important is what he can mentally process. In fact, the entire human perception system can simply be considered to be an information processing entity. In this chapter a perception systembased on this idea that perception is the process of gathering information from the environment is presented. This is called an \emph{Information Based Perception}(IBP) system.
 
 Miller's seminal work~\cite{Miller:1956tr} on human cognition revealed two important characteristics of human cognition:
 \begin{inparaenum}
 \item Humans constantly group together similar data into \emph{chunks} of information.
 \item At any given time, a human can only process a limited amount of information.
 \end{inparaenum}
-For IBP, the assumption is made that this limited capacity results in humans being attracted towards certain kinds of information, e.g.\ a bright light or a celebrity; this, in turn, results in other information in the environment being unnoticed. By organizing information into chunks, humans are able to use their limited information processing capability more efficiently. This ability can manifest itself in different ways. It can be reasonably assumed that during motion planning, humans will process a group of people coming towards them as a single obstacle rather than many individuals. This grouping not only helps the person make use of his limited information processing capacity more efficiently,  it also helps him/~her conform to social norms that instruct him/~her that walking through a group of interacting people would be rude.
+For IBP, the assumption is made that this limited capacity results in humans being attracted towards certain kinds of information, e.g.\ a bright light or a celebrity; this, in turn, results in other information in the environment being unnoticed. By organizing information into chunks, humans are able to use their limited information processing capability more efficiently. This ability can manifest itself in different ways. It can be reasonably assumed that during motion planning, humans will process a group of people coming towards them as a single obstacle rather than many individuals. This grouping not only helps the person make use of his limited information processing capacity more efficiently,  it also helps him conform to social norms that instruct him that walking through a group of interacting people would be rude.
 
 
-This chapter explains and illustrates the working and usefulness of an Information Based Perception system for agents. It's viability is demonstrated through the implementation of a simple moving agent and by incorporating information based processing into the agent's navigation system. Why navigation only? Besides being one of the major components of Agent Based Crowd Simulation, navigation is also a process in which the effects of using a new perception system can be observed easily. The experiments towards the end of this chapter illustrate the significant effects that a modified sensing and perception system can have on an existing \emph{motion planning} algorithm.
+This chapter explains and illustrates the working and usefulness of an Information Based Perception system for agents. Its viability is demonstrated through the implementation of a simple moving agent and by incorporating information based processing into the agent's motion planning system. Why motion planning only? Besides being one of the major components of Agent Based Crowd Simulation, motion planning is also a process in which the effects of using a new perception system can be observed easily. The experiments towards the end of this chapter illustrate the significant effects that a modified sensing and perception system can have on an existing \emph{motion planning} algorithm. The results produced are also compared against real world experiments to demonstrate that the results produced are realistic.
 
-The remainder of this chapter is organized as follows: Section~\ref{IBP:ReviewPerception} gives some background on how humans perceive the world around them; the IBP model itself is introduced in Section~\ref{IBP:Theory}; following this, Section~\ref{IBP:MotionPlanning} presents an analyses some of the existing work in motion planning; in Section~\ref{IBP:Results} presents the preliminary work done in visual and quantitative validation; finally, Section~\ref{IBP:Conclusion} concludes this chapter and gives an overview of the work that needs to be done.
+The remainder of this chapter is organized as follows: Section~\ref{IBP:ReviewPerception} gives some background on how humans perceive the world around them; the IBP model itself is introduced in Section~\ref{IBP:Theory}; following this, Section~\ref{IBP:MotionPlanning} presents an analyses some of the existing work in motion planning; in Section~\ref{IBP:Results} presents the work done in visual, experimental and quantitative validation; finally, Section~\ref{IBP:Conclusion} concludes this chapter and gives an overview of the work that needs to be done.
 
 \section{Limits of Human Perception}
 \label{IBP:ReviewPerception}
@@ -39,12 +39,12 @@ The idea of humans being able to process only a limited amount of information is
 
 The majority of existing perception systems, consider perception to be only visual perception. Even in more detailed crowd simulation systems like LEGION~\cite{Still:2000tp} and MASSEgress~\cite{Pan:2006vp} perception is implemented to aid movement by detecting other obstacles and goals to enable planning a path towards the goal and to provide a collision free motion. The simplified IBP System implemented and demonstrated in this chapter is similarly limited, i.e.\ the IBP is modeled in the context of collision avoidance. The information which the agents perceive are dynamic obstacles, i.e.\ other agents or groups of agents. However, in theory, the concept of an information processing based perception system can be extended to include factors like cue perception as explained in Chapter~\ref{chapter:IBP}.
 
-In the present model, it is not proposed to model all the complexities of human perception and visual cognition, rather an agent based perception model for crowds is presented which can not only show a basic implementation of the idea of information based perception but can be easily extended when required, to model more complicated visual cognition. In order to demonstrate the effect of IBP on an agent's navigation system. It is first necessary to have an idea of existing navigation systems.
+In the present model, it is not proposed to model all the complexities of human perception and visual cognition, rather an agent based perception model for crowds is presented which can not only show a basic implementation of the idea of information based perception but can be easily extended when required, to model more complicated visual cognition. In order to demonstrate the effect of IBP on an agent's motion planning system. It is first necessary to have an idea of existing motion planning systems.
 
-\section{Navigation Systems}
+\section{A Brief Introduction to Motion Planning Systems}
 \label{IBP:MotionPlanning}
 
-To recap, navigation is defined as the process or activity of accurately ascertaining one's position and planning and following a route. Thus we use the term \emph{navigation} to refer to the complete process of how a person moves from one point to another. Navigation itself can be broadly divided into 3 (or 4 parts) as shown in Fig.~\ref{fig:NavigationArchitecture} extracted from Fig.~\ref{fig:AgentArchitecture}. It was briefly explained in Sect.~\ref{IBEVAC:NavigationModule} and will be discussed in more detail in Sect.~\ref{CFW:NavigationModule}. In this section, a brief overview of \emph{motion planning} is given. A more detailed description and analysis is given in Chapter~\ref{chapter:MotionPlannerComparison}. In a simulation, motion planning ensures that the human does not go through another human being in the crowd.
+To recap, navigation is defined as the process or activity of accurately ascertaining one's position and planning and following a route. Thus we use the term \emph{navigation} to refer to the complete process of how a person moves from one point to another. Navigation itself can be broadly divided into 3 (or 4 parts) as shown in Fig.~\ref{fig:NavigationArchitecture}. In this section, a brief overview of \emph{motion planning} is given. A more detailed description and analysis is given in Chapter~\ref{chapter:MotionPlannerComparison}. In a simulation, motion planning ensures that the simulated human does not go through another human being in the crowd.
 
 \begin{figure}[!tb]
 \centering
@@ -191,8 +191,8 @@ This shortened neighbor list is passed to RVO2~\cite{Guy:2010ko} for calculating
 \section{Model Evaluation}
 \label{IBP:Results}
 
-Section~\ref{sec:experimental_validation} validates the model against real world experiments. Before this, Section~\ref{sec:model_demonstration} presents a preliminary visual and quantitative validation of the proposed model.
-
+This section evaluates the validity of the model. This is done in two ways. First, Section~\ref{sec:model_demonstration} presents a preliminary visual and quantitative validation of the proposed model.
+Section~\ref{sec:experimental_validation} then validates the model against real world experiments.
 
 \subsection{Model demonstration} % (fold)
 \label{sec:model_demonstration}
@@ -296,7 +296,7 @@ Figures~\ref{Exp2_Black_Effort} and \ref{Exp2_Remaining_Effort} show a compariso
   \label{Exp3}
 \end{figure}
 
-In Sects.~\ref{IBP:Theory}, the fact that humans have limited information processing capacity was explained. In this experiment, it is demonstrated that if a human being's limited information processing capability is to be modeled, it is necessary to use Group Based Perception. This is done by observing the simple scenario of an agent moving towards two groups of other agents (Fig.~\ref{Exp3}). When no information limit is imposed on the agent, and a normal circular sensor range is used, the agent, as expected, follows a nice straight path through the center of the group. However, when an information limit of $a_{IL} = 4$ is imposed on the agent, the black agent, does not perceive all the individual agents in the group and  as a result it is forced to reconsider its path mid-route. As a result, the irregular trail shown in Fig.~\ref{Exp3_4_RVO} is obtained. However, in the same situation, when Group Based Perception is used, the agent smoothly avoids the whole group (Fig.~\ref{Exp3_4_GBP}). In fact, this smooth path is obtained for as low a limit as $a_{IL} = 1$ (Fig.~\ref{Exp3_1_GBP}).
+In Section~\ref{IBP:Theory}, the fact that humans have limited information processing capacity was explained. In this experiment, it is demonstrated that if a human being's limited information processing capability is to be modeled, it is necessary to use Group Based Perception. This is done by observing the simple scenario of an agent moving towards two groups of other agents (Fig.~\ref{Exp3}). When no information limit is imposed on the agent, and a normal circular sensor range is used, the agent, as expected, follows a nice straight path through the center of the group. However, when an information limit of $a_{IL} = 4$ is imposed on the agent, the black agent, does not perceive all the individual agents in the group and  as a result it is forced to reconsider its path mid-route. As a result, the irregular trail shown in Fig.~\ref{Exp3_4_RVO} is obtained. However, in the same situation, when Group Based Perception is used, the agent smoothly avoids the whole group (Fig.~\ref{Exp3_4_GBP}). In fact, this smooth path is obtained for as low a limit as $a_{IL} = 1$ (Fig.~\ref{Exp3_1_GBP}).
 
 \subsubsection{Effect of filtering of percept information}
 
@@ -322,12 +322,12 @@ This experiment illustrates how small differences in the information limit can g
 \subsection{Experimental validation} % (fold)
 \label{sec:experimental_validation}
 
-Nan et al.~\cite{hunanpaper,hunanthesis} conducted a series of controlled field experiments to study the interaction among individual participants and their movement in certain scenarios. In this section, the experimental setup used by Nan in his thesis is first reproduced. Following this, the results obtained by him are presented and compared against the results produced by RVO2 agents using Information Based Perception.
+Hu et al.~\cite{hunanpaper,hunanThesis} conducted a series of controlled field experiments to study the interaction among individual participants and their movement in certain scenarios. In this section, the experimental setup used by Hu in his thesis is first reproduced. Following this, the results obtained are presented and compared against the results produced by RVO2 agents using Information Based Perception.
 
 \subsubsection{Experiment setup} % (fold)
 \label{sec:experiment_setup}
 
-This section explains the experimental setup and measurements made by Nan et al. to study human movement in particular scenarios~\footnote{As mentioned earlier, this section simply summarizes the experiments conducted by Nan et al. to provide a context for the subsequent analysis and validation done. For a more detailed discussion please refer to the original paper and thesis.}. In the original paper there experiments were conducted, since IBP does not produce results different from the underlying motion planning algorithm used (RVO2 in this case) for two of the scenarios only the first experiment analysing movement of pedestrians walking towards each other is presented and considered in this analysis.
+This section explains the experimental setup and measurements made by Hu et al. to study human movement in particular scenarios~\footnote{This section simply summarizes the experiments conducted by Hu et al. to provide a context for the subsequent analysis and validation done. For a more detailed discussion please refer to the original paper and thesis.}. In the original paper three experiments were conducted, since IBP does not produce results different from the underlying motion planning algorithm used (RVO2 in this case) for two of the scenarios only the first experiment analysing movement of pedestrians walking towards each other is presented and considered in this analysis.
 
 \begin{figure}[!tbhp]
     \begin{center}
@@ -338,18 +338,18 @@ This section explains the experimental setup and measurements made by Nan et al.
 \end{figure}
 
 
-The experiments were conducted at an outdoor passage outside the School of Computer Engineering in Nanyang Technological University. Figure~\ref{fig:schematic_setup} shows the setup used in the experiment. Each experiment considered of three participants (marked 1, 2 and 3) moving at their prefered speed in the given direction until they reached the goal point marked by the border of the demarcated area. In order to shift attention from movement, the participants were given some simple algebraic calculations to do as they move. Nan et al argue that this is typical of several real life bi-directional movement scenarios. The experimental setup is shown in Figure~\ref{fig:detailed_setup}. A video camera with adequqare resolution was kept at fixed height above the experimental area using a horizontal tripod. The location of the camera and the lens was fixed to ensure maximum clarity and minimal distortion. Markers were kept on the experimental area to prevent participants from going outside the experimental area and to help in analysis of results obtained. Participants were also asked to wear white helmets so that the analysis from the video was accurate~\cite{W:2004tp}.
+The experiments were conducted at an outdoor passage outside the School of Computer Engineering in Nanyang Technological University. Figure~\ref{fig:schematic_setup} shows the setup of the experiment. Each experiment consisted of three participants (marked 1, 2 and 3) moving at their preferred speed in the given direction until they reached the goal point marked by the border of the demarcated area. Hu et al argue that this scenario is typical of several real life bi-directional movement scenarios. In order to shift attention from movement, the participants were given some simple algebraic calculations to do as they move.  The experimental setup is shown in Figure~\ref{fig:detailed_setup}. A video camera with adequate resolution was kept at fixed height above the experimental area using a horizontal tripod. The location of the camera and the lens was fixed to ensure maximum clarity and minimal distortion. Markers were kept on the experimental area to prevent participants from going outside the experimental area and to help in analysis of results obtained. Participants were also asked to wear white helmets so that the analysis from the video was accurate~\cite{W:2004tp}.
 
 
 \begin{figure}[!tbhp]
     \begin{center}
         \includegraphics[]{detailed_setup.pdf}
     \end{center}
-    \caption{Detailed setup}
+    \caption{The experimental setup used by Hu et al.~\cite{hunanThesis} for their controlled field experiments.}
     \label{fig:detailed_setup}
 \end{figure}
 
-Videos of 20 experiments with 13 participants (9 male; 4 female) were finally analysed for charecteristic movement patterns and other metrics. The process shown in Figure~\ref{fig:the_video_extraction_process} was then used to extract the trajectories of each of the participants in each of the recorded videos. First the video is converted into a series of images at 20 frames per second which is a ideal frame rate to obtain a complete trajectory of the movement of participants. Once an image stack is obtained the image is scaled, rotated and tranformed using the markers to remove distortions and bring it to metric scale. Following this the next two steps quantize the image and remove noise such that, at the end of the process, each image only has black and white colors with the former depicting the background and the latter the participants. Lastly, a tool is used for tracking each participant (white particle) in the quantized images. Fig.~\ref{fig:VideoExtractionExample} gives an example of the whole process.
+Videos of 20 experiments with 13 participants (9 male; 4 female) were finally analyzed for characteristic movement patterns and other metrics. The process shown in Figure~\ref{fig:the_video_extraction_process} was then used to extract the trajectories of each of the participants in each of the recorded videos. Briefly, the process was as follows: first the video was converted into a series of images at 20 frames per second which is an ideal frame rate to obtain a complete trajectory of the movement of participants. Once an image stack was obtained the image was scaled, rotated and transformed using the markers to remove distortions and bring it to metric scale. Following this the next two steps quantize the image and remove noise such that, at the end of the process, each image only has black and white colors with the former depicting the background and the latter the participants. Lastly, a tool is used for tracking each participant (white particle) in the quantized images. Fig.~\ref{fig:VideoExtractionExample} gives an example of the whole process.
 
 \begin{figure}[!tbhp]
     \begin{center}
@@ -360,45 +360,49 @@ Videos of 20 experiments with 13 participants (9 male; 4 female) were finally an
 \end{figure}
 
 \begin{figure}[!tbhp]
-    \begin{center}
-        \includegraphics[scale=0.75]{DataExtractionProcess.pdf}
-    \end{center}
-    \caption{An example of the video extraction process.}
+    \centering
+   		\subfloat[Step 1]{\includegraphics[width=7.5cm,height=4cm]{extract_1}}
+  		\hspace{1pt}
+    	\subfloat[Step 2]{\includegraphics[width=7.5cm,height=4cm]{extract_2}}
+  		\\
+  		\subfloat[Step 3]{\includegraphics[width=7.5cm,height=4cm]{extract_3}}
+  		\hspace{1pt}
+  		\subfloat[Step 4]{\includegraphics[width=7.5cm,height=4cm]{extract_4}}
+  		\\
+  		\subfloat[Step 5]{\includegraphics[width=7.5cm,height=4cm]{extract_5}}
+  		\hspace{1pt}
+  		\subfloat[Step 6]{\includegraphics[width=7.5cm,height=4cm]{extract_6}}
+  	\caption{An example of the video extraction process}
     \label{fig:VideoExtractionExample}
 \end{figure}
 
 
 
-\subsubsection{Metrics Used} % (fold)
+\subsubsection{Quantitative measurements of experimental data} % (fold)
 \label{sec:metrics_used}
 
-The data extraction process outlined in Section~\ref{sec:experiment_setup} produces for each participant in each experiment a trajectory. These trajectories can be grouped into three main categories as shown in Figure~\ref{fig:categoriesOfMotion}. While the movement can be classified into these three groups, there are slight differences in the trajectories for each category in each video. Nan et al. normalize the trajectories of the same type to find one average trajectory for each type of trajectory. The metrics that are explained next are all calculated on this average trajectory.
+The data extraction process outlined in Section~\ref{sec:experiment_setup} produces for each participant in each experiment a trajectory. Trajectories that were similar were grouped together and normalized to find an average trajectory for each group. It was observed that these trajectories could be grouped into three main groups shown in Figure~\ref{fig:categoriesOfMotion}.  The quantitative measurements that are explained next are all calculated on this average trajectory.
 
-% \begin{figure}[!tbph]
-%     \begin{center}
-%         \includegraphics[width=\textwidth]{CategoriesPicture}
-%     \end{center}
-%     \caption{The trajectories of participants can be grouped into 3 categories}
-%     \label{fig:categoriesOfMotion}
-% \end{figure}
+\begin{figure}[!tbph]
+    \begin{center}
+        \includegraphics[width=\textwidth]{CategoriesPicture}
+    \end{center}
+    \caption{The trajectories of participants can be grouped into 3 categories}
+    \label{fig:categoriesOfMotion}
+\end{figure}
 
-The different measurements that are used by Nan et al. are very neatly summarized in Figure~\ref{fig:OverviewOfMetrics}. These metrics are:
+The different measurements used by Hu et al. are very neatly summarized in Figure~\ref{fig:OverviewOfMetrics}. These metrics are:
 
-% \begin{figure}[!tbph]
-%     \begin{center}
-%         \includegraphics[width=\textwidth]{CategoriesPicture}
-%     \end{center}
-%     \caption{An overview of all the metrics that were used to measure the trajectories of participants in the video.}
-%     \label{% \begin{figure}[!tbph]
-%     \begin{center}
-%         \includegraphics[width=\textwidth]{CategoriesPicture}
-%     \end{center}
-%     \caption{The trajectories of participants can be grouped into 3 categories}
-%     \label{fig:figure1}
-% \end{figure}}
-% \end{figure}
+\begin{figure}[!tbph]
+    \begin{center}
+        \includegraphics[width=\textwidth]{metricsUsedHuNan}
+    \end{center}
+    \caption{Metrics proposed by Hu et al for quantitative validation of models.}
+    \label{fig:OverviewOfMetrics}
+\end{figure}
+
 \begin{itemize}
-    \item Trajectory Length of participant $i$ ($L_i$).
+    \item Trajectory length of participant $i$ ($L_i$).
     % \item Distance deviated from the horizontal direction line (along the x axis) of participant $i$ as a function of time $t$ ($dd^t_i$). The horizontal direction line is also the shortest trajectory for the participant towards his goal.
     \item Maximum deviation of participant $i$ ($D_i$). This is the maximum value of $dd^t_i$ for a participant over the course of the complete trajectory.
     % \item  The local curvature of participant $i$ as a function of time ($lc^t_i$). The local curvature of a participant at a given time is the tangent of the angle formed by the instantaneous velocity of the participant to the velocity along the horizontal direction line.
@@ -410,10 +414,21 @@ The different measurements that are used by Nan et al. are very neatly summarize
 % section metrics_used (end)
 
 
-\subsubsection{Results and Comparison} % (fold)
+\subsubsection{Results and comparison} % (fold)
 \label{sec:comparison_of_ibp}
 
-The metrics in Section~\ref{sec:metrics_used} can be broadly grouped into two kinds: Time dependent measures and non time dependent ones. Table~\ref{tab:RealWorldDistanceDeviation} shows the non time dependent values for the Real world data. It can be broadly seen that in $90\%$ of the cases, Participant 2 avoided Participant 1 and 3 through either side. It can also be seen that the major deviation effort was taken by single agent ($approx 0.87m$) rather than the group of two agents (both $approx 0.2 -0.3m$). This also meant that participant 2 on average had to travel a slightly longer distance. Both of these observations can be made of the simulations results produced by RVO2 using Information Based Perception as shown in Table~\ref{tab:IBPDistanceDeviation}.
+This section presents the simulation results produced using IBP when compared against the experimental data. The experimental setup was replicated by initializing the agents as shown in Fig.~\ref{fig:experiment_simulation_setup}
+
+\begin{figure}[!tbph]
+    \begin{center}
+        \includegraphics[width=\textwidth]{expSimulationSetup}
+    \end{center}
+    \caption{The initial configuration of the simulation based on the experimental setup in real world experiments}
+    \label{fig:experiment_simulation_setup}
+\end{figure}
+
+
+The metrics in Section~\ref{sec:metrics_used} can be broadly grouped into two kinds: temporal measures and non-temporal ones. Table~\ref{tab:RealWorldDistanceDeviation} shows the non-temporal values for the real world data. It can be broadly seen that in $90\%$ of the cases, Participant 2 avoided Participant 1 and 3 through either side. It can also be seen that the major deviation effort was taken by single agent ($\approx 0.87m$) rather than the group of two agents ($\approx 0.2 -0.3m$). This also meant that participant 2 on average had to travel a slightly longer distance. Both of these observations can be made of the simulations results produced by RVO2 using Information Based Perception as shown in Table~\ref{tab:IBPDistanceDeviation}.
 
 
 \begin{table}[h]
@@ -447,7 +462,7 @@ The metrics in Section~\ref{sec:metrics_used} can be broadly grouped into two ki
         \end{tabular}
 %     \end{adjustbox}
 %     \vspace{ - 05 mm}
-    \caption{Maximum deviation and path length according to experiments conducted Hu Nan~\cite{HuNanThesis}. Category 1 refers to the movement of Agent 2 to the left of the group, category 2 to the movement of Agent 2 to the right of the group and category 3 to the movement of agent 2 through the middle of the oncoming group.}
+    \caption{Maximum deviation and path length according to experiments conducted Hu~\cite{hunanThesis}. Category 1 refers to the movement of Agent 2 to the left of the group, category 2 to the movement of Agent 2 to the right of the group and category 3 to the movement of agent 2 through the middle of the oncoming group.}
     \label{tab:RealWorldDistanceDeviation}
 \end{table}
 
@@ -482,27 +497,40 @@ The metrics in Section~\ref{sec:metrics_used} can be broadly grouped into two ki
         \end{tabular}
 %     \end{adjustbox}
 %     \vspace{ - 05 mm}
-    \caption{Maximum deviation and trajectory length obtained for the simulation of the experimental scenario in~\cite{HuNanThesis}}
+    \caption{Maximum deviation and trajectory length obtained for the simulation of the experimental scenario in~\cite{hunanThesis}}
     \label{tab:IBPDistanceDeviation}
 \end{table}
 
-Figure~\ref{fig:TimeBasedMeasurements} gives a summary of the time based measurements from the simulation results. Nan et al observed that one of the problems with existing motion planning systems was that there was a significant slowing of agent 2 when it gets closer to the other agents; whereas in the real world results all three participants maintained there speed. When RVO2 is used with IBP there is dip in speed of participant 2 but this lasts for less than a second as shown in Fig~\ref{fig:SpeedIBPPlot}. For the rest of the simulation, the agent maintains it's speed. Fig.~\ref{fig:DistanceIBPPlot} shows the inter agent distances as a function of time. As in the real world experiments of Nan et al. it can be seen that agents 1 and 3 maintain a relatively constant value. It can also be seen that, at it's closest point, as in the experiment, agent 2 becomes closer to one of agent 1 and 3 than they are to each other. This is better than the results produced by RVO2 and Social Force using a normal sensor range as shown in Fig.~\ref{} and Fig.~\ref{} taken from Hu Nan's Thesis.
+Figures~\ref{fig:SpeedIBPPlot} and~\ref{fig:DistanceIBPPlot} illustrate the temporal measurements from the simulation results for RVO2, Social Force and RVO2 with IBP. Hu et al observed that one of the problems with existing motion planning systems was that there was a significant slowing of agent 2 when it gets closer to the other agents ( Figure~\ref{fig:SpeedIBPPlot}); whereas in the real world results all three participants maintained their speed. When RVO2 is used with IBP there is dip in speed of participant 2 but this lasts for less than a second as shown in Fig~\ref{fig:SpeedIBPPlot}. For the rest of the simulation, the agent maintains it's speed.
+
+\begin{figure}[!tb]
+  \centering
+  \subfloat[Agent 2]{\includegraphics[width=0.9\textwidth]{SpeedPlot-agent2.png}}
+   \\
+   \subfloat[Agent 1]{\includegraphics[width=0.9\textwidth]{SpeedPlot-agent1.png}}
+   \\
+    \subfloat[Agent 3]{\includegraphics[width=0.9\textwidth]{SpeedPlot-agent3.png}}
+  \caption{Plot of speed against time for various models and the experimental data.}
+  \label{fig:SpeedIBPPlot}
+\end{figure}
+
+Fig.~\ref{fig:DistanceIBPPlot} shows the inter agent distances as a function of time. As in the real world experiments of Hu et al. it can be seen that agents 1 and 3 maintain a relatively constant value. It can also be seen that, at it's closest point, as in the experiment, agent 2 becomes closer to one of agent 1 and 3 than they are to each other. This is better than the results produced by RVO2 and Social Force using a normal sensor range as shown in Fig.~\ref{fig:DistanceIBPPlot-RVO2} and Fig.~\ref{fig:DistanceIBPPlot-SF}.
+
 
 
 
 
 \begin{figure}[!tb]
   \centering
-  \subfloat[Speed against Time]{\label{fig:SpeedIBPPlot}\includegraphics[width=3in]{SpeedPlot.png}}
-  \hspace{1pt}
-% \\
-   \subfloat[Distance against Time]{\label{fig:DistanceIBPPlot}\includegraphics[width=3in]{DistancePlot.png}}
-   % \\
-   % \subfloat[Curvature against Time]{\label{fig:CurvatureIBPPlot}\includegraphics[scale=0.05]{CurvaturePlot.png}}
-   % \hspace{3pt}
-    % \subfloat[Deviation against Time]{\label{fig:DeviationIBPPlot}\includegraphics[scale=0.05]{DeviationPlot.png}}
-  \caption{Time dependent measures for RVO2 using IBP.}
-  \label{fig:TimeBasedMeasurements}
+  \subfloat[Experiment]{\includegraphics[width=4in]{DistancePlot-RVO2-IBP.png}}
+  \\
+   \subfloat[IBP-RVO2]{\label{fig:DistanceIBPPlot-IBP}\includegraphics[width=4in]{DistancePlot-RVO2-IBP.png}}
+   \\
+   \subfloat[RVO2]{\label{fig:DistanceIBPPlot-RVO2}\includegraphics[width=4in]{DistancePlot-RVO2.png}}
+   \\
+    \subfloat[Social Force]{\label{fig:DistanceIBPPlot-SF}\includegraphics[width=4in]{DistancePlot-SocialForce.png}}
+  \caption{Plot of inter agent distances over time for various models and the experimental data.}
+  \label{fig:DistanceIBPPlot}
 \end{figure}
 
 % section experimental_validation (end)
@@ -510,11 +538,11 @@ Figure~\ref{fig:TimeBasedMeasurements} gives a summary of the time based measure
 \section{Summary and Future Work}
 \label{IBP:Conclusion}
 
-In this chapter, the Information Based Perception model for agents which is based on perceived information rather than spatial distance has been introduced. It's been argued through that this is a more appropriate model of human perception for crowd and egress simulation. The behavior of this system has been illustrated through experiments. It has been shown and argued that this creates more realistic group avoidance behavior. The idea that humans have limited perception capacity such that they only process certain obstacles more relevant to collision avoidance is incorporated; this in turn will result in a reduction in efficiency of collision avoidance. The real world experiments conducted by Nan et al. were introduced and comparison of simulation results against experimental results showed that Information Based Perception can produce more realistic behavior.
+In this chapter, an Information Based Perception model for agents which is based on perceived information rather than spatial distance has been introduced. It's been argued through that this is a more appropriate model of human perception for crowd and egress simulation. The behavior of this system has been demonstrated through experiments and compared to the results produced by real world experiments. It has been shown and argued that this creates more realistic group avoidance behavior. The idea that humans have limited perception capacity such that they only process certain obstacles more relevant to collision avoidance is incorporated; this in turn will result in a reduction in efficiency of collision avoidance. The real world experiments conducted by Hu et al. were introduced and comparison of simulation results against experimental results showed that Information Based Perception can replicate the results produced by the experiments.
 
 
 
 The IBP model can be extended so that during filtering it can recognize cues that contain event and environment information as well. This can be passed as input to the Event Identification system which is described in more detailed in Chapter~\ref{chapter:PreEvacuationBehavior}. Also, one aspect of the model that has not been explored much is the quantification of information limits and appropriate definitions of interest; real world experiments could be conducted to attempt to quantify these parameters. The third criteria which was mentioned in Sect.~\ref{IBP:Filtering}, i.e.\ the inherent interestingness of perceived objects, could also be the subject of these real world experiments.
 
-In emergency situations, according to Ozel~\cite{Ozel:2001tn}, humans start perceiving cues in the environment differently. The idea of modeling different cues and their effect on the agent's information processing capabilities as suggested by Kuligowski~\cite{Kuligowski:2009un} is an idea that will be discussed in more detail in Chapter~\ref{chapter:PreEvacuationBehavior}. As mentioned by Hill~\cite{Hill:1999ww} there is also a reciprocal effect of cognition on perception where agents would turn towards objects of more interest. These could also be incorporated into a later version of the IBP model.
+In emergency situations, according to Ozel~\cite{Ozel:2001tn}, humans start perceiving cues in the environment differently. The idea of modeling different cues and their effect on the agent's information processing capabilities as suggested by Kuligowski~\cite{Kuligowski:2009un} is an idea that will be discussed in more detail in Chapter~\ref{chapter:PreEvacuationBehavior}. As mentioned by Hill~\cite{Hill:1999ww} there is also a reciprocal effect of cognition on perception where agents would turn towards objects of more interest. These could also be incorporated into a later version of the IBP model. In the next chapter, a model for how perceived cues can be used for identifying events and modelling pre evacuation behavior is presented.
 

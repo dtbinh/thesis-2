@@ -1,0 +1,120 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: vaisagh_thesis.aux
+A level-1 auxiliary file: Introduction.aux
+Case mismatch error between cite keys HuNanThesis and hunanthesis
+---line 395 of file vaisagh_thesis.aux
+ : \citation{HuNanThesis
+ :                      }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys HuNanThesis and hunanthesis
+---line 396 of file vaisagh_thesis.aux
+ : \citation{HuNanThesis
+ :                      }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys HuNanThesis and hunanthesis
+---line 397 of file vaisagh_thesis.aux
+ : \citation{HuNanThesis
+ :                      }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys HuNanThesis and hunanthesis
+---line 398 of file vaisagh_thesis.aux
+ : \citation{HuNanThesis
+ :                      }
+I'm skipping whatever remains of this command
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 13235 items from 5000.
+Database file #1: thesis.bib.bib
+Warning--I didn't find a database entry for "Zhou:2010:CMS:1842722.1842725"
+Warning--I didn't find a database entry for "Gwynne1999741"
+Warning--I didn't find a database entry for "Snape:2012"
+Warning--I didn't find a database entry for "ageOfEmpires:2013"
+Warning--I didn't find a database entry for "PhysRevE.51.4282"
+Warning--I didn't find a database entry for "PEDFull:2011"
+Warning--I didn't find a database entry for "Mordvintsev:2012"
+Warning--I didn't find a database entry for "Klupfel:2003wa"
+Warning--I didn't find a database entry for "Latane:1969wm"
+Warning--I didn't find a database entry for "Nagai:2004kl"
+Warning--I didn't find a database entry for "Hoekstra:2010"
+Warning--I didn't find a database entry for "Yuan:2007ja"
+Warning--I didn't find a database entry for "Yamamoto:2007dc"
+Warning--I didn't find a database entry for "Klein:2009"
+Warning--I didn't find a database entry for "Marconi2002"
+Warning--I didn't find a database entry for "nishinari2004extended"
+Warning--I didn't find a database entry for "Qi:2011kv"
+Warning--I didn't find a database entry for "IntelligentAgentsWoolridge"
+Warning--I didn't find a database entry for "BDI"
+Warning--I didn't find a database entry for "CognitiveMapCitation"
+Warning--I didn't find a database entry for "hunanpaper"
+Warning--I didn't find a database entry for "hunanthesis"
+Warning--I didn't find a database entry for "CGF:CGF1090"
+Warning--I didn't find a database entry for "HuNan2013"
+Warning--I didn't find a database entry for "JOHANSSON2008"
+Warning--I didn't find a database entry for "Hughes:2003"
+Warning--I didn't find a database entry for "Helbing:2012"
+Warning--I didn't find a database entry for "Tajima:2001to"
+Warning--I didn't find a database entry for "isobe2004experiment"
+Warning--I didn't find a database entry for "fruin1992designing"
+Warning--I didn't find a database entry for "Bauer2011"
+Warning--I didn't find a database entry for "Seyfried2008"
+Warning--I didn't find a database entry for "Lin:1991it"
+Warning--I didn't find a database entry for "Abdi:DISTATIS"
+Warning--I didn't find a database entry for "Yang2013"
+Warning--I didn't find a database entry for "Yang2011"
+Warning--I didn't find a database entry for "Pelechano:2008uo"
+Warning--I didn't find a database entry for "Pengfei:2011us"
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty year in Viswanathan:ut
+Warning--edition ordinal word "Fourth Edition" may be too high (or improper) for conversion in Whittle:2006vsa
+Warning--empty booktitle in Siegel19759
+
+Done.
+You've used 145 entries,
+            4039 wiz_defined-function locations,
+            1818 strings with 35173 characters,
+and the built_in function-call counts, 107139 in all, are:
+= -- 8842
+> -- 2361
+< -- 916
++ -- 1272
+- -- 389
+* -- 5119
+:= -- 16396
+add.period$ -- 323
+call.type$ -- 145
+change.case$ -- 165
+chr.to.int$ -- 2106
+cite$ -- 148
+duplicate$ -- 7781
+empty$ -- 8764
+format.name$ -- 492
+if$ -- 24667
+int.to.chr$ -- 0
+int.to.str$ -- 145
+missing$ -- 1317
+newline$ -- 486
+num.names$ -- 169
+pop$ -- 2923
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 4
+skip$ -- 8254
+stack$ -- 0
+substring$ -- 5034
+swap$ -- 6407
+text.length$ -- 214
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 145
+warning$ -- 3
+while$ -- 544
+width$ -- 148
+write$ -- 1454
+(There were 4 error messages)
