@@ -1,10 +1,10 @@
 %!TEX root = vaisagh_thesis.tex
 
-\chapter{An Information Processing Based Approach Perception Modelling}\footnote{This chapter was presented at the Cyberworlds 2011 Conference~\cite{Viswanathan:2011uy} and further explored in the extended version published in the Transactions on Computational Science~\cite{Viswanathan:ut}. This chapter additionally contains some validation of the model against real world experimental data.}
+\chapter{An Information Processing Based Approach Perception Modelling}
 \label{chapter:IBP}
 
 % The aim of this thesis is to create an agent based fire egress simulation that models human behavior as accurately as possible.
-A model of perception is a core component of any behavior model for egress simulation. This chapter introduces a novel agent based approach to modeling perception that takes into consideration the limitations of human perception.
+The first essential buidling block identified in the previous chapter and a core component of any behavior model for egress simulation is perception. This chapter introduces a novel agent based approach to modeling perception that takes into consideration the limitations of human perception.
 
 Agent-Based Models (ABMs) consist of large-numbers of heterogeneous, autonomous entities inhabiting a spatially explicit, partially observable environment; macro level dynamics are said to emerge through the asynchronous interactions among these entities~\cite{Bonabeau:2002um,Epstein:1999vn}. Each of these individual entities will iterate through a sense-think-act cycle, where agents obtain information from their environment through {\em sensing}, make a decision through {\em thinking} and finally carry out their decision by {\em acting}. In many application areas in which ABMs have been applied, including crowd simulation, the emphasis is generally on describing thought processes accurately via rules. However, sensing is a critical aspect in the modeling process and can greatly impact both the individual and emergent properties of the system.
 
@@ -22,7 +22,7 @@ For IBP, the assumption is made that this limited capacity results in humans bei
 
 This chapter explains and illustrates the working and usefulness of an Information Based Perception system for agents. Its viability is demonstrated through the implementation of a simple moving agent and by incorporating information based processing into the agent's motion planning system. Why motion planning only? Besides being one of the major components of Agent Based Crowd Simulation, motion planning is also a process in which the effects of using a new perception system can be observed easily. The experiments towards the end of this chapter illustrate the significant effects that a modified sensing and perception system can have on an existing \emph{motion planning} algorithm. The results produced are also compared against real world experiments to demonstrate that the results produced are realistic.
 
-The remainder of this chapter is organized as follows: Section~\ref{IBP:ReviewPerception} gives some background on how humans perceive the world around them; the IBP model itself is introduced in Section~\ref{IBP:Theory}; following this, Section~\ref{IBP:MotionPlanning} presents an analyses some of the existing work in motion planning; in Section~\ref{IBP:Results} presents the work done in visual, experimental and quantitative validation; finally, Section~\ref{IBP:Conclusion} concludes this chapter and gives an overview of the work that needs to be done.
+The remainder of this chapter is organized as follows: Section~\ref{IBP:ReviewPerception} gives some background on how humans perceive the world around them; the IBP model itself is introduced in Section~\ref{IBP:Theory}; following this, Section~\ref{IBP:MotionPlanning} presents an analyses some of the existing work in motion planning; in Section~\ref{IBP:Results} presents the work done in visual, experimental and quantitative validation; finally, Section~\ref{IBP:Conclusion} concludes this chapter and gives an overview of the work that needs to be done.\footnote{This chapter was presented at the Cyberworlds 2011 Conference~\cite{Viswanathan:2011uy} and further explored in the extended version published in the Transactions on Computational Science~\cite{Viswanathan:ut}. This chapter additionally contains some validation of the model against real world experimental data.}
 
 \section{Limits of Human Perception}
 \label{IBP:ReviewPerception}
@@ -462,12 +462,12 @@ The metrics in Section~\ref{sec:metrics_used} can be broadly grouped into two ki
         \end{tabular}
 %     \end{adjustbox}
 %     \vspace{ - 05 mm}
-    \caption{Maximum deviation and path length according to experiments conducted Hu~\cite{hunanThesis}. Category 1 refers to the movement of Agent 2 to the left of the group, category 2 to the movement of Agent 2 to the right of the group and category 3 to the movement of agent 2 through the middle of the oncoming group.}
+    \caption{Maximum deviation and path length according to experiments conducted by Hu~\cite{hunanThesis}. Category 1 refers to the movement of Agent 2 to the left of the group, category 2 to the movement of Agent 2 to the right of the group and category 3 to the movement of agent 2 through the middle of the oncoming group.}
     \label{tab:RealWorldDistanceDeviation}
 \end{table}
 
 \begin{table}[h]
-\label{tab:RealWorldDistanceDeviation}
+\label{tab:SimulationDistanceDeviation}
 \centering
 %     \begin{adjustbox}{width=\textwidth,center}
     % \begin{adjustbox}{center}

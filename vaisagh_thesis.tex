@@ -13,6 +13,7 @@
 
 
 \usepackage{array}
+\usepackage{amsmath}
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{topcapt}
@@ -72,6 +73,8 @@
 \makeatother
 
 \renewcommand\bibname{References} % Name the bibliography as references
+
+
 
 \usepackage{fancyhdr} % Fancy header with chapter and section header on alternate pages...
 \pagestyle{fancy}
@@ -135,7 +138,7 @@
 
 		\vspace {1 cm}
 		{\small
-		March 2014
+		\today
 		}
 
 	}
@@ -177,7 +180,7 @@
 	\input{Conclusion.tex}
 
 	\appendix
-	\input{appendixa.tex}
+	% \input{appendixa.tex}
     \input{appendixb.tex}
 
 	\bibliographystyle{IEEEtran} %style with square brackets

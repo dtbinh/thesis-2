@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"survi",
+				"survivedPlotSeveralRooms"
+			],
+			[
 				"distance",
 				"distancesPerTimestep"
 			],
@@ -510,28 +514,16 @@
 			[
 				"Subs",
 				"subscribing"
-			],
-			[
-				"featured",
-				"featured_tutorials"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Thesis.TODO",
+			"file": "vaisagh_thesis.tex",
 			"settings":
 			{
-				"buffer_size": 536,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "InfoBasedArchitecture.tex",
-			"settings":
-			{
-				"buffer_size": 25012,
+				"buffer_size": 4458,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,32 +531,23 @@
 			"file": "PreEvacuation.tex",
 			"settings":
 			{
-				"buffer_size": 19435,
+				"buffer_size": 32810,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "// you can also use imports, for example:\n// import java.math.*;\nclass Solution {\n    public int[] solution(String S, int[] P, int[] Q) {\n        int N= S.length();\n        int M= P.length;\n        \n        int[][] minArray = new int[N+1][4];\n        for(int i=0;i<=N;i++){\n            \n            for(int j=0;j<4;j++){\n               \n                if(i==0){\n                    minArray[i][j]=-1;\n                }else{\n                    minArray[i][j]=minArray[i-1][j];\n                }\n            }\n            \n            \n            int currentNum=0;\n            \n            switch(S.charAt(i-1)){\n                case 'A':currentNum=0;\n                        break;\n                case 'C':currentNum=1;\n                        break;\n                case 'G':currentNum=2;\n                        break;\n                case 'T': currentNum=3;\n                        break;\n            }\n            minArray[i][currentNum]=i;\n           \n            \n        }\n        \n        int[] result = new int[M];\n        for(int i=0;i<M;i++){\n            int min = P[i]+1;\n            int max = Q[i]+1;\n            \n            for(int j=0;j<4;j++){\n                if(minArray[min][j]>minArray[min-1][j] || minArray[max][j] >minArray[min][j]){\n                    result[i]=j+1;\n                    break;\n                }\n            }\n            \n        }\n        return result;\n    }\n}\n",
+			"file": "/E/ibevac/createGraphs.py",
 			"settings":
 			{
-				"buffer_size": 1407,
-				"line_ending": "Unix",
-				"name": "// you can also use imports, for example:"
+				"buffer_size": 11636,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "InfoBasedPerception.tex",
 			"settings":
 			{
-				"buffer_size": 63883,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "LiteratureReview.tex",
-			"settings":
-			{
-				"buffer_size": 90346,
+				"buffer_size": 63950,
 				"line_ending": "Unix"
 			}
 		}
@@ -572,9 +555,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 81.0,
 		"selected_items":
 		[
+			[
+				"reconf",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
 			[
 				"task",
 				"Tasks: Complete"
@@ -796,7 +783,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 453.0
+		"width": 424.0
 	},
 	"console":
 	{
@@ -825,23 +812,32 @@
 	},
 	"file_history":
 	[
-		"/Users/vaisaghvt/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
-		"/C/Users/vaisagh/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeX.sublime-build",
-		"/E/Dropbox/HuNan calculation/findDistanceAndLength.py",
+		"/E/ibevac/1ab77d2d-9191-439a-9559-b4f47da64056.dmp",
+		"/E/Dropbox/analysisCodeShare/plotTrust.py",
+		"/E/Dropbox/Tex/Thesis/InfoBasedArchitecture.tex",
+		"/E/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
 		"/E/Dropbox/Tex/Thesis/Conclusion.tex",
-		"/E/Dropbox/Tex/Thesis/PreEvacuation.tex",
 		"/E/Dropbox/Tex/Thesis/appendixb.tex",
 		"/E/Dropbox/Tex/Thesis/appendixa.tex",
 		"/E/Dropbox/Tex/Thesis/acknow.tex",
 		"/E/Dropbox/Tex/Thesis/abstract.tex",
-		"/E/Dropbox/Tex/Thesis/TheRemainingModules.tex",
-		"/E/Dropbox/Tex/Thesis/SpatialKnowledgeModelling.tex",
 		"/E/Dropbox/Tex/Thesis/MotionPlanner.tex",
-		"/E/Dropbox/Tex/Thesis/LiteratureReview.tex",
+		"/C/Users/vaisagh/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
 		"/E/Dropbox/Tex/Thesis/Introduction.tex",
-		"/E/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
 		"/E/Dropbox/Tex/Thesis/vaisagh_thesis.tex",
+		"/E/Dropbox/Tex/Thesis/PreEvacuation.tex",
+		"/E/Dropbox/Tex/Thesis/LiteratureReview.tex",
+		"/E/Dropbox/Tex/MY_CV/fullCVVaisagh.tex",
+		"/C/Users/vaisagh/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeX.sublime-build",
+		"/E/Dropbox/Tex/Thesis/SpatialKnowledgeModelling.tex",
+		"/E/Dropbox/Tex/exploration journal paper/Exploration paper/submissionFolder/ExplorationPaper_apa.tex",
 		"/E/Dropbox/Tex/Thesis/thesis.sublime-project",
+		"/C/Users/vaisagh/Downloads/newGame.py",
+		"/E/ibevac/createGraphs.py",
+		"/E/Dropbox/Tex/Thesis/Thesis.TODO",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
+		"/E/Dropbox/HuNan calculation/findDistanceAndLength.py",
+		"/E/Dropbox/Tex/Thesis/TheRemainingModules.tex",
 		"/E/Dropbox/Tex/Thesis/thesis.bib",
 		"/C/Users/vaisagh/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeXTools Preferences.sublime-settings",
 		"/E/Dropbox/Tex/Thesis/$out_dir.fdb_latexmk",
@@ -943,16 +939,7 @@
 		"/Users/vaisaghvt/djangoProjects/ideatory/templates/wizards/my_projects.html",
 		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/terms.html",
 		"/Users/vaisaghvt/Downloads/html-1/privacy_policy.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/requirements.txt",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/socialaccount/signup.html",
-		"/Users/vaisaghvt/Downloads/html-1/project.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/likes/inclusion_tags/likes.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/scripts/likes.js",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/techfest_project.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/scripts/dropzone.min.js",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/scripts/repo.min.js",
-		"/Users/vaisaghvt/djangoProjects/ideatory/missions/forms.py",
-		"/Users/vaisaghvt/djangoProjects/ideatory/missions/serializers.py"
+		"/Users/vaisaghvt/djangoProjects/ideatory/requirements.txt"
 	],
 	"find":
 	{
@@ -1009,6 +996,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"survivedPlotOld",
+			"fig:SurvivalPlot",
+			"# fig, axs = plt.subplots(nrows=1, ncols=1, sharex=False, sharey=False)\n	# survivedPlotNew(conn,axs)\n\n	# #betterStartPlotOld(conn,axs)\n	# plt.show()",
+			"clarity",
+			"0.3",
+			"textwidth",
+			"egress",
+			"most",
+			"sideways",
+			"sodeways",
+			"sqlConnector",
+			"scale=0.5",
+			"milling",
+			"PreEvac:intro",
 			"footnote",
 			"LitRev",
 			"Nan",
@@ -1122,21 +1123,7 @@
 			"EASY",
 			"TUTORIAL_TYPES",
 			"Tutorial_types",
-			"ifequal field",
-			"click",
-			"subscribe",
-			"function",
-			"subscribe",
-			"subscrib",
-			"p>",
-			"newsletter",
-			"#0088cc",
-			"1171b7",
-			"#1171b7",
-			"#117b17",
-			"newsletter",
-			"h2",
-			"about"
+			"ifequal field"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1184,86 +1171,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Thesis.TODO",
+					"file": "vaisagh_thesis.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 536,
+						"buffer_size": 4458,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								511,
-								511
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "InfoBasedArchitecture.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25012,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								23049,
-								23289
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"keep focus": true,
-							"spell_check": true,
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 7102.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "PreEvacuation.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19435,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11016,
-								11016
+								1989,
+								1989
 							]
 						],
 						"settings":
@@ -1272,85 +1197,87 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3408.0,
+						"translation.y": 1363.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
+					"file": "PreEvacuation.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1407,
+						"buffer_size": 32810,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1407,
-								1407
+								30129,
+								30129
 							]
 						],
 						"settings":
 						{
 							"WordCountShouldRun": true,
-							"auto_name": "// you can also use imports, for example:",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"spell_check": true,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 684.0,
+						"translation.y": 14522.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "InfoBasedPerception.tex",
+					"buffer": 2,
+					"file": "/E/ibevac/createGraphs.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 63883,
+						"buffer_size": 11636,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2865,
-								2847
+								7170,
+								7170
 							]
 						],
 						"settings":
 						{
 							"WordCountShouldRun": true,
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 425.0,
+						"translation.y": 4488.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "LiteratureReview.tex",
+					"buffer": 3,
+					"file": "InfoBasedPerception.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 90346,
+						"buffer_size": 63950,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18831,
-								18847
+								33987,
+								33663
 							]
 						],
 						"settings":
@@ -1359,10 +1286,10 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 24201.0,
+						"translation.y": 15712.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1370,7 +1297,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 42.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -1414,7 +1341,7 @@
 	"project": "thesis.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1423,16 +1350,68 @@
 		"selected_items":
 		[
 			[
-				"ibp",
+				"info",
 				"InfoBasedPerception.tex"
+			],
+			[
+				"event",
+				"PreEvacuation.tex"
+			],
+			[
+				"",
+				"InfoBasedPerception.tex"
+			],
+			[
+				"mot",
+				"MotionPlanner.tex"
+			],
+			[
+				"intro",
+				"Introduction.tex"
+			],
+			[
+				"the",
+				"vaisagh_thesis.tex"
+			],
+			[
+				"thes",
+				"vaisagh_thesis.tex"
+			],
+			[
+				"appe",
+				"appendixa.tex"
+			],
+			[
+				"conc",
+				"Conclusion.tex"
+			],
+			[
+				"pre",
+				"PreEvacuation.tex"
+			],
+			[
+				"percep",
+				"InfoBasedPerception.tex"
+			],
+			[
+				"motion",
+				"MotionPlanner.tex"
+			],
+			[
+				"spati",
+				"SpatialKnowledgeModelling.tex"
+			],
+			[
+				"lit",
+				"LiteratureReview.tex"
 			],
 			[
 				"liter",
 				"LiteratureReview.tex"
 			],
 			[
-				"pre",
-				"PreEvacuation.tex"
+				"ibp",
+				"InfoBasedPerception.tex"
 			],
 			[
 				"thesis",
@@ -1440,10 +1419,6 @@
 			],
 			[
 				"in",
-				"InfoBasedArchitecture.tex"
-			],
-			[
-				"info",
 				"InfoBasedArchitecture.tex"
 			],
 			[
@@ -1455,15 +1430,7 @@
 				"InfoBasedPerception.tex"
 			],
 			[
-				"lit",
-				"LiteratureReview.tex"
-			],
-			[
 				"into",
-				"Introduction.tex"
-			],
-			[
-				"intro",
 				"Introduction.tex"
 			],
 			[
@@ -1811,10 +1778,6 @@
 				"templates/tutorials/tutorial_hint.html"
 			],
 			[
-				"",
-				"missions/forms.py"
-			],
-			[
 				"vi",
 				"wizards/views.py"
 			],
@@ -1897,42 +1860,6 @@
 			[
 				"flaun",
 				"static/ideatory/scripts/js/flaunt.js"
-			],
-			[
-				"nav.",
-				"static/ideatory/images/nav.svg"
-			],
-			[
-				"drop.s",
-				"static/ideatory/images/drop.svg"
-			],
-			[
-				"slider",
-				"static/ideatory/css/slider.css"
-			],
-			[
-				"reset",
-				"static/ideatory/css/reset.css"
-			],
-			[
-				"pro_",
-				"static/ideatory/css/pro_slider.css"
-			],
-			[
-				"bas",
-				"templates/tutorials/base.html"
-			],
-			[
-				"soci",
-				"templates/wizards/social_connections.html"
-			],
-			[
-				"idet",
-				"static/ideatory/css/ideatory.css"
-			],
-			[
-				"rese",
-				"templates/wizards/password_reset.html"
 			]
 		],
 		"width": 0.0

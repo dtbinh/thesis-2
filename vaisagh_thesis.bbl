@@ -21,6 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Kuligowski:2009un}
+E.~D. Kuligowski, ``{The Process of Human Behavior in Fire},'' National
+  Institute of Standards and Technological, Tech. Rep. 1632, May 2009.
+
 \bibitem{Arthur:2010uy}
 B.~Arthur. (2010, Dec.) {Complexity Economics 2}.
 
@@ -28,12 +32,40 @@ B.~Arthur. (2010, Dec.) {Complexity Economics 2}.
 G.~K. Still, ``{Crowd Dynamics},'' Ph.D. dissertation, University of Warwick,
   University of Warwick, Department of Mathematics, Aug. 2000.
 
+\bibitem{Zhou:2010:CMS:1842722.1842725}
+\BIBentryALTinterwordspacing
+S.~Zhou, D.~Chen, W.~Cai, L.~Luo, M.~Y.~H. Low, F.~Tian, V.~S.-H. Tay, D.~W.~S.
+  Ong, and B.~D. Hamilton, ``Crowd modeling and simulation technologies,''
+  \emph{ACM Trans. Model. Comput. Simul.}, vol.~20, no.~4, pp. 20:1--20:35,
+  Nov. 2010. [Online]. Available:
+  \url{http://doi.acm.org/10.1145/1842722.1842725}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Gwynne:1999vi}
+\BIBentryALTinterwordspacing
+S.~Gwynne, E.~Galea, M.~Owen, P.~Lawrence, and L.~Filippidis, ``A review of the
+  methodologies used in the computer simulation of evacuation from the built
+  environment,'' \emph{Building and Environment}, vol.~34, no.~6, pp. 741 --
+  749, 1999. [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0360132398000572}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Regelous:2011vt}
 S.~Regelous and K.~Mannion. (2011) {Massive Software -- Simulating Life}.
 
 \bibitem{Reynolds:1987vm}
 C.~W. Reynolds, ``{Flocks, herds and schools: A distributed behavioral
   model},'' \emph{Computer Graphics}, vol.~21, no.~4, pp. 25--34, Jul. 1987.
+
+\bibitem{Snape:2012}
+J.~Snape, ``Reciprocal collision avoidance and navigation for video games,'' in
+  \emph{Game Developers Conf.}, San Francisco, Calif., March 2012.
+
+\bibitem{ageOfEmpires:2013}
+\BIBentryALTinterwordspacing
+R.~E. Ensemble~Studios, Big Huge~Games, ``Age of empires,'' April 2013.
+  [Online]. Available: \url{http://ageofempiresonline.com/en/}
+\BIBentrySTDinterwordspacing
 
 \bibitem{Viswanathan:ut}
 V.~Viswanathan and M.~Lees, ``{Modeling and Analyzing the Human Cognitive
@@ -97,10 +129,6 @@ R.~L. Paulsen, ``{Human behavior and fires: An introduction},'' \emph{Fire
 J.~D. Sime, ``{Affiliative Behavior During Escape to Building Exits},''
   \emph{Journal of environmental psychology}, vol.~3, pp. 21--41, 1983.
 
-\bibitem{Ozel:2001tn}
-F.~Ozel, ``{Time Pressure and Stress as a Factor During Emergency Egress},''
-  \emph{Safety Science}, vol.~38, pp. 95--107, 2001.
-
 \bibitem{Pires:2005gs}
 T.~T. Pires, ``{An approach for modeling human cognitive behavior in evacuation
   models},'' \emph{Fire Safety Journal}, vol.~40, no.~2, pp. 177--189, Mar.
@@ -115,9 +143,9 @@ P.~M.~A. Sloot, A.~Schoneveld, and J.~De~Ronde, ``{Large-scale simulations of
   complex systems, part I: conceptual framework},'' \emph{Working Papers},
   1997.
 
-\bibitem{Kuligowski:2009un}
-E.~D. Kuligowski, ``{The Process of Human Behavior in Fire},'' National
-  Institute of Standards and Technological, Tech. Rep. 1632, May 2009.
+\bibitem{Ozel:2001tn}
+F.~Ozel, ``{Time Pressure and Stress as a Factor During Emergency Egress},''
+  \emph{Safety Science}, vol.~38, pp. 95--107, 2001.
 
 \bibitem{Andree:2008td}
 K.~Andr{\'e}e and B.~Eriksson, ``{Cultural differences in an evacuation
@@ -288,12 +316,6 @@ M.~Isobe, D.~Helbing, and T.~Nagatani, ``{Many-particle simulation of the
 J.~M. Watts~Jr, ``{Computer models for evacuation analysis},'' \emph{Fire
   Safety Journal}, vol.~12, pp. 237--245, 1987.
 
-\bibitem{Gwynne:1999vi}
-S.~M.~V. Gwynne, E.~R. Galea, M.~Owen, P.~J. Lawrence, and L.~Filippidas, ``{A
-  Review of the Methodologies Used in the Computer Simulation of Evacuation
-  From the Built Environment},'' \emph{Building and Environment}, vol.~34,
-  no.~6, pp. 741--749, Nov. 1999.
-
 \bibitem{Kuligowski:2005tt}
 E.~D. Kuligowski, ``{4.4 Review of 28 Egress Models},'' in \emph{Workshop on
   Building Occupant Movement During Fire Emergencies}, 2005.
@@ -427,11 +449,6 @@ S.~Russel and P.~Norvig, ``{Intelligent Agents},'' in \emph{Artificial
   Intelligence: A Modern Approach}.\hskip 1em plus 0.5em minus 0.4em\relax
   Prentive-Hall, Inc., 1995, pp. 30--52.
 
-\bibitem{Russel:1995wca}
-------, ``{Informed Search and Exploration},'' in \emph{Artificial
-  Intelligence: A Modern Approach}.\hskip 1em plus 0.5em minus 0.4em\relax
-  Prentice Hall, 1995, pp. 122--147.
-
 \bibitem{Nan:2011vr}
 H.~Nan, M.~Lees, S.~Zhou, and V.~Viswanathan, ``{Pattern Based Motion For Crowd
   Simulation},'' \emph{Transactions on Edutainment}, pp. 1--10, 2011.
@@ -454,6 +471,16 @@ S.~J. Guy, J.~van~den Berg, and M.~C. Lin, ``{Geometric methods for multi-agent
 H.~Yeh, S.~Curtis, S.~Patil, and J.~van~den Berg, ``{Composite agents},'' in
   \emph{Symposium on Computer Animation}.\hskip 1em plus 0.5em minus
   0.4em\relax University of North Carolina, 2008.
+
+\bibitem{Viswanathan:2011uy}
+V.~Viswanathan and M.~Lees, ``{An Information-Based Perception Model for
+  Agent-Based Crowd and Egress Simulation},'' in \emph{2011 International
+  Conference on Cyberworlds (CW)}, Jul. 2011, pp. 38--45.
+
+\bibitem{Viswanathan:2012vt}
+------, ``{An Information Processing Based Model of Pre-evacuation Behavior for
+  Agent Based Egress Simulation},'' in \emph{Pedestrian and Evacuation Dynamics
+  2012}, May 2012, pp. 1--8.
 
 \bibitem{Hochberg:1953eh}
 J.~Hochberg and E.~McAlister, ``{A Quantitative Approach, to Figural
@@ -540,11 +567,6 @@ W.~Daamen and S.~P. Hoogendoorn, ``{Controlled Experiments to Derive Walking
   Behaviour},'' \emph{Journal of Transport and Infrastructure Research},
   vol.~3, no.~1, pp. 1--19, 2003.
 
-\bibitem{npelechano:2008ug}
-N.~Pelechano, C.~Stocker, J.~M. Allbeck, and N.~L. Badler, ``{Being a Part of
-  the Crowd: Towards Validating VR Crowds Using Presence},'' in \emph{Multiple
-  values selected}, Estoril, Portugal, Jan. 2008, pp. 1--7.
-
 \bibitem{Anonymous:2011ba}
 X.~Pengfei, M.~Lees, H.~Nan, and V.~Viswanathan, ``{Validation of Agent-Based
   Simulation Through Human Computation : An Example of Crowd Simulation},'' in
@@ -553,6 +575,29 @@ X.~Pengfei, M.~Lees, H.~Nan, and V.~Viswanathan, ``{Validation of Agent-Based
   minus 0.4em\relax Teipei, Taiwan: School of Computer Engineering, NTU, May
   2011, pp. 1--12.
 
+\bibitem{Michael:2005:SGG:1051239}
+D.~R. Michael and S.~L. Chen, \emph{Serious Games: Games That Educate, Train,
+  and Inform}.\hskip 1em plus 0.5em minus 0.4em\relax Muska \&
+  Lipman/Premier-Trade, 2005.
+
+\bibitem{Waller:2002we}
+D.~Waller, J.~M. Loomis, R.~G. Golledge, and A.~C. Beall, ``{Place learning in
+  humans: The role of distance and direction information},'' \emph{Spatial
+  Cognition and Computation}, vol.~2, pp. 333--354, May 2002.
+
+\bibitem{O'Neill1992319}
+\BIBentryALTinterwordspacing
+M.~J. O'Neill, ``Effects of familiarity and plan complexity on wayfinding in
+  simulated buildings,'' \emph{Journal of Environmental Psychology}, vol.~12,
+  no.~4, pp. 319 -- 327, 1992. [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0272494405800805}
+\BIBentrySTDinterwordspacing
+
+\bibitem{npelechano:2008ug}
+N.~Pelechano, C.~Stocker, J.~M. Allbeck, and N.~L. Badler, ``{Being a Part of
+  the Crowd: Towards Validating VR Crowds Using Presence},'' in \emph{Multiple
+  values selected}, Estoril, Portugal, Jan. 2008, pp. 1--7.
+
 \bibitem{Bode06022014}
 \BIBentryALTinterwordspacing
 N.~W.~F. Bode, A.~U. Kemloh~Wagoum, and E.~A. Codling, ``Human responses to
@@ -560,6 +605,19 @@ N.~W.~F. Bode, A.~U. Kemloh~Wagoum, and E.~A. Codling, ``Human responses to
   \emph{Journal of The Royal Society Interface}, vol.~11, no.~91, 2014.
   [Online]. Available:
   \url{http://rsif.royalsocietypublishing.org/content/11/91/20130904.abstract}
+\BIBentrySTDinterwordspacing
+
+\bibitem{hays1992flight}
+R.~T. Hays, J.~W. Jacobs, C.~Prince, and E.~Salas, ``Flight simulator training
+  effectiveness: A meta-analysis,'' \emph{Military Psychology}, vol.~4, no.~2,
+  pp. 63--74, 1992.
+
+\bibitem{jama.282.9.861}
+\BIBentryALTinterwordspacing
+I.~S, M.~WC, H.~IR, and et~al, ``Simulation technology for health care
+  professional skills training and assessment,'' \emph{JAMA}, vol. 282, no.~9,
+  pp. 861--866, 1999. [Online]. Available: \url{+
+  http://dx.doi.org/10.1001/jama.282.9.861}
 \BIBentrySTDinterwordspacing
 
 \bibitem{DOH1949}
@@ -681,14 +739,6 @@ B.~Kuipers, D.~G. Tecuci, and B.~J. Stankiewicz, ``The skeleton in the
   \url{http://eab.sagepub.com/content/35/1/81.abstract}
 \BIBentrySTDinterwordspacing
 
-\bibitem{O'Neill1992319}
-\BIBentryALTinterwordspacing
-M.~J. O'Neill, ``Effects of familiarity and plan complexity on wayfinding in
-  simulated buildings,'' \emph{Journal of Environmental Psychology}, vol.~12,
-  no.~4, pp. 319 -- 327, 1992. [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S0272494405800805}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Montello:2004uj}
 D.~R. Montello, M.~Hegarty, A.~E. Richardson, and D.~Waller, ``{Spatial Memory
   of Real Environments, Virtual Environments, and Maps},'' in \emph{Human
@@ -769,34 +819,5 @@ S.~Luke, C.~Cioffi-Revilla, L.~Panait, K.~Sullivan, and G.~Balan, ``{MASON: A
   Multi-Agent Simulation Environment},'' \emph{Simulation : Transactions of the
   society for Modeling and Simulation International}, vol.~82, no.~7, pp.
   517--527, 2005.
-
-\bibitem{Snape:2009er}
-J.~Snape, J.~van~den Berg, S.~J. Guy, and D.~Manocha, ``{Independent navigation
-  of multiple mobile robots with hybrid reciprocal velocity obstacles},'' in
-  \emph{Intelligent Robots and Systems, 2009. IROS 2009. IEEE/RSJ International
-  Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE Press, Oct. 2009,
-  pp. 5917--5922.
-
-\bibitem{Banerjee:2011uz}
-B.~Banerjee and L.~Kraemer, ``{Evaluation and Comparison of Multi-Agent Based
-  Crowd Simulation Systems},'' \emph{Agents for games and simulations II}, pp.
-  53--66, 2011.
-
-\bibitem{Lerner:2009wj}
-A.~Lerner, Y.~Chrysanthou, A.~Shamir, and D.~Cohen-Or, ``{Data Driven
-  Evaluation of Crowds},'' \emph{Motion in Games}, pp. 75--83, 2009.
-
-\bibitem{Lerner:2010cu}
-------, ``{Context-Dependent Crowd Evaluation},'' \emph{Computer Graphics
-  Forum}, vol.~29, no.~7, pp. 2197--2206, Oct. 2010.
-
-\bibitem{VonAhn:2007wi}
-L.~Von~Ahn, ``{Human computation},'' in \emph{Proceedings of the 4th
-  international conference on Knowledge Capture}.\hskip 1em plus 0.5em minus
-  0.4em\relax Carnegie Mellon University, Pittsburgh, PA USA, Oct. 2007.
-
-\bibitem{Sterman:1987vk}
-J.~D. Sterman, ``{Testing Behavioral Simulation Models by Direct Experiment},''
-  \emph{Management Science}, vol.~33, no.~12, pp. 1572--1592, Dec. 1987.
 
 \end{thebibliography}
