@@ -38,7 +38,7 @@
 
 \setcounter{secnumdepth}{5} %subsection depth
 \setcounter{tocdepth}{5} %table of content depth
-\onehalfspacing % use 1.5 line spacing
+\doublespacing % use 1.5 line spacing
 
 \makeatletter % Some command to chnage something in the internal latex commands. No idea why this is here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
@@ -115,7 +115,7 @@
 			\par}
 		\end{figure}
         \vspace{1cm}
-        {\Large\bf An Information Processing Based Model for Emergency Egress Simulation}\\
+        {\Large\bf Modelling Behavior in Agent Based Simulations of Crowds}\\
         \vspace{3cm}
         {\bf {Vaisagh Viswanathan T}}\\
 
@@ -125,13 +125,15 @@
         \vspace{.5cm}
 
 
+        {\small {\bf {Asst. Prof. Bo An}}}\\
+        {\small {\it{and}}} \\
         {\small {\bf {Asst. Prof. Michael H. Lees}}}\\
 
-        \vspace{3cm}
+        \vspace{1cm}
 
 
 		{\small School of Computer Engineering}\\
-        \vspace{1cm}
+        \vspace{0.5cm}
 
 		{\small A thesis submitted to the Nanyang Technological University in partial fulfilment of the requirement for the degree of Doctor of Philosophy}
 		% {\small \bf {G1000347G}}
@@ -152,7 +154,7 @@
 	\pagenumbering{roman} % roman number for pre report pages.... then arabic numbers
 	\input{abstract.tex}
 
-	\newpage
+	% \newpage
 	\thispagestyle{empty}
 	\mbox{}
 	\input{acknow.tex}
@@ -160,6 +162,7 @@
 	\tableofcontents
 	\listoffigures
 	\listoftables
+
 	\newpage
 	\newenvironment{mydef}[1]{
 		\begin{definition}
@@ -181,6 +184,7 @@
 
 	\appendix
 	% \input{appendixa.tex}
+    \input{speedExpAppendix.tex}
     \input{appendixb.tex}
 
 	\bibliographystyle{IEEEtran} %style with square brackets

@@ -1,123 +1,174 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Strategies for Egress}}{12}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces EXODUS model}}{27}{figure.2.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Strategies for Egress}}{18}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces EXODUS model}}{37}{figure.2.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The Process of Evacuation}}{34}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Detailed Navigation Model}}{37}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The Process of Evacuation}}{46}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Detailed Navigation Model}}{50}{figure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Navigation Architecture}}{47}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Perception and Acting}}{49}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Breakdown of the Perception Process}}{50}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces A Multi-layered Clustering Approach}}{52}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Distance Score}}{54}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Angle Score}}{55}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Experiment 1: Group Based Perception}}{56}{figure.4.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Traditional Circular Sensor Range}}}{56}{subfigure.7.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Group Based Perception}}}{56}{subfigure.7.2}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Experiment 2: Effect of multi layered clustering}}{58}{figure.4.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Using traditional sensing}}}{58}{subfigure.8.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Using Group Based Perception}}}{58}{subfigure.8.2}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Experiment 2: Quantitative Analysis}}{59}{figure.4.9}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Black Agent- Effort}}}{59}{subfigure.9.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Black Agent- Inconvenience}}}{59}{subfigure.9.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Remaining Agents- Effort}}}{59}{subfigure.9.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Remaining Agents- Inconvenience}}}{59}{subfigure.9.4}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Experiment 3: The necessity of Group Based Perception}}{60}{figure.4.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial Scenario}}}{60}{subfigure.10.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Info limit of 4, without GBP}}}{60}{subfigure.10.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Complete knowledge, without GBP}}}{60}{subfigure.10.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Info limit of 1, with GBP}}}{60}{subfigure.10.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Info limit of 4, with GBP}}}{60}{subfigure.10.5}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Experiment 4: Effect of filtering of percept information}}{61}{figure.4.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial Scenario}}}{61}{subfigure.11.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {InfoLimit 3: Step 1}}}{61}{subfigure.11.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {InfoLimit 5: Step 1}}}{61}{subfigure.11.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {InfoLimit 3: Step 2}}}{61}{subfigure.11.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {InfoLimit 5: Step 2}}}{61}{subfigure.11.5}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces A 13.5 m x 2.5 m area is demarcated for the experiments. The participants stand 10m apart and are directed to walk towards the other end at their prefered speed.}}{62}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces The experimental setup used by Hu et al.\nobreakspace {}\cite {hunanThesis} for their controlled field experiments.}}{64}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces The data extraction process.}}{65}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces An example of the video extraction process}}{66}{figure.4.15}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Step 1}}}{66}{subfigure.15.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Step 2}}}{66}{subfigure.15.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Step 3}}}{66}{subfigure.15.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Step 4}}}{66}{subfigure.15.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Step 5}}}{66}{subfigure.15.5}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Step 6}}}{66}{subfigure.15.6}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces The trajectories of participants can be grouped into 3 categories}}{66}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Metrics proposed by Hu et al for quantitative validation of models.}}{67}{figure.4.17}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces The initial configuration of the simulation based on the experimental setup in real world experiments}}{67}{figure.4.18}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Plot of speed against time for various models and the experimental data.}}{69}{figure.4.19}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Agent 2}}}{69}{subfigure.19.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Agent 1}}}{69}{subfigure.19.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Agent 3}}}{69}{subfigure.19.3}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Plot of inter agent distances over time for various models and the experimental data.}}{71}{figure.4.20}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Experiment}}}{71}{subfigure.20.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {IBP-RVO2}}}{71}{subfigure.20.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RVO2}}}{71}{subfigure.20.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Social Force}}}{71}{subfigure.20.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Navigation Architecture}}{62}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Perception and Acting}}{65}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Breakdown of the Perception Process}}{66}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A Multi-layered Clustering Approach}}{69}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Distance Score}}{71}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Angle Score}}{72}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Experiment 1: Group Based Perception}}{74}{figure.4.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Traditional Circular Sensor Range}}}{74}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Group Based Perception}}}{74}{subfigure.7.2}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Experiment 2: Effect of multi layered clustering}}{75}{figure.4.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Using traditional sensing}}}{75}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Using Group Based Perception}}}{75}{subfigure.8.2}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Experiment 2: Quantitative Analysis}}{77}{figure.4.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Black Agent- Effort}}}{77}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Black Agent- Decision Inconvenience}}}{77}{subfigure.9.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Remaining Agents- Effort}}}{77}{subfigure.9.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Remaining Agents- Decision Inconvenience}}}{77}{subfigure.9.4}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Experiment 3: The necessity of Group Based Perception}}{78}{figure.4.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial Scenario}}}{78}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Info limit of 4, without GBP}}}{78}{subfigure.10.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Complete knowledge, without GBP}}}{78}{subfigure.10.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Info limit of 1, with GBP}}}{78}{subfigure.10.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Info limit of 4, with GBP}}}{78}{subfigure.10.5}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Experiment 4: Effect of filtering of percept information}}{80}{figure.4.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial Scenario}}}{80}{subfigure.11.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {InfoLimit 3: Step 1}}}{80}{subfigure.11.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {InfoLimit 5: Step 1}}}{80}{subfigure.11.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {InfoLimit 3: Step 2}}}{80}{subfigure.11.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {InfoLimit 5: Step 2}}}{80}{subfigure.11.5}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Corridor Experiment Screenshots}}{82}{figure.4.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {IBP - $10$ seconds}}}{82}{subfigure.12.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {RVO2 - $10$ seconds}}}{82}{subfigure.12.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {IBP - $15$ seconds}}}{82}{subfigure.12.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {RVO2 - $15$ seconds}}}{82}{subfigure.12.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {IBP - $17.5$ seconds}}}{82}{subfigure.12.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {RVO2 - $17.5$ seconds}}}{82}{subfigure.12.6}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {IBP - $20$ seconds}}}{82}{subfigure.12.7}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {RVO2 - $20$ seconds}}}{82}{subfigure.12.8}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Intersection Experiment Screenshots}}{84}{figure.4.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {RVO2+IBP-200 seconds}}}{84}{subfigure.13.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {RVO2+IBP-250 seconds}}}{84}{subfigure.13.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RVO2+IBP-300 seconds}}}{84}{subfigure.13.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {RVO2+IBP-350 seconds}}}{84}{subfigure.13.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {RVO2+IBP-400 seconds}}}{84}{subfigure.13.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {RVO2-200 seconds}}}{84}{subfigure.13.6}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {RVO2-250 seconds}}}{84}{subfigure.13.7}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {RVO2-300 seconds}}}{84}{subfigure.13.8}
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {RVO-350 seconds}}}{84}{subfigure.13.9}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Circle Experiment Screenshots}}{85}{figure.4.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {RVO2+IBP}}}{85}{subfigure.14.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {RVO}}}{85}{subfigure.14.2}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Schematic of layout of experiment area\nobreakspace {}\cite {hunanThesis}.}}{86}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Actual setup of Nan's experiments\nobreakspace {}\cite {hunanThesis}}}{87}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces The data extraction process.}}{88}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces An example of the video extraction process}}{89}{figure.4.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Step 1}}}{89}{subfigure.18.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Step 2}}}{89}{subfigure.18.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Step 3}}}{89}{subfigure.18.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Step 4}}}{89}{subfigure.18.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Step 5}}}{89}{subfigure.18.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Step 6}}}{89}{subfigure.18.6}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces The trajectories of participants can be grouped into 3 categories}}{89}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Metrics proposed by Hu et al. for quantitative validation of models\nobreakspace {}\cite {hunanThesis}.}}{90}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Layout of experiment in simulation}}{91}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Graphical illustration of the absolute difference in maximum deviations that can be seen in Table\nobreakspace {}\ref {tab:energy}.}}{92}{figure.4.22}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Inter agent distances over time.}}{93}{figure.4.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Experiment- Category 1 (55\%)\nobreakspace {}\cite {hunanThesis}}}}{93}{subfigure.23.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Experiment- Category 2 (40\%)\nobreakspace {}\cite {hunanThesis}}}}{93}{subfigure.23.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {IBP-RVO2}}}{93}{subfigure.23.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {RVO2}}}{93}{subfigure.23.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Social Force}}}{93}{subfigure.23.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The Environment Layout}}{81}{figure.5.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground Floor}}}{81}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Second Floor}}}{81}{subfigure.1.2}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The layout of the ground floor with the relevant rooms, staircases and exit marked}}{82}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces This figure shows the percentage of evacuees that survived as a function of the ambiguity with the fire being started in different rooms. While there are obvious inter room differences, it can be clearly seen that the more ambiguous an alarm, the lower the survival rate.}}{83}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces This figure shows blah}}{84}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Figure showing informed vs informing}}{85}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Figure showing the effect of milling on survival rate}}{86}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Figure showing the average time at which last agent starts evacuating}}{87}{figure.5.7}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces An illustration of the bucket model}}{102}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The Environment Layout}}{106}{figure.5.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground Floor}}}{106}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Second Floor}}}{106}{subfigure.2.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Immediate Evacuation Survival Rate Heat Map}}{107}{figure.5.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground Floor}}}{107}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Second Floor}}}{107}{subfigure.3.2}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Delayed Evacuation Survival Rate Heat Map}}{109}{figure.5.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground Floor}}}{109}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Second Floor}}}{109}{subfigure.4.2}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Survival Rate Difference Heat Map}}{110}{figure.5.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground Floor}}}{110}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Second Floor}}}{110}{subfigure.5.2}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Experiment 1: The effect of fire alarm ambiguity}}{112}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Experiment 2: The effect of having informed occupants}}{114}{figure.5.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Room 14}}}{114}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Room 30}}}{114}{subfigure.7.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Room 53}}}{114}{subfigure.7.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Room 71}}}{114}{subfigure.7.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Room 81}}}{114}{subfigure.7.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Room 190}}}{114}{subfigure.7.6}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Experiment 2: The effect of having informed occupants (contd.)}}{115}{figure.5.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Room 224}}}{115}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Room 240}}}{115}{subfigure.8.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Room 252}}}{115}{subfigure.8.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Room 377}}}{115}{subfigure.8.4}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Experiment 3: The importance of milling}}{117}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Experiment 4: The importance of spatial knowledge propagation}}{119}{figure.5.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Floor Plans of the three floors. The X indicates the starting point. The blue color indicates the prisoner locations.}}{96}{figure.6.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground Floor}}}{96}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {First Floor}}}{96}{subfigure.1.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Second Floor}}}{96}{subfigure.1.3}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces This figure shows a graphical representation of the room layout in Figure\nobreakspace {}\ref {fig:FloorPlans}}}{98}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Figure\nobreakspace {}\ref {fig:UnscaledMap} scaled by normalized number of visits as described in Equation\nobreakspace {}\ref {eq:y_equation}. Red color indicates a $y$ value of greater than $1.05$ and the green color indicates a value of less than $0.95$. The diameter of each node in this graph is scaled to $y_r \times (unscaled\ diameter)$.}}{100}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Figure\nobreakspace {}\ref {fig:scaledMap} normalized to floor instead of the total number of visits. The fact that this graph is different from Figure\nobreakspace {}\ref {fig:scaledMap} indicates that, unlike a random walker, a player differentiates betwen a simple link between rooms or corridors and a staircase which links two floors.}}{101}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces This figure shows the average coverage after 300 hops as a function of memory size.}}{104}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces This figure shows the minimum number of hops required for obtaining given coverage and shows this as a function of memory size.}}{106}{figure.6.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hops for 88\% coverage.}}}{106}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hops for 50\% coverage}}}{106}{subfigure.6.2}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces A bar chart summarizing the behavior at corridors of different types. There are definite decision points during exploration.}}{107}{figure.6.7}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces The layout of the area under consideration for analysing location recognition and memory.}}{108}{figure.6.8}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Behavior at \emph {junction A2} during the Knowledge Testing Phase.}}{109}{figure.6.9}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Behavior at \emph {Dorm Corridor} during the Knowledge Testing Phase.}}{109}{figure.6.10}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Floor Plans of the three floors}}{135}{figure.6.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground Floor}}}{135}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {First Floor}}}{135}{subfigure.1.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Second Floor}}}{135}{subfigure.1.3}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Picture Gallery}}{136}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Graphical representation of floor plan}}{139}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Markov Data Explanation}}{143}{figure.6.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {The Situation}}}{143}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Player 1}}}{143}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Player 2}}}{143}{subfigure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Player 3}}}{143}{subfigure.4.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Agent with 6-step memory}}}{143}{subfigure.4.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$6^{th}$ order Markov Agent}}}{143}{subfigure.4.6}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Visualization of room visit frequencies}}{147}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Room visit frequencies normalized to floor}}{149}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Expected coverage after 253 hops}}{150}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Minimum expected number of hops for given coverage}}{152}{figure.6.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hops for 88\% coverage.}}}{152}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hops for 50\% coverage}}}{152}{subfigure.8.2}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Existence of definite decision points}}{153}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Layout of dorm corridor}}{155}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Player behavior at junction under consideration}}{155}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Player behavior at dorm corridor}}{156}{figure.6.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Four out of eight possible configurations of a walker on the square lattice moving towards an exit in the direction $\mathaccentV {vec}17E{e}$ shown: (a) unobstructed walker, (b) walker obstructed to the left, (c) walker obstructed to the left and top, and (d) completely obstructed walker.}}{114}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces The environment setup used for the simulations in this paper.}}{117}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces In our simulations, agents are grouped into six zones based on their initial distances from the exit. The outer radii of Zones 1, 2, 3, 4, 5 and 6 are 5 m, 10 m, 15 m, 20 m, 25 m and 30 m respectively.}}{119}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces In many classification problems, we can define different distance metrics for the same set of data points to measure how dissimilar they are to each other. In this figure we show three different distance matrices D1, D2, and D3. If we perform principal component analysis (PCA) on them separately (PCA1, PCA2, PCA3), we are not likely to agree on which data points are more similar to each other. In the DISTATIS method, we first standardize the distance matrices by centering and rescaling, to get S1, S2, and S3. If two data points are indeed more similar to each other than they are with the third, then we expect this similarity structure to be reflected in S1, S2, and S3, i.e.\nobreakspace {}two standardized distance matrices would have very similar patterns of matrix elements. With this in mind, we reshape the matrices S1, S2, and S3 to make them into vectors of distances. We then compute the cross correlations between these vectors, before performing PCA on the correlation matrix C. This PCA tells us which distance matrices agree with each other more, and which less. The result is a consensus between different distance metrics, based on which a single PCA will discover the similarity structure between the data points.}}{121}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Evacuation time distributions for the (a) lattice gas, (b) social force, and (c) RVO2 models for $N = 50, 100, 150, 200, 300, 500, 1000$ agents. For each model and $N$, the distribution is built from 100 simulations.}}{122}{figure.7.5}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{122}{subfigure.5.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{122}{subfigure.5.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{122}{subfigure.5.3}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Zoned evacuation time distributions for the (a) lattice gas, (b) social force, and (c) RVO2 models for $N = 1000$ agents in six zones, with zone 1 closest to the exit and zone 6 furthest away (see Figure\nobreakspace {}\ref {fig:Zoning}). For each model, the distribution is averaged over 100 simulations.}}{124}{figure.7.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{124}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{124}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{124}{subfigure.6.3}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Passage density maps of $N = 1000$ agents averaged over 100 simulations for the (a) lattice gas, (b) social force, and (c) RVO2 models. In these color maps, the exit is located at the bottom.}}{125}{figure.7.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{125}{subfigure.7.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{125}{subfigure.7.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{125}{subfigure.7.3}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Distributions of total distance traveled for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the distribution is averaged over 100 simulations.}}{126}{figure.7.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{126}{subfigure.8.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{126}{subfigure.8.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{126}{subfigure.8.3}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Distributions of inconveniences for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the distribution is averaged over 100 simulations.}}{127}{figure.7.9}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{127}{subfigure.9.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{127}{subfigure.9.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{127}{subfigure.9.3}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Flow rates at the exit as functions of time for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the flow rate is averaged over 100 simulations.}}{129}{figure.7.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{129}{subfigure.10.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{129}{subfigure.10.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{129}{subfigure.10.3}
-\contentsline {figure}{\numberline {7.11}{\ignorespaces The flow rates for evacuation during the May 2008 Sichuan Earthquake: (top) through the check-out counters of a Walmart supermarket in Chengdu, China (\url {http://www.youtube.com/watch?v=-y38ebiAnQw}); and (bottom) through the narrow exit of a classroom in an elementary school in Sichuan, China (\url {http://www.youtube.com/watch?v=e1yapP3z_L4}).}}{129}{figure.7.11}
-\contentsline {figure}{\numberline {7.12}{\ignorespaces The DISTATIS analysis of the three models with $N = 1000$ agents. In this plot, $\tau $ is the quality of compromise, and $\lambda $ is the eigenvalue.}}{130}{figure.7.12}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Working of lattice gas model}}{163}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The environment setup used for the simulations in this paper.}}{167}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Zonal division of environment}}{169}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Visualization of DISTATIS workflow}}{171}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Evacuation time distributions}}{173}{figure.7.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{173}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{173}{subfigure.5.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{173}{subfigure.5.3}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Zoned evacuation time distributions}}{174}{figure.7.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{174}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{174}{subfigure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{174}{subfigure.6.3}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Passage density maps}}{175}{figure.7.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{175}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{175}{subfigure.7.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{175}{subfigure.7.3}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Distributions of total distance traveled}}{176}{figure.7.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{176}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{176}{subfigure.8.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{176}{subfigure.8.3}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Distributions of inconveniences}}{177}{figure.7.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{177}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{177}{subfigure.9.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{177}{subfigure.9.3}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Visualization of flow rates}}{178}{figure.7.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{178}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{178}{subfigure.10.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{178}{subfigure.10.3}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Flow rates during Sichuan earthquake equation}}{179}{figure.7.11}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces DISTATIS analysis of three models}}{179}{figure.7.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces DEPATHSS Screenshot}}{135}{figure.8.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Hop and coverage graphs different size of datasets. Seems to indicate that the peak is not dependent on data size}}{138}{figure.A.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hop and coverage for 44 players}}}{138}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hop and coverage for 22 players}}}{138}{subfigure.1.2}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Comparison of the decision bases}}{139}{figure.A.2}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Speed plot comparison}}{195}{figure.A.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Agent 2}}}{195}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Agent 1}}}{195}{subfigure.1.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Agent 3}}}{195}{subfigure.1.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Dataset size dependence of calculations}}{198}{figure.B.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hop and coverage for 44 players}}}{198}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hop and coverage for 22 players}}}{198}{subfigure.1.2}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Comparison of the decision base sizes.}}{198}{figure.B.2}

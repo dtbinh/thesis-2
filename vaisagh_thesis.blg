@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: vaisagh_thesis.aux
 A level-1 auxiliary file: Introduction.aux
@@ -8,92 +8,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 13280 items from 5000.
+Reallocated field_info (elt_size=4) to 13460 items from 5000.
 Database file #1: thesis.bib.bib
-Warning--I didn't find a database entry for "hunanThesis"
-Warning--I didn't find a database entry for "PhysRevE.51.4282"
-Warning--I didn't find a database entry for "PEDFull:2011"
-Warning--I didn't find a database entry for "Mordvintsev:2012"
-Warning--I didn't find a database entry for "Klupfel:2003wa"
-Warning--I didn't find a database entry for "Latane:1969wm"
-Warning--I didn't find a database entry for "Nagai:2004kl"
-Warning--I didn't find a database entry for "Hoekstra:2010"
-Warning--I didn't find a database entry for "Yuan:2007ja"
-Warning--I didn't find a database entry for "Yamamoto:2007dc"
-Warning--I didn't find a database entry for "Klein:2009"
-Warning--I didn't find a database entry for "Marconi2002"
-Warning--I didn't find a database entry for "nishinari2004extended"
-Warning--I didn't find a database entry for "Qi:2011kv"
-Warning--I didn't find a database entry for "IntelligentAgentsWoolridge"
-Warning--I didn't find a database entry for "BDI"
-Warning--I didn't find a database entry for "CognitiveMapCitation"
-Warning--I didn't find a database entry for "15MinuteDelayStudy"
-Warning--I didn't find a database entry for "PreEvacModel"
-Warning--I didn't find a database entry for "Viswanathan:2014"
-Warning--I didn't find a database entry for "hunanpaper"
-Warning--I didn't find a database entry for "Viswanathan2014"
-Warning--I didn't find a database entry for "Bode2013347"
-Warning--I didn't find a database entry for "CGF:CGF1090"
-Warning--I didn't find a database entry for "HuNan2013"
-Warning--I didn't find a database entry for "JOHANSSON2008"
-Warning--I didn't find a database entry for "Hughes:2003"
-Warning--I didn't find a database entry for "Helbing:2012"
-Warning--I didn't find a database entry for "Tajima:2001to"
-Warning--I didn't find a database entry for "isobe2004experiment"
-Warning--I didn't find a database entry for "fruin1992designing"
-Warning--I didn't find a database entry for "Bauer2011"
-Warning--I didn't find a database entry for "Seyfried2008"
-Warning--I didn't find a database entry for "Lin:1991it"
-Warning--I didn't find a database entry for "Abdi:DISTATIS"
-Warning--I didn't find a database entry for "Yang2013"
-Warning--I didn't find a database entry for "Yang2011"
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty year in Viswanathan:ut
-Warning--edition ordinal word "Fourth Edition" may be too high (or improper) for conversion in Whittle:2006vsa
-Warning--empty booktitle in Siegel19759
 
 Done.
-You've used 147 entries,
+You've used 188 entries,
             4039 wiz_defined-function locations,
-            1833 strings with 35929 characters,
-and the built_in function-call counts, 108096 in all, are:
-= -- 8915
-> -- 2400
-< -- 912
-+ -- 1285
-- -- 400
-* -- 5177
-:= -- 16593
-add.period$ -- 324
-call.type$ -- 147
-change.case$ -- 166
-chr.to.int$ -- 2085
-cite$ -- 150
-duplicate$ -- 7851
-empty$ -- 8847
-format.name$ -- 505
-if$ -- 24872
+            2047 strings with 43686 characters,
+and the built_in function-call counts, 140857 in all, are:
+= -- 11775
+> -- 3063
+< -- 1208
++ -- 1653
+- -- 502
+* -- 6855
+:= -- 21687
+add.period$ -- 414
+call.type$ -- 188
+change.case$ -- 213
+chr.to.int$ -- 2739
+cite$ -- 188
+duplicate$ -- 10165
+empty$ -- 11341
+format.name$ -- 643
+if$ -- 32411
 int.to.chr$ -- 0
-int.to.str$ -- 147
-missing$ -- 1342
-newline$ -- 500
-num.names$ -- 171
-pop$ -- 2986
+int.to.str$ -- 188
+missing$ -- 1713
+newline$ -- 663
+num.names$ -- 217
+pop$ -- 3731
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 4
-skip$ -- 8329
+quote$ -- 2
+skip$ -- 10920
 stack$ -- 0
-substring$ -- 4985
-swap$ -- 6453
-text.length$ -- 217
+substring$ -- 6588
+swap$ -- 8463
+text.length$ -- 295
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 147
-warning$ -- 3
-while$ -- 544
-width$ -- 150
-write$ -- 1483
-(There were 40 warnings)
+type$ -- 188
+warning$ -- 0
+while$ -- 691
+width$ -- 191
+write$ -- 1956

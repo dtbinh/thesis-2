@@ -1,0 +1,38 @@
+\documentclass{article}
+% \usepackage{natbib}
+\usepackage{colortbl}
+\usepackage[maxnames = 10, firstinits=true, isbn=false, url=false,  doi=false, style=numeric, defernumbers=true]{biblatex}
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=MyBlue, citecolor=MyBlue, urlcolor=MyBlue]{hyperref}
+%%biblatex stuff
+\addbibresource{all_publications.bib}
+\DeclareBibliographyCategory{journs}
+\DeclareBibliographyCategory{confs}
+\DeclareBibliographyCategory{books}
+\defbibheading{journs}{\subsection*{Journals}}
+\defbibheading{confs}{\subsection*{Conferences}}
+\defbibheading{books}{\subsection*{Book Chapters}}
+
+
+%%Color and hyperref
+\definecolor{MyBlue}{rgb}{0.7,0.1,0.2}
+
+% whatever you need here, basically a good idea is to use your real thesis header
+\begin{document}
+
+\renewcommand{\mkbibnamefirst}[1]{\textsc{#1}}
+\renewcommand{\mkbibnamelast}[1]{\textsc{#1}}
+\renewcommand{\mkbibnameprefix}[1]{\textsc{#1}}
+\renewcommand{\mkbibnameaffix}[1]{\textsc{#1}}
+\DeclareFieldFormat{titlecase}{\MakeSentenceCase{#1}}
+
+\DeclareFieldFormat[article, inproceedings, inbook]{title}{\textcolor{MyBlue}{#1}} % italic title with period
+
+
+\nocite{*}
+\printbibliography[heading=journs, type=article]
+\printbibliography[heading=confs, type=inproceedings]
+\printbibliography[heading=books, type=incollection]
+
+% \bibliographystyle{mystyle}
+% \bibliography{all_publications}
+\end{document}

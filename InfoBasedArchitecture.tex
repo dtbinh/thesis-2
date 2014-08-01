@@ -1,6 +1,6 @@
 %!TEX root = vaisagh_thesis.tex
 
-\chapter{The Building Blocks of Crowd Behavior During Egress}
+\chapter{The Building Blocks of a Behavior Model for Egress Simulation}
 \label{chapter:IBEVAC}
 
 In the previous chapter, the salient features of the behavior of a crowd engaging in egress were introduced. It is understood that people don't immediately exit a building on hearing a fire alarm or seeing smoke. The occupant gets only an inkling about the danger that is possible. In both these cases there is not enough information for him to get scared and make the decision to egress. If the cues are interesting enough, he then embarks on investigating to gather more information. On realizing that the situation requires some action, he forms a plan to evacuate either alone or, if possible, with his primary group members. In forming this plan of evacuation, unless he is trained for egress or very familiar with the environment, it is unlikely that he will have knowledge of all exits. As a result, he is most likely to just move to the nearest \emph{known} exit. An overview of this process of human evacuation is illustrated in Fig.~\ref{fig:EvacuationProcess}.
@@ -8,13 +8,13 @@ In the previous chapter, the salient features of the behavior of a crowd engagin
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=4in]{fig-ProcessOfEvacuation}
+\includegraphics[height=4in]{InfoBasedArchitecture/ProcessOfEvacuation}
 \caption[The Process of Evacuation]{The Process of Evacuation: This state diagram shows the different phases of behavior of a person engaging in egress and the triggers that cause phase changes}
 \label{fig:EvacuationProcess}
 \end{figure}
 
 
-Section~\ref{IBEVAC:EgressProgress} explores how a small set of core subprocesses and their interaction is necessary and sufficient to produce this evacuation process. Section~\ref{IBEVAC:Shortcomings} introduces some of the shortcomings of existing models of each of the current approaches to modelling these sub processes. Section~\ref{IBEVAC:RemainingChapters} explains how these shortcomings are addressed and overviews the key contributions of this thesis.
+A small set of core subprocesses and their interaction is necessary and sufficient to produce this evacuation process. These are introduced in Section~\ref{IBEVAC:EgressProgress}. Section~\ref{sec:shortcomings_in_existing_models} introduces some of the shortcomings of existing approaches to modelling each of these sub processes. Section~\ref{IBEVAC:Contributions} explains how these shortcomings are addressed and overviews the key contributions of this thesis.
 
 
 
@@ -24,7 +24,7 @@ Section~\ref{IBEVAC:EgressProgress} explores how a small set of core subprocesse
 \section{The Building Blocks of the Egress Process}
 \label{IBEVAC:EgressProgress}
 
-The individual behevaior of an evacuee during emergency egress was summarized above from the literature discussed in Chapter~\ref{chapter:LiteratureReview}. This section outlines the building blocks of a system that simulates crowd egress during an emergency event. The first step in simulating the behavior of any human being engaging in an activity is modelling his \emph{perception} of the environment. Once perceived, the information gained from perception is used to \emph{identify events} and trigger key actions. In the case of an egress simulation, this would be evacuation (or one of the processes leading up to it). Following this, the person tries to form an evacuation plan using the \emph{knowledge} he has of the layout of the environment and also the information that he is currently perceiving. Once such a plan is formed, a \emph{path is planned} towards this point and he moves along this path towards his goal. Thus the process of egress simulation can be said to consist of four major building blocks: perception, event identification, a knowledge model and navigation. The following sections defines and explains each of these building blocks and their significance in the evacuation process.
+The individual behevaior of an evacuee during emergency egress was summarized in Figure~\ref{fig:EvacuationProcess} from the literature discussed in Chapter~\ref{chapter:LiteratureReview}. This section outlines the building blocks of a system that simulates crowd egress during an emergency event. The first step in simulating the behavior of any human being engaging in an activity is modelling his \emph{perception} of the environment. Once perceived, the information gained from perception is used to \emph{identify events} and trigger key actions. In the case of an egress simulation, this would be evacuation (or one of the processes leading up to it). Following this, the person tries to form an evacuation plan using the \emph{knowledge} he has of the layout of the environment and also the information that he is currently perceiving. Once such a plan is formed, a \emph{path is planned} towards this point and he moves along this path towards his goal. Thus the process of egress simulation can be said to consist of four major building blocks: perception, event identification, spatial knowledge utilization and navigation. The following sections defines and explains each of these building blocks and their significance in the evacuation process.
 
 \subsection{Perception}
 \label{IBEVAC:IBP}
@@ -35,24 +35,24 @@ The individual behevaior of an evacuee during emergency egress was summarized ab
 \subsection{Event identification}
 \label{IBEVAC:EventIdentification}
 
-	  In some cases, evacuees might perceive something out of the ordinary like a ringing fire alarm or smoke or even people running away from a location. If these special percepts, known as \emph{cues}, are intriguing enough, then the occupant will set about investigating the environment in search of more cues that would help make a decision on a plan of action.. Cues are certain changes in the environment that indicate that something is wrong or different from normal~\cite{Sime:1983uy}. Thus, cues help people identify an event and a need for an action. During emergency egress, on perceiving \emph{sufficient} cues from the environment, an evacuee stops whatever task he's doing and initiates a process of investigation. Once enough evidence is gathered to convince the evacuee of danger, evacuation starts; if there is not enough information then the evacuee will likely resume their previous task. Thus identification of events is a key component of the evacuation process that is especially important for modeling pre-evacuation behavior.
+	  In some cases, evacuees might perceive something out of the ordinary like a ringing fire alarm or smoke or even people running away from a location. If these special percepts, known as \emph{cues}, are intriguing enough, then the occupant will set about investigating the environment in search of more cues that would help make a decision on a plan of action. Cues are certain changes in the environment that indicate that something is wrong or different from normal~\cite{Sime:1983uy}. Thus, cues help people identify an event and a need for an action. During emergency egress, on perceiving \emph{sufficient} cues from the environment, an evacuee stops whatever task he's doing and initiates a process of investigation. Once enough evidence is gathered to convince the evacuee of danger, evacuation starts. If enough information is not obtained then the evacuee will likely resume their previous task. Thus identification of events is a key component of the evacuation process that is especially important for modelling pre-evacuation behavior.
 
     % A person's intrinsic characteristics like age, gender and mental state determine how much information is considered enough i.e.\ the threshold. Each person keeps a track of all the cues that are perceived and when the amount of information crosses the threshold, the evidence is acted upon. In the first phase, this action would be to start investigation and in the second phase it would be the starting of the process of evacuation. In this thesis, this whole process by which the evacuee perceives, analyses and aggregates cues and identifies an event is called \emph{event identification}.
 
     In summary, event identification is the process by which the evacuee interprets perceived information and decides to proceed to the next phase of evacuation. Executing the action for a particular phase generally requires the evacuee to proceed to a particular location in the environment. This is done using the subjective knowledge that he has of the environment.
 
-\subsection{The knowledge model}
+\subsection{Spatial knowledge utilization}
 \label{IBEVAC:Knowledge}
 
-	On recognizing that there is an event to escape from, the evacuee moves towards the closest known exit. Each evacuee holds his own personal version of the map of the environment which is used for evacuation and movement in general. This personal map is called his cognitive map~\cite{CognitiveMapCitation}. In most cases, this map is not complete. In a scenario where all known exits are blocked or if the evacuee does not know any exit, he is likely to engage in some sort of exploration behavior which helps increase his knowledge and improve his cognitive map.
+	On recognizing that there is an event to escape from, the evacuee moves towards the closest known exit. Each evacuee holds his own personal version of the map of the environment which is used for evacuation and movement in general. This personal map is called his cognitive map~\cite{tolman1948}. In most cases, this map is not complete. In a scenario where all known exits are blocked or if the evacuee does not know any exit, he is likely to engage in some sort of exploration behavior which helps increase his knowledge and improve his cognitive map.
 
-    The process of knowledge modelling encompasses how the cognitive map is modelled and how it is obtained by the evacuee and his actions when insufficient knowledge is available to act. Modelling evacuee-specific \emph{knowledge} is necessary to model the heterogeneity in behavior found in real life emergency evacuations. The key function of the knowledge model for the agent is to provide it with a target to move to complete the action required based on the event identified. The actual movement towards this point is controlled by the navigation system.
+    The process of knowledge modelling encompasses the method used for modelling the cognitive map and how it is obtained by the evacuee and his actions when insufficient knowledge is available to act. Modelling evacuee-specific \emph{knowledge} is necessary to model the heterogeneity in behavior found in real life emergency evacuations. The key function of the spatial knowledge model for the agent is to provide it with a target to move to complete the action required based on the event identified. The actual movement towards this point is controlled by the navigation system.
 
 
 \subsection{Navigation}
 \label{IBEVAC:Navigation}
 
-	Navigation is defined as the process or activity of accurately ascertaining one's position and planning and following a route. In the context of egress simulation, we define navigation as the process by which an evacuee first plans his route towards a \emph{goal location} based on his cognitive map and then moves along this route towards the goal. Thus, Navigation consists of 2 distinct processes: planning a route and following the route. The former is referred to as path planning and the latter is called motion planning.
+	Navigation is defined as the process or activity of accurately ascertaining one's position and planning and following a route. In the context of egress simulation, we define navigation as the process by which an evacuee first plans his route towards a \emph{goal location} based on his cognitive map and then moves along this route towards the goal. Thus, navigation consists of 2 distinct processes: planning a route and following the route. The former is referred to as path planning and the latter is called motion planning.
 
     During emergency egress, once evacuation has started, the agent decides that it must proceed to a particular exit, say exit D. Given the current location and this goal, the path planning system recommends a sequence of locations, or waypoints, through which the agent should proceed to get to this goal. Understanding the process of path planning in agent based simulations is easier if it is divided into two parts:  A higher level path finder that finds abstract logical waypoints towards the goal, i.e. go through room A to room B to room C and take Exit D; and a lower level mechanism that translates these logical waypoints to physical locations on the map that the agent can pass through to reach it's goal. Fig.~\ref{fig:detailedNavigationModule}, which gives a mathematical overview of the navigation process, refers to the former as ``Logical Waypoint Determination'' and the latter as ``Current Waypoint Path Determination''. Once these physical waypoints are determined the actual movement towards these locations are determined by the motion planning process.
 
@@ -65,7 +65,7 @@ The individual behevaior of an evacuee during emergency egress was summarized ab
 
     \begin{figure}[!tb]
     \centering
-    \includegraphics[height=5in]{NavigationWithFormula}
+    \includegraphics[height=5in]{InfoBasedArchitecture/NavigationWithFormula}
     \caption[Detailed Navigation Model]{Mathematical description of the working of a Navigation System}
     \label{fig:detailedNavigationModule}
     \end{figure}
@@ -78,7 +78,7 @@ The individual behevaior of an evacuee during emergency egress was summarized ab
 
     % Since the Motion Planning system works on the basis of perceived obstacles and not actual obstacles, there is a chance, especially in dense environments, that the predicted velocity might cause a collision. In such cases, the lowest level \emph{Physical Consistency Check}~($PCC$) layer ensures that unnatural behavior is not produced. As the name suggests, this layer ensures that physical consistency is maintained and people don't walk through other people and static obstacles in the environment during the next time step~($t_{i+1}$). This is the only layer in the agent that uses the actual map($Env_{actual}$) and actual obstacles($O_{actual}$) instead of the personal cognitive map and perceived obstacles.
 
-    To summarize, the Navigation system receives a goal that is passed to the highest level which determines a high level route through the different areas in the environment to the goal; this waypoint is passed to the next level which determines a path towards the current waypoint that avoids dynamic obstacles and calculates the velocity of the agent in order to get to the waypoint while avoiding collisions for the next time step of the simulation.
+    To summarize, the navigation system receives a goal that is passed to the highest level which determines a high level route through the different areas in the environment to the goal; this waypoint is passed to the next level which determines a path towards the current waypoint that avoids dynamic obstacles and calculates the velocity of the agent in order to get to the waypoint while avoiding collisions for the next time step of the simulation.
 
 
 
@@ -107,47 +107,47 @@ Navigation & The routing and movement process. & Handles movement towards the ev
 \section{Shortcomings in Existing Models} % (fold)
 \label{sec:shortcomings_in_existing_models}
 
-The previous Section identified the core building blocks of an agent based model of emergency egress.
-In this thesis, the approach taken is to identify key shortcomings in each of these core aspects of agent based simulation of crowds and propose solutions to these. This section briefly describes the shortcomings in existing models and gives an overview of the rest of this thesis.
+The previous section identified the core building blocks of an agent based model of emergency egress. In Chapter~\ref{chapter:LiteratureReview}, the salient features of human behavior during egress were identified and summarized in Section~\ref{LiteratureReview:PsychSummary}. In this section, we use this to identify key research questions in each of the core building blocks, where either new modelling approaches or new understanding is necessary.
+
 
 \subsection{Perception : the lack of a realistic approach}
 \label{IBEVAC:PerceptionShortcomings}
 
 
-    Perception is the process by which agents perceive and gather information about the world around them. It is thus a crucial part of an agent based simulation of crowds. However, in most models, it is standard practice to consider a simple circular or elliptical sensor range. All agents and objects within that sensor range are perceived by the agent. One of the rare exceptions to this is the MASSegress model~\cite{Pan:2006vp} that makes use of a ray tracing algorithm to model perception. The assumptions that an agent can perceive as many objects as are there in the sensor range without any internal limit on capacity~\cite{Miller:1956tr} and that perception is simply a visual process are both simplistic. Another related consequence of the limited information processing capacity of humans is that the human brain tries to chunk similar information to improve it's efficiency. Modeling this limited information processing capacity and chunking can produce significant improvements in the realism of crowd simulations. This is demonstrated in Chapter~\ref{chapter:IBP} which introduces an Information Processing Based Perception model which takes this into account.
+    Perception is the process by which agents perceive and gather information about the world around them. It is thus a crucial part of an agent based simulation of crowds. However, in most models, it is standard practice to consider a simple circular or elliptical sensor range. All agents and objects within that sensor range are perceived by the agent. One of the rare exceptions to this is the MASSegress model~\cite{Pan:2006vp} that makes use of a ray tracing algorithm to model perception. The assumptions that an agent can perceive as many objects as are there in the sensor range without any internal limit on capacity~\cite{Miller:1956tr} and that perception is simply a visual process are both simplistic. Another related consequence of the limited information processing capacity of humans is that the human brain tries to chunk similar information to improve it's efficiency. modelling this limited information processing capacity and chunking can produce significant improvements in the realism of crowd simulations. This is demonstrated in Chapter~\ref{chapter:IBP} which introduces an Information Processing Based Perception model which takes this into account.
 
 
-\subsection{Event identification: modeling pre-evacuation behavior}
+\subsection{Event identification: modelling pre-evacuation behavior}
 \label{IBEVAC:EventIdentificationShortcomings}
 
     % The Event Knowledge Module stores the agent's beliefs about the current state of the environment.
 
-    Several studies~\cite{Kuligowski:2009un} have shown that humans do not evacuate immediately on hearing a fire alarm. In fact, the delay between hearing the alarm and actual evacuation starting can be as long as 15 minutes in some cases~\cite{15MinuteDelayStudy}. This can have significant results on the time to evacuation and the general efficiency of evacuation. However, despite several studies highlighting this, pre-evacuation behavior is hardly ever modeled. In the few instances were it is considered~\cite{PreEvacModel}, the models are rather simplistic.
+    Several studies~\cite{Kuligowski:2009un} have shown that humans do not evacuate immediately on hearing a fire alarm. This delay between hearing the alarm and actual evacuation has even resulted in deaths~\cite{Berry:2000us}. This can have significant results on the time to evacuation and the general efficiency of evacuation. However, despite several studies highlighting this, pre-evacuation behavior is hardly ever modeled. In the few instances were it is considered~~\cite{Pires:2005gs,Franca:2009el} , the models are rather simplistic.
     % In essence, there is a need for an agent to keep a track of the phase of evacuatio.
     % Event identification can be considered to be equivalent to the process of associating perceived cues with an experience in a Recognition Primed D.
 
-    Chapter~\ref{chapter:PreEvacuationBehavior} introduces a model for event identification that enables the modeling of pre-evacuation behavior and studying of its effects. Through simulation of certain scenarios, the importance and usefulness of modeling pre-evacuation behavior is demonstrated.
+    Chapter~\ref{chapter:PreEvacuationBehavior} introduces a model for event identification that enables the modelling of pre-evacuation behavior and studying of its effects. Through simulation of certain scenarios, the importance and usefulness of modelling pre-evacuation behavior is demonstrated.
 
 
-\subsection{Knowledge modeling: the effect of partial knowledge}
+\subsection{Knowledge modelling: the effect of partial knowledge}
 \label{IBEVAC:EnvironmentKnowledgeShortcomings}
 
     On deciding to evacuate an evacuee plans a path towards an exit. Ideally, this plan would be to move towards the closest exit that is known. In most cases, however, say a shopping mall or a hospital, it is highly likely that the majority of the occupants do not know emergency exit locations or the closest exits. How evacuees explore and form their memory in such a situation of partial knowledge is still an open problem.
 
     Existing simulations either assume complete knowledge or have a simplistic memory model where a single visit is remembered forever. It is unlikely that evacuees have such eidetic memories. Also, it is common to simply take a depth first approach to exploration in case of incomplete knowledge. However, there is no proof whether this is the actual way in which evacuees explore.
 
-    Chapter~\ref{chapter:SpatialKnowledgeChapter} first introduces a game based methodology for studying exploration of indoor environments and how human memory works during exploration. By comparing against a pure random walker, it is shown that humans are in fact more effective explorers than a random walker but not as efficient as is portrayed in existing computational models of egress. The study also revealed some interesting patterns in the strategies used for exploring complex indoor environments.l
+    Chapter~\ref{chapter:SpatialKnowledgeChapter} first introduces a game based methodology for studying exploration of indoor environments and how human memory works during exploration. By comparing against a pure random walker, it is shown that humans are in fact more effective explorers than a random walker but not as efficient as is portrayed in existing computational models of egress. The study also revealed some interesting patterns in the strategies used for exploring complex indoor environments.
 
 
 \subsection{Navigation: analyzing motion planning systems}
 \label{IBEVAC:NavigationShortcomings}
 
     The motion planning system used in an agent based simulation of egress is a key determinant of the kind of behavior produced by the model. The motion planning system used can have a great impact on the patterns of motion produced and the dynamics of the crowd.
-    There are several different models of motion planning that have been proposed that sometimes work in very different ways. Each model has it's strengths and there are studies that demonstrate their strengths. However, despite the abundance of models, there aren't any standard methods for comparing different models.
+    There are several different models of motion planning that have been proposed that sometimes work in very different ways. Each model has its strengths and there are studies that demonstrate their strengths. However, despite the abundance of models, there aren't any standard methods for comparing different models.
     In Chapter~\ref{chapter:MotionPlannerComparison} of this thesis, we quantitatively compare and evaluate existing motion planning systems and determine a metric that can be used for differentiating existing motion planning systems and compare their working against real world data.
 
 
-% section perception_modeling (end)
+% section perception_modelling (end)
 
 
 
@@ -160,15 +160,15 @@ Following is a summary of the contributions of the remaining chapters:
 
 \begin{itemize}
     \item \textbf{Chapter~\ref{chapter:IBP}:} This chapter presents an Information Processing Based model of perception which was presented at the Cyberworlds 2011 Conference~\cite{Viswanathan:2011uy} and further explored in the extended version published in the Transactions on Computational Science~\cite{Viswanathan:ut}. This chapter additionally contains some validation of the model against real world experimental data.
-    \item \textbf{Chapter~\ref{chapter:PreEvacuationBehavior}:} This chapter presents a method for modelling pre-evacuation behavior in emergency egress simulation. The model was presented as a poster and short paper at the Pedestrian and Evacuation Dynamics Conference in 2012~\cite{Viswanathan:2012vt}.
-    \item \textbf{Chapter~\ref{chapter:SpatialKnowledgeChapter}:} A game based methodology for studying the effect of memory on exploration of complex indoor environments and different exploration strategies used is presented in this chapter. A paper highlighting the contributions of this paper has been submitted to Cognitive Science: A Multidisciplinary Journal.
-    \item \textbf{Chapter~\ref{chapter:MotionPlannerComparison}:} The final contribution of this thesis is a methodology for quantitatively comparing different motion planning systems which was also used to compare some popular models against real world data. These findings were published in European Physica Journal B~\cite{Viswanathan:2014}.
+    \item \textbf{Chapter~\ref{chapter:PreEvacuationBehavior}:} This chapter presents a method for modelling pre-evacuation behavior in emergency egress simulation. The model was presented at the Pedestrian and Evacuation Dynamics Conference in 2012 and published in 2014~\cite{Viswanathan:2012vt}.
+    \item \textbf{Chapter~\ref{chapter:SpatialKnowledgeChapter}:} A game based methodology for studying the effect of memory on exploration of complex indoor environments and different exploration strategies used is presented in this chapter. The work done in this chapter has been submitted for review to Nature Scientific Reports.
+    \item \textbf{Chapter~\ref{chapter:MotionPlannerComparison}:} The final contribution of this thesis is a methodology for quantitatively comparing different motion planning systems which was also used to compare some popular models against real world data. These findings were published in European Physical Journal B~\cite{Viswanathan2014}.
 \end{itemize}
 
 
 \section{Summary}
 \label{IBEVAC:Summary}
 
-% This chapter introduced the IBEVAC Agent Architecture for modeling complex behavior in agent based simulations of crowds. This architecture consists of and \emph{Information Based Perception Module} as a sensor, a \emph{Knowledge Base} consisting of both events and the environment, an \emph{Agent Descriptor Module} which could be used to specify the properties of the agents, a \emph{Planning Module} for planning and a \emph{Navigation Module} and \emph{Communication Module} as actuators. The rest of the thesis develops each of these components to form.
+% This chapter introduced the IBEVAC Agent Architecture for modelling complex behavior in agent based simulations of crowds. This architecture consists of and \emph{Information Based Perception Module} as a sensor, a \emph{Knowledge Base} consisting of both events and the environment, an \emph{Agent Descriptor Module} which could be used to specify the properties of the agents, a \emph{Planning Module} for planning and a \emph{Navigation Module} and \emph{Communication Module} as actuators. The rest of the thesis develops each of these components to form.
 
-This chapter first summarized the behavior of an evacuee during evacuation from the literature in the previous Chapter. Following this, the four essential building blocks for an agent based simulation of emergency egress was presented. Following this, shortcomings of existing approaches to modeling these parts were identified and the contributions of the remaining chapters was introduced.
+This chapter first summarized the behavior of an evacuee during evacuation from the literature in the previous Chapter. Following this, the four essential building blocks for an agent based simulation of emergency egress was presented. Following this, shortcomings of existing approaches to modelling these parts were identified and the contributions of the remaining chapters was introduced.

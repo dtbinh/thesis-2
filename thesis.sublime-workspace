@@ -4,12 +4,48 @@
 		"selected_items":
 		[
 			[
-				"survi",
-				"survivedPlotSeveralRooms"
+				"an_",
+				"an_information_processing_based_approach_to_perception"
 			],
 			[
 				"distance",
-				"distancesPerTimestep"
+				"distanceTravelled"
+			],
+			[
+				"deviation",
+				"deviationPerTimeStep"
+			],
+			[
+				"roo",
+				"room_id"
+			],
+			[
+				"cen",
+				"center_y"
+			],
+			[
+				"bott",
+				"bottom_right"
+			],
+			[
+				"bo",
+				"bottom_right"
+			],
+			[
+				"top",
+				"top_left"
+			],
+			[
+				"las",
+				"lastPersonPlotForMilling"
+			],
+			[
+				"survivedPlotFor",
+				"survivedPlotForMilling"
+			],
+			[
+				"survi",
+				"survivedPlotSeveralRooms"
 			],
 			[
 				"agen",
@@ -478,86 +514,30 @@
 			[
 				"mission",
 				"mission_history	(local, instance)"
-			],
-			[
-				"regis",
-				"registered_mission_list	(local, instance)"
-			],
-			[
-				"register",
-				"registered_missions"
-			],
-			[
-				"reg",
-				"registered_open_mission_list	(local, instance)"
-			],
-			[
-				"fea",
-				"featured_projects  (variable)"
-			],
-			[
-				"features",
-				"featured_projects"
-			],
-			[
-				"fe",
-				"featured_project	(local, instance)"
-			],
-			[
-				"featu",
-				"featured_projects	(local, instance)"
-			],
-			[
-				"scro",
-				"scrollToWhatToDo"
-			],
-			[
-				"Subs",
-				"subscribing"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "vaisagh_thesis.tex",
+			"file": "/E/gitolite-admin/conf/gitolite.conf",
 			"settings":
 			{
-				"buffer_size": 4458,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "PreEvacuation.tex",
-			"settings":
-			{
-				"buffer_size": 32810,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/E/ibevac/createGraphs.py",
-			"settings":
-			{
-				"buffer_size": 11636,
+				"buffer_size": 2161,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "InfoBasedPerception.tex",
-			"settings":
-			{
-				"buffer_size": 63950,
-				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 81.0,
+		"height": 247.0,
 		"selected_items":
 		[
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
 			[
 				"reconf",
 				"LaTeXTools: Reconfigure and migrate settings"
@@ -783,7 +763,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 424.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -812,11 +792,58 @@
 	},
 	"file_history":
 	[
+		"/E/Dropbox/Tex/vaisagh thesis/SpatialKnowledgeModelling.tex",
+		"/E/cosmos/EADS-MRTSimulation/src/main/java/sg/edu/ntu/eads/mrtsimulation/MRTSimulationModel.java",
+		"/E/cosmos/COSMOS-Projects/COSMOS/src/main/java/cosmos/motion/collision/rvo2/RVO2.java",
+		"/E/ibevac/createGraphs.py",
+		"/E/gitolite-admin/.git/description",
+		"/E/gitolite-admin/.git/HEAD",
+		"/E/ibevac/.gitignore",
+		"/E/gitolite-admin/keydir/vaisagh@macbook.pub",
+		"/E/gitolite-admin/keydir/jinghui.pub",
+		"/E/gitolite-admin/keydir/vaisagh@default.pub",
+		"/C/Users/vaisagh/ABM-Pattern-printing/trial1",
+		"/E/git repositories/gitolite-admin/.git/HEAD",
+		"/E/gitolite-admin/conf/gitolite.conf",
+		"/E/git repositories/gitolite-admin/.git/config",
+		"/C/Users/vaisagh/.ssh/known_hosts",
+		"/C/Users/vaisagh/Downloads/sandeepkumar.sk(546).csv",
+		"/E/Dropbox/Tex/vaisagh thesis/PreEvacuation.tex",
+		"/E/Dropbox/Tex/vaisagh thesis/speedExpAppendix.tex",
+		"/E/Dropbox/Tex/vaisagh thesis/Conclusion.tex",
+		"/E/Dropbox/Tex/vaisagh thesis/InfoBasedArchitecture.tex",
+		"/E/Dropbox/Tex/vaisagh thesis/thesis.bib",
+		"/E/Dropbox/Tex/vaisagh thesis/Introduction.tex",
+		"/E/Dropbox/Tex/vaisagh thesis/InfoBasedPerception.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/TheRemainingModules.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/SpatialKnowledgeModelling.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/PreEvacuation.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/InfoBasedArchitecture.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/LiteratureReview.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/acknow.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/MotionPlanner.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/Introduction.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/abstract.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/thesis.bib",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/vaisagh_thesis.tex",
+		"/E/Dropbox/PhD/HuNan calculation/findDistanceAndLength.py",
+		"/E/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/all_publications.bib",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/Thesis.TODO",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/thesis.sublime-project",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/Conclusion.tex",
+		"/Users/vaisaghvt/Dropbox/Tex/Thesis/vaisagh_thesis.aux",
+		"/Users/vaisaghvt/Dropbox/Tex/exploration journal paper/Exploration paper/apa restructured/exploration paper restructured.sublime-project",
+		"/E/Dropbox/Tex/Thesis/Conclusion.tex",
+		"/C/Users/vaisagh/Documents/listOfRooms.csv",
+		"/C/Users/vaisagh/AppData/Local/Temp/Rar$DIa0.873/crowdCount.MarchApril.20140422.csv",
+		"/C/Users/vaisagh/AppData/Local/Temp/Rar$DIa0.569/crowdDensity.MarchApril.20140422.csv",
+		"/E/Dropbox/Tex/Thesis/vaisagh_thesis.tex",
+		"/E/Dropbox/Tex/Thesis/PreEvacuation.tex",
 		"/E/ibevac/1ab77d2d-9191-439a-9559-b4f47da64056.dmp",
 		"/E/Dropbox/analysisCodeShare/plotTrust.py",
 		"/E/Dropbox/Tex/Thesis/InfoBasedArchitecture.tex",
-		"/E/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
-		"/E/Dropbox/Tex/Thesis/Conclusion.tex",
 		"/E/Dropbox/Tex/Thesis/appendixb.tex",
 		"/E/Dropbox/Tex/Thesis/appendixa.tex",
 		"/E/Dropbox/Tex/Thesis/acknow.tex",
@@ -824,8 +851,6 @@
 		"/E/Dropbox/Tex/Thesis/MotionPlanner.tex",
 		"/C/Users/vaisagh/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
 		"/E/Dropbox/Tex/Thesis/Introduction.tex",
-		"/E/Dropbox/Tex/Thesis/vaisagh_thesis.tex",
-		"/E/Dropbox/Tex/Thesis/PreEvacuation.tex",
 		"/E/Dropbox/Tex/Thesis/LiteratureReview.tex",
 		"/E/Dropbox/Tex/MY_CV/fullCVVaisagh.tex",
 		"/C/Users/vaisagh/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeX.sublime-build",
@@ -833,9 +858,7 @@
 		"/E/Dropbox/Tex/exploration journal paper/Exploration paper/submissionFolder/ExplorationPaper_apa.tex",
 		"/E/Dropbox/Tex/Thesis/thesis.sublime-project",
 		"/C/Users/vaisagh/Downloads/newGame.py",
-		"/E/ibevac/createGraphs.py",
 		"/E/Dropbox/Tex/Thesis/Thesis.TODO",
-		"/Users/vaisaghvt/Dropbox/Tex/Thesis/InfoBasedPerception.tex",
 		"/E/Dropbox/HuNan calculation/findDistanceAndLength.py",
 		"/E/Dropbox/Tex/Thesis/TheRemainingModules.tex",
 		"/E/Dropbox/Tex/Thesis/thesis.bib",
@@ -849,11 +872,6 @@
 		"/E/Dropbox/Tex/exploration journal paper/Exploration paper/apa/ExplorationPaper_apa.tex",
 		"/E/Dropbox/EADS Project/Deliverables folder/scenario-latest-2.xml",
 		"/C/Users/vaisagh/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
-		"/Users/vaisaghvt/Dropbox/Tex/Thesis/thesis.sublime-project",
-		"/Users/vaisaghvt/Dropbox/Tex/Thesis/InfoBasedArchitecture.tex",
-		"/Users/vaisaghvt/Dropbox/Tex/Thesis/Introduction.tex",
-		"/Users/vaisaghvt/Dropbox/Tex/Thesis/LiteratureReview.tex",
-		"/Users/vaisaghvt/Dropbox/Tex/Thesis/Conclusion.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/TheRemainingModules.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/LiteratureReview.tex",
 		"/Users/vaisagh/Dropbox/Tex/Thesis/thesis.bib",
@@ -901,45 +919,7 @@
 		"/Users/vaisaghvt/djangoProjects/ideatory/templates/missions/base.html",
 		"/Users/vaisaghvt/djangoProjects/ideatory/missions/urls.py",
 		"/Users/vaisaghvt/djangoProjects/ideatory/templates/missions/mission_page.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/techfest_projects.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/home_page.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/missions/admin.py",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/tutorials/public_project.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/missions/templatetags/missions_extras.py",
-		"/Users/vaisaghvt/djangoProjects/ideatory/missions/migrations/0041_auto__add_internshiphost__add_internship__add_wizardinternshiprelation.py",
-		"/Users/vaisaghvt/djangoProjects/ideatory/ideatory/settings.py",
-		"/Users/vaisaghvt/djangoProjects/ideatory/.ebextensions/ideatory.config",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/wizards/social_connections.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/base.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/business.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/about.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/account/base.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/wizards/login.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/wizards/home.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/wizards/profile.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/zocial.css",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/zocial.min.css",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/style.css",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/our_team.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/partners.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/css/media.css",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/css/dropzone.css",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/css/dropzone.min.css",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/account/login.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/style.min.css",
-		"/Users/vaisaghvt/djangoProjects/ideatory/static/ideatory/css/ideatory.min.css",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/tutorials/register_project.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/wizards/urls.py",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/avatar/changes.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/techfest_page.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/account/email/email_confirmation_message.txt",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/policy.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/techfest_terms.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/explore.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/wizards/my_projects.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/terms.html",
-		"/Users/vaisaghvt/Downloads/html-1/privacy_policy.html",
-		"/Users/vaisaghvt/djangoProjects/ideatory/requirements.txt"
+		"/Users/vaisaghvt/djangoProjects/ideatory/templates/ideatory/techfest_projects.html"
 	],
 	"find":
 	{
@@ -996,6 +976,91 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"crosit",
+			"AAAAB3NzaC1yc2EAAAABJQAAAIEApjvW2rTmV7CEkZUjpsSUaDaiMCzEhWnjfiFrcmi0BgBmA6t9nzJhIPTDF2zK8j3+Wp0b7AV6lxHqIQ/vEU1Sza8KSVJjmS/LJn+JIGtEa/BHYv+ThX8b2XGKcFfRxY/QWc99bMEHHOsvcve3y8qs9ksMlh3gUG+rVTFHX+oujAU",
+			"FONT_SIZE",
+			"survivedPlotForManagement",
+			"font",
+			"RVO2",
+			"fig:coverage",
+			"fig:introScreenshot",
+			"linberg",
+			"Montello",
+			"Iroquois",
+			"crucial",
+			"not availa",
+			"lack of",
+			"helbing",
+			"state",
+			"modeling",
+			"pre",
+			"boland",
+			"like the ",
+			"lord",
+			"The lord of",
+			"navigation",
+			"authorities",
+			"modeling",
+			"primary",
+			"modelling",
+			"Modelling",
+			"survey",
+			"pelechano",
+			"ozel",
+			"inter-disciplinary",
+			"inter disciplinary",
+			"interdisciplinary",
+			"gallery room",
+			"pre-evac",
+			"demonst",
+			"MyStatisticsPlugin",
+			"minecraft",
+			"video",
+			"findDistanceMeasurements",
+			"findAllMeasurements",
+			"deviationPerTimeStep",
+			"clustered",
+			"findAllMeasurements",
+			"findDistanceMeasurements",
+			"experimentCalculations",
+			"loadRecordsFromFile",
+			"horizon",
+			"tau",
+			"white",
+			"int(round(float(heatmap[room_id]['mean'])))",
+			"40",
+			"saveHeatMap",
+			"getHeatmapForImmed",
+			"survivedPlotForManagement",
+			"informedPlotSeveralRooms",
+			"\\begin{figure*}[!tb",
+			"\\begin{figure}",
+			"begin",
+			"Simulation technology for health care professional skills training and assessment",
+			",\n",
+			"A Pattern",
+			"viswanathan",
+			"dual ",
+			"a dual",
+			"% Future work",
+			"% Limitations",
+			"Figure showing informed vs informing",
+			"0.45",
+			"Second Floor",
+			"Ground Floor",
+			"ground floor",
+			"Ground Floor",
+			"\\includegraphics",
+			"hspace",
+			"0.75",
+			"scales",
+			"center_y",
+			"), ",
+			"center_y",
+			"annot",
+			"\n",
+			"\\n",
+			"survivedPlotForMilling",
 			"survivedPlotOld",
 			"fig:SurvivalPlot",
 			"# fig, axs = plt.subplots(nrows=1, ncols=1, sharex=False, sharey=False)\n	# survivedPlotNew(conn,axs)\n\n	# #betterStartPlotOld(conn,axs)\n	# plt.show()",
@@ -1038,92 +1103,7 @@
 			"human ",
 			"human computation",
 			"computation",
-			"human computaiton",
-			"abstract",
-			"figure",
-			"scaledmap",
-			"begin\\{figure",
-			"begin{figure",
-			"figure",
-			"floor",
-			"Corr A2",
-			"ackno",
-			"navigation",
-			"<number>2</number>",
-			"<number>",
-			"<number>1</number>",
-			"<number>2</number>",
-			"/~her",
-			"IBEVAC",
-			"scale",
-			"Exp4",
-			"05",
-			"=4cm",
-			"i ",
-			"tb",
-			"check",
-			"width=\\textwidth,",
-			"7.5cm",
-			"still",
-			"Wang:2009wh",
-			"Wang:2009",
-			"highest value",
-			" \n",
-			"cite",
-			"sloot",
-			"Ozel",
-			"adaptive",
-			"non adaptive",
-			"nonadaptive",
-			"non adaptive",
-			"mhl",
-			"Mukerji",
-			"helbing",
-			"mason",
-			"figure",
-			"Metrics",
-			"Experiments",
-			"Limitations",
-			"Shill",
-			"keith",
-			"zia",
-			"keith",
-			"2013",
-			"still",
-			"current",
-			"user_image_upload",
-			"success",
-			"dd",
-			"dropzone",
-			"internship_detail",
-			"login",
-			"mission_detail",
-			"mission",
-			"time_line",
-			"hand",
-			"5",
-			"shadow",
-			"now",
-			"\n@ajax(require_POST=True)\ndef subscribe_to_ideatory(request):\n    email_address = request.POST.get(\"email\")\n    MAILCHIMP_LIST_ID = '1844034d87'\n\n    mailChimpList = utils.get_connection().get_list_by_id(MAILCHIMP_LIST_ID)\n\n    account_details = {'EMAIL': email_address}\n    try:\n        member = mailChimpList.get_member(email_address)\n        if member.status == 'subscribed':\n            result = False\n        else:\n            account_details['FNAME'] = member.merges['FNAME']\n            account_details['LNAME'] = member.merges['LNAME']\n            result = mailChimpList.subscribe(email_address, account_details, email_type='html', double_optin=False,send_welcome=True, update_existing=True)\n    except KeyError:\n        result = mailChimpList.subscribe(email_address, account_details, email_type='html', double_optin=False,send_welcome=True, update_existing=True)\n\n    return {\n        'subscription_status': result ,\n    }",
-			"ideatory",
-			"'),\n",
-			"http",
-			"http:",
-			"(http|https)",
-			"(http|https):(\\/\\/www\\.joinmethere\\.tv\\/User_Videos\\/([a-zA-Z0-9]+)\\.mp4)",
-			"^(http|https)\\:",
-			"^(http|https)\\:(\\/\\/www\\.joinmethere\\.tv",
-			"{{ project.video|youtube_embed_url|safe }}",
-			"video",
-			"mission",
-			"Mission",
-			"mission_wizard",
-			"mission",
-			"host",
-			"EASY",
-			"TUTORIAL_TYPES",
-			"Tutorial_types",
-			"ifequal field"
+			"human computaiton"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1131,6 +1111,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			",",
 			"Hu",
 			"%!TEX root = vaisagh_thesis.tex",
 			"non-adaptive",
@@ -1171,125 +1152,64 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "vaisagh_thesis.tex",
+					"file": "/E/gitolite-admin/conf/gitolite.conf",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4458,
+						"buffer_size": 2161,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1989,
-								1989
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1363.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "PreEvacuation.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 32810,
-						"regions":
-						{
-						},
-						"selection":
-						[
+								634,
+								640
+							],
 							[
-								30129,
-								30129
+								731,
+								737
+							],
+							[
+								810,
+								816
+							],
+							[
+								825,
+								831
+							],
+							[
+								836,
+								842
+							],
+							[
+								849,
+								855
+							],
+							[
+								870,
+								876
+							],
+							[
+								892,
+								898
 							]
 						],
 						"settings":
 						{
 							"WordCountShouldRun": true,
-							"spell_check": true,
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 14522.0,
+						"translation.y": 483.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/E/ibevac/createGraphs.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11636,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7170,
-								7170
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4488.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "InfoBasedPerception.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 63950,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								33987,
-								33663
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 15712.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1332,7 +1252,7 @@
 	},
 	"output.exec":
 	{
-		"height": 268.0
+		"height": 253.0
 	},
 	"output.find_results":
 	{
@@ -1341,7 +1261,7 @@
 	"project": "thesis.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1350,24 +1270,112 @@
 		"selected_items":
 		[
 			[
-				"info",
-				"InfoBasedPerception.tex"
+				"spa",
+				"SpatialKnowledgeModelling.tex"
+			],
+			[
+				"ib",
+				"InfoBasedArchitecture.tex"
+			],
+			[
+				"bib",
+				"thesis.bib"
+			],
+			[
+				"intr",
+				"Introduction.tex"
+			],
+			[
+				"int",
+				"Introduction.tex"
+			],
+			[
+				"ack",
+				"acknow.tex"
+			],
+			[
+				"motion",
+				"MotionPlanner.tex"
+			],
+			[
+				"spat",
+				"SpatialKnowledgeModelling.tex"
 			],
 			[
 				"event",
 				"PreEvacuation.tex"
 			],
 			[
-				"",
+				"ibp",
 				"InfoBasedPerception.tex"
+			],
+			[
+				"lit",
+				"LiteratureReview.tex"
+			],
+			[
+				"in",
+				"Introduction.tex"
+			],
+			[
+				"con",
+				"Conclusion.tex"
+			],
+			[
+				"spai",
+				"SpatialKnowledgeModelling.tex"
+			],
+			[
+				"pre",
+				"PreEvacuation.tex"
+			],
+			[
+				"thesis",
+				"thesis.bib"
+			],
+			[
+				"intro",
+				"Introduction.tex"
+			],
+			[
+				"abas",
+				"abstract.tex"
+			],
+			[
+				"s",
+				"SpatialKnowledgeModelling.tex"
+			],
+			[
+				"even",
+				"PreEvacuation.tex"
+			],
+			[
+				"thesi",
+				"thesis.bib"
+			],
+			[
+				"spati",
+				"SpatialKnowledgeModelling.tex"
 			],
 			[
 				"mot",
 				"MotionPlanner.tex"
 			],
 			[
-				"intro",
-				"Introduction.tex"
+				"perception",
+				"InfoBasedPerception.tex"
+			],
+			[
+				"percep",
+				"InfoBasedPerception.tex"
+			],
+			[
+				"info",
+				"InfoBasedPerception.tex"
+			],
+			[
+				"",
+				"InfoBasedPerception.tex"
 			],
 			[
 				"the",
@@ -1386,44 +1394,8 @@
 				"Conclusion.tex"
 			],
 			[
-				"pre",
-				"PreEvacuation.tex"
-			],
-			[
-				"percep",
-				"InfoBasedPerception.tex"
-			],
-			[
-				"motion",
-				"MotionPlanner.tex"
-			],
-			[
-				"spati",
-				"SpatialKnowledgeModelling.tex"
-			],
-			[
-				"lit",
-				"LiteratureReview.tex"
-			],
-			[
 				"liter",
 				"LiteratureReview.tex"
-			],
-			[
-				"ibp",
-				"InfoBasedPerception.tex"
-			],
-			[
-				"thesis",
-				"vaisagh_thesis.tex"
-			],
-			[
-				"in",
-				"InfoBasedArchitecture.tex"
-			],
-			[
-				"intr",
-				"Introduction.tex"
 			],
 			[
 				"perc",
@@ -1432,10 +1404,6 @@
 			[
 				"into",
 				"Introduction.tex"
-			],
-			[
-				"spa",
-				"SpatialKnowledgeModelling.tex"
 			],
 			[
 				"models",
@@ -1812,54 +1780,6 @@
 			[
 				"mi",
 				"missions/templatetags/missions_extras.py"
-			],
-			[
-				"my_",
-				"templates/wizards/my_projects.html"
-			],
-			[
-				"my_pro",
-				"templates/wizards/my_projects.html"
-			],
-			[
-				"explre",
-				"templates/ideatory/explore.html"
-			],
-			[
-				"plugin",
-				"static/ideatory/scripts/js/plugin.js"
-			],
-			[
-				"mac",
-				"static/ideatory/scripts/js/mac_js.js"
-			],
-			[
-				"jquer",
-				"static/ideatory/scripts/js/jquery.cslider.js"
-			],
-			[
-				"cslider",
-				"static/ideatory/css/slider.css"
-			],
-			[
-				"color",
-				"static/ideatory/scripts/js/jquery.colorbox.js"
-			],
-			[
-				"caroud",
-				"static/ideatory/scripts/js/jquery.carouFredSel-6.0.4-packed.js"
-			],
-			[
-				"jquery",
-				"static/ideatory/scripts/js/jquery-1.7.1.min.js"
-			],
-			[
-				"html",
-				"static/ideatory/scripts/js/html5.js"
-			],
-			[
-				"flaun",
-				"static/ideatory/scripts/js/flaunt.js"
 			]
 		],
 		"width": 0.0
@@ -1870,16 +1790,20 @@
 		"selected_items":
 		[
 			[
+				"",
+				"~/djangoProjects/ideatory/ideatoryWebsite.sublime-project"
+			],
+			[
 				"idea",
 				"~/djangoProjects/ideatory/ideatoryWebsite.sublime-project"
 			],
 			[
 				"apa",
-				"E:\\Dropbox\\Tex\\exploration journal paper\\Exploration paper\\apa\\Exploration Project APA.sublime-project"
+				"~/Dropbox/Tex/exploration journal paper/Exploration paper/apa restructured/exploration paper restructured.sublime-project"
 			],
 			[
-				"",
-				"/Users/vaisaghvt/Library/Application Support/Sublime Text 2/Packages/CheckTypos3/TypoCheck.sublime-project"
+				"apap",
+				"~/Dropbox/Tex/exploration journal paper/Exploration paper/apa restructured/exploration paper restructured.sublime-project"
 			],
 			[
 				"chec",
@@ -1967,7 +1891,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 179.0,
+	"side_bar_width": 156.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

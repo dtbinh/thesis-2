@@ -3,23 +3,23 @@
 \chapter{Quantitative Comparison Between Motion Planning Systems for Evacuation Planning and Evaluation}
 \label{chapter:MotionPlannerComparison}
 
-The previous chapters have introduced a novel model of perception, a framework for modeling pre-evacuation behavior and an analysis into how humans explore environments. While modeling pre-evacuation and partial knowledge are both important they are not strictly essential for an agent based simulation of a crowd. In fact, as discussed in Chapter~\ref{chapter:IBP}, even perception is sometimes not given much importance in agent based models. However, the fourth essential building block from Chapter~\ref{chapter:IBEVAC} is the most fundamental and generally considered the core of the simulation. More importantly, the lower level motion planning system influences the dynamics produced by the crowd. However, despite several models having been proposed to model this there is little consensus on which is the best model to use. This chapter introduces a methodology for comparing different models of crowds and identifies a key metric that can be used in differentiating the different models~\footnote{This chapter was published as an article in the European Physical Journal B~\cite{Viswanathan2014}}.
+The previous chapters have introduced a novel model of perception, a framework for modelling pre-evacuation behavior and an analysis into how humans explore environments. While modelling pre-evacuation and partial knowledge are both important they are not strictly essential for an agent based simulation of a crowd. In fact, as discussed in Chapter~\ref{chapter:IBP}, even perception is sometimes not given much importance in agent based models. However, the fourth essential building block from Chapter~\ref{chapter:IBEVAC} is the most fundamental and generally considered the core of the simulation. More importantly, the lower level motion planning system influences the dynamics produced by the crowd. However, despite several models having been proposed to model this there is little consensus on which is the best model to use. This chapter introduces a methodology for comparing different models of crowds and identifies a key metric that can be used in differentiating the different models~\footnote{This chapter was published in the European Physical Journal B~\cite{Viswanathan2014}}.
 
 % In fact, the many motion planning models in the literature are structurally different, and few have been rigorously calibrated against real-world egress data, especially in emergency situations. In this chapter we describe a procedure to quantitatively compare different motion planning systems or between models and real-world data. We simulated three models: (1) the lattice gas model, (2) the social force model, and (3) the RVO2 model, and obtained the distributions of six observables: (1) evacuation time, (2) zoned evacuation time, (3) passage density, (4) total distance traveled, (5) inconvenience, and (6) flow rate. We then used the DISTATIS procedure to compute the compromise matrix of statistical distances between the three models. Projecting the three models onto the first two principal components of the compromise matrix, we find the lattice gas and RVO2 models are similar in terms of the evacuation time, passage density, and flow rates, whereas the social force and RVO2 models are similar in terms of the total distance traveled. Most importantly, we find that the zoned evacuation times of the three models to be very different from each other. Thus we propose to use this variable, if it can be measured, as the key test between different models, and also between models and the real world. Finally, we compared the model flow rates against the flow rate of an emergency evacuation during the May 2008 Sichuan earthquake, and found the social force model agrees best with this real data.
 %
 % \section{Introduction}
 % \label{intro}
 
-% Crowd simulation is an area that has been the subject of a significant amount of multidisciplinary work over the last few decades~\cite{Still:2000tp,Zhou:2010:CMS:1842722.1842725,Gwynne1999741}. Its applications range from simulating crowds for movies~\cite{Regelous:2011vt,Reynolds:1987vm} and games~\cite{Snape:2012,ageOfEmpires:2013} to analyzing pedestrian behavior~\cite{PhysRevE.51.4282,Viswanathan:ut,Guy:2010uv} and preparing for fire evacuations and similar emergencies~\cite{Klupfel:2005to,PEDFull:2011,Mordvintsev:2012}.
+% Crowd simulation is an area that has been the subject of a significant amount of multidisciplinary work over the last few decades~\cite{Still:2000tp,Zhou:2010:CMS:1842722.1842725,Gwynne1999741}. Its applications range from simulating crowds for movies~\cite{Regelous:2011vt,Reynolds:1987vm} and games~\cite{Snape:2012,ageOfEmpires:2013} to analyzing pedestrian behavior~\cite{Helbing:1995ie,Viswanathan:ut,Guy:2010uv} and preparing for fire evacuations and similar emergencies~\cite{Klupfel:2005to,PEDFull:2011,Mordvintsev:2012}.
 
 As discussed in Chapter~\ref{chapter:LiteratureReview}, the earliest attempts to simulate crowds generally adopted a macroscopic approach~\cite{Henderson:1974ve,WattsJr:1987tx}, where there is no explicit notion of an individual.
 %Rather, the emphasis was on analyzing macroscopic features of the crowd, such as the throughput and density-velocity correlations.
-Later, with increasing computational resources and with availability of observational data on an individual level~\cite{CGF:CGF1090, HuNan2013, JOHANSSON2008}, modelers were able to develop microscopic approaches~\cite{Reynolds:1987vm,PhysRevE.51.4282} for application in areas where it was necessary to model and analyze individuals in the crowd.
+Later, with increasing computational resources and with availability of observational data on an individual level~\cite{CGF:CGF1090, HuNan2013, JOHANSSON2008}, modelers were able to develop microscopic approaches~\cite{Reynolds:1987vm,Helbing:1995ie} for application in areas where it was necessary to model and analyze individuals in the crowd.
 %Such models enabled the user to describe the heterogeneity of the crowd in terms of behavior, physique and emotion.
 For example, in a simulation of evacuation, knowledge of the movement of crowds could reveal methods to improve crowd flow and evacuation speed.
 
 %There are various approaches to individual-based motion planning.
-One of the earliest and seminal works in individual-based motion planning was Craig Reynolds's model of coordinated animal motion such as bird flocks and fish schools~\cite{Reynolds:1987vm}. Okazaki and Matsushita~\cite{Okazaki:1993wh} assigned magnetic poles to goals, agents and obstacles to model movement. Subsequently, Helbing's Social Force Model~\cite{PhysRevE.51.4282} was developed, which is still one of the most popular models of movement in crowds. More recently, there have been several velocity-based approaches to motion planning, such as the synthetic vision based model~\cite{Ondrej:2010hv} and the Reciprocal Velocity Obstacle Model~\cite{vandenBerg:2011ww,Guy:2010ko,vandenBerg:2008fu}.
+One of the earliest and seminal works in individual-based motion planning was Craig Reynolds's model of coordinated animal motion such as bird flocks and fish schools~\cite{Reynolds:1987vm}. Okazaki and Matsushita~\cite{Okazaki:1993wh} assigned magnetic poles to goals, agents and obstacles to model movement. Subsequently, Helbing's Social Force Model~\cite{Helbing:1995ie} was developed, which is still one of the most popular models of movement in crowds. More recently, there have been several velocity-based approaches to motion planning, such as the synthetic vision based model~\cite{Ondrej:2010hv} and the Reciprocal Velocity Obstacle Model~\cite{vandenBerg:2011ww,Guy:2010ko,vandenBerg:2008fu}.
 
 %Regardless of the approach, the central question of a crowd simulation is the validity of the model of movement. For most major applications of crowd simulation, a direct observation of the movement of crowds is not only useful but necessary.
 
@@ -46,7 +46,7 @@ In this section we describe the three individual (or microscopic) models that ar
 \label{LatticeGasModel}
 
 A Cellular Automation (CA) model is one in which space and time are discrete. Furthermore, the state space of a CA model is also discrete and finite. In each time step the values of all cells are updated synchronously based on the values of cells in their neighborhoods. Depending on the type of neighborhood (i.e., von Neumann, Moore), and the type of lattice (triangular, square, hexagonal, etc.), the exact number of cells in the neighborhood of a given cell can vary~\cite{Hoekstra:2010}.
-Lattice gas models are CA models that make use of a discretized version of the Boltzmann transport equation to model motion~\cite{Marconi:2002ue,Marconi2002,Nagai:2004kl}. Advances in this modeling area include the Extended Floor Field Model~\cite{nishinari2004extended} in which agents interact through virtual traces that act like the pheromones in chemotaxis, and the SWARM information model~\cite{Henein:2006jq} which uses multiple floor fields to model transmission of knowledge between agents.
+Lattice gas models are CA models that make use of a discretized version of the Boltzmann transport equation to model motion~\cite{Marconi:2002ue,Marconi2002,Nagai:2004kl}. Advances in this modelling area include the Extended Floor Field Model~\cite{nishinari2004extended} in which agents interact through virtual traces that act like the pheromones in chemotaxis, and the SWARM information model~\cite{Henein:2006jq} which uses multiple floor fields to model transmission of knowledge between agents.
 %For lattice gas simulation of fluids, the choice between square grids and hexagonal grids can mean the difference between a non-ergodic phase space in the former and an ergodic phase space in the latter~\cite{Frisch:1986}. The choice of a particular lattice has to be carefully considered even though we do not explicitly simulate collisions.
 In this study we use the model by Tajima and Nagatani~\cite{Tajima:2001to}. In contrast to later CA models with additional features like bi-directional movement~\cite{isobe2004experiment} and vision impairment during evacuation~\cite{Nagai:2004kl}, this original model is simple, and adequate for our model comparison purpose.
 
@@ -54,10 +54,10 @@ A square grid is used, and each cell
 %is assumed to be the size of a person. Consequently, at any given time each cell
 can be occupied by at most one person. The person performs a random walk biased towards the single exit in the room. For example, in Fig.~\ref{fig:latticeGasMovement}(a), the probability that the person takes a step in the $+y$ direction is $P_y = (1 - D)/3 + D e_y /(e_x + e_y)$, while the probability that it takes a step in the $-x$ direction is $P_{-x} = (1 - D)/3 + D e_x /(e_x + e_y)$, since the intended direction $\vec{e}$ has positive projections along the $+y$ and $-x$ directions. Along the $+x$ direction, for which $\vec{e}$'s projection is negative, the probability that the person takes a step in the $+x$ direction is $P_x = (1 - D)/3$. Here we see that the random walk probabilities contain an unbiased component $(1 - D)/n$, which is the same for all $n$ permissible directions (in the Tajima-Nagatani model, the $-y$ direction is not permitted), as well as a biased component $D = 0.7$ that favours movement towards the exit.
 
-\begin{figure*}[!htb]
+\begin{figure*}[!tb]
 \centering
-\includegraphics[width=.8\textwidth]{LatticeRule.pdf}
-\caption{Four out of eight possible configurations of a walker on the square lattice moving towards an exit in the direction $\vec{e}$ shown: (a) unobstructed walker, (b) walker obstructed to the left, (c) walker obstructed to the left and top, and (d) completely obstructed walker.}
+\includegraphics[width=.8\textwidth]{MotionPlanner/LatticeRule.pdf}
+\caption[Working of lattice gas model]{Four out of eight possible configurations of a walker on the square lattice moving towards an exit in the direction $\vec{e}$ shown: (a) unobstructed walker, (b) walker obstructed to the left, (c) walker obstructed to the left and top, and (d) completely obstructed walker.}
 \label{fig:latticeGasMovement}
 \end{figure*}
 
@@ -66,7 +66,7 @@ can be occupied by at most one person. The person performs a random walk biased 
 \subsection{Social force model}
 \label{SocialForceModel}
 
-The social force model is one of the most popular models for motion planning in crowds~\cite{Kamphuis:2004uu,Xi:2010uc,Peng:2009cc}. This model is based on the idea that pedestrians move in response to fictitious attractive or repulsive \emph{social forces} produced by obstacles and other pedestrians.  Over the years, several extensions have been made to the social forces model like the modeling of grouping behavior~\cite{Kamphuis:2004uu}. In this paper, we use the Helbing-Moln\'ar-Farkas-Vicsek (HMFV) social force model~\cite{PhysRevE.51.4282}, which is tweaked from the original model introduced by Helbing and Molnar in 1995~\cite{PhysRevE.51.4282}. In the original model
+The social force model is one of the most popular models for motion planning in crowds~\cite{Kamphuis:2004uu,Xi:2010uc,Peng:2009cc}. This model is based on the idea that pedestrians move in response to fictitious attractive or repulsive \emph{social forces} produced by obstacles and other pedestrians.  Over the years, several extensions have been made to the social forces model like the modelling of grouping behavior~\cite{Kamphuis:2004uu}. In this paper, we use the Helbing-Moln\'ar-Farkas-Vicsek (HMFV) social force model~\cite{Helbing:1995ie}, which is tweaked from the original model introduced by Helbing and Molnar in 1995~\cite{Helbing:1995ie}. In the original model
 \begin{equation} \label{eqn:SFeqn}
 m_i \frac{d\vec{v}_i}{dt}=\vec{f}_{i}+\sum_{j(\neq i)}\vec{f}_{ij}+\sum_{W}\vec{f}_{iW}
 \end{equation}
@@ -122,16 +122,16 @@ In this section we explain the simulations that were carried out and the analysi
 Where possible, we have used the same settings for all three models to ensure a fair comparison. The values used for the remaining parameters required for the models was given in Sec.~\ref{Models} along with the respective models. However, to the best of our knowledge, only the social force model has been calibrated against real world data~\cite{Bauer2011}. The other two models are not calibrated beyond choosing a reasonable and believable model and the values chosen are taken such that they produce empirically believable results.
 
 
-\begin{figure}[htbp]
+\begin{figure}[!tbp]
 \centering
-\includegraphics[width=\textwidth]{ExperimentSetup}
+\includegraphics[width=\textwidth]{MotionPlanner/ExperimentSetup}
 \caption{The environment setup used for the simulations in this paper.}
 \label{fig:experimentalSetup}
 \end{figure}
 
 \subsection{Measurements}
 
-Depending on the context and motivation of the model there are several metrics that are generally used. For CA models that are generally used for studying macroscopic patterns, it is common to measure macro variables like the mean evacuation time~\cite{Nagai:2004kl} and flow rate~\cite{Tajima:2001to}. For models like social force where the motivation is to study interactions at a more granular level, it is common to make empirical and qualitative observations like the lane effect~\cite{PhysRevE.51.4282}. Sometimes quantitative metrics like density-dependence of the flow or velocity are also measured~\cite{Seyfried2008}. From a graphics perspective, where performance is key, computation time~\cite{Ondrej:2010hv}, frame rate and run time per frame are generally measured against the number of walkers~\cite{vandenBerg:2008fu}.
+Depending on the context and motivation of the model there are several metrics that are generally used. For CA models that are generally used for studying macroscopic patterns, it is common to measure macro variables like the mean evacuation time~\cite{Nagai:2004kl} and flow rate~\cite{Tajima:2001to}. For models like social force where the motivation is to study interactions at a more granular level, it is common to make empirical and qualitative observations like the lane effect~\cite{Helbing:1995ie}. Sometimes quantitative metrics like density-dependence of the flow or velocity are also measured~\cite{Seyfried2008}. From a graphics perspective, where performance is key, computation time~\cite{Ondrej:2010hv}, frame rate and run time per frame are generally measured against the number of walkers~\cite{vandenBerg:2008fu}.
 
 In this paper, we performed two main classes of measurements: time-based and distance-based measurements. For time-based measurements, we first measured the evacuation time distributions for different number of agents. To better understand the stages in the evacuation, we also divide the room into six different zones (see Fig.~\ref{fig:Zoning}) to measure the evacuation time sub-distribution. The outer radii of Zones 1, 2, 3, 4, 5 and 6 are 5 m, 10 m, 15 m, 20 m, 25 m and 30 m respectively. We also measure the flow rate at the exit as a function of time for each model.
 
@@ -140,16 +140,16 @@ For distance-based measurements, we traced the trajectories of all agents to obt
 I_i=\frac{D_i}{D_{\min}}
 \end{equation}
 
-\begin{figure}[h]
+\begin{figure}[!tb]
 \begin{center}
-\includegraphics[scale=1.0]{Zoning}
-\caption{In our simulations, agents are grouped into six zones based on their initial distances from the exit. The outer radii of Zones 1, 2, 3, 4, 5 and 6 are 5 m, 10 m, 15 m, 20 m, 25 m and 30 m respectively.}
+\includegraphics[scale=1.0]{MotionPlanner/Zoning}
+\caption[Zonal division of environment]{In our simulations, agents are grouped into six zones based on their initial distances from the exit. The outer radii of Zones 1, 2, 3, 4, 5 and 6 are 5 m, 10 m, 15 m, 20 m, 25 m and 30 m respectively.}
 \label{fig:Zoning}
 \end{center}
 \end{figure}
 
 
-\subsection{DISTATIS}\label{sec:distatis}
+\subsection{DISTATIS}\label{sec:DISTATIS}
 
 After making six different measurements on three models, we discovered that when we look at the flow rates, the lattice gas model is more similar to the RVO2 model. However, if we look at the total distance travelled, the social force model is more similar to the RVO2 model. If we look at the zoned evacuation times, we find that the three models have very different distributions (see Sec.~\ref{EvacTime}). Since we do not know \emph{a priori} which measurements best discriminate the three models (or for that matter, best discriminate models from the real world), we want to be able to compare the three models quantitatively, incorporating information from all six measurements.
 
@@ -169,12 +169,12 @@ If $f_{k\mu}(z)$ and $f_{k\nu}(z)$ are highly similar, we will get $D_{JS}[f_{k\
 
 Then, we use the \emph{DISTATIS} method~\cite{Abdi:DISTATIS} for analyzing multiple distance matrices. This is a generalization of the method of principal component analysis (PCA). STATIS is an acronym for the French expression `Structuration des Tableaux \`{a} Trois Indices de la Statistique', which roughly means `structuring three way statistical tables'. The difference between a straightforward application of the PCA method and the DISTATIS method is shown in Fig.~\ref{fig:DISTATIS}. Instead of six different PCAs for the distance matrices obtained from the six different variables measured, and inevitably ending up with conflicting conclusions on which models are more similar, we standardize the six distance matrices, and ask which variables are more similar to each other.
 
-The idea behind DISTATIS is that the data points are similarly clustered in two variables, if their standardized distance matrices in these two variables are similar to each other. Therefore, if we compute the cross correlations between variables, we will discover which variables give more similar outcomes to which other variables through a PCA. Components of the first eigenvector obtained from this PCA tells us how important each variable is. By weighting the distance matrices of each variable by its component in the first eigenvector, we construct a \emph{compromise matrix} whose matrix elements give us the most reliable similarity/dissimilarity between data points. A final PCA of this compromise matrix then gives the most reliable groups of data points. In Fig.~\ref{fig:Distatis1000}, we show the six independent PCA results superimposed on the PCA of the compromise matrix.
+The idea behind DISTATIS is that the data points are similarly clustered in two variables, if their standardized distance matrices in these two variables are similar to each other. Therefore, if we compute the cross correlations between variables, we will discover which variables give more similar outcomes to which other variables through a PCA. Components of the first eigenvector obtained from this PCA tells us how important each variable is. By weighting the distance matrices of each variable by its component in the first eigenvector, we construct a \emph{compromise matrix} whose matrix elements give us the most reliable similarity/dissimilarity between data points. A final PCA of this compromise matrix then gives the most reliable groups of data points. In Fig.~\ref{fig:DISTATIS1000}, we show the six independent PCA results superimposed on the PCA of the compromise matrix.
 
-\begin{figure}[htbp]
+\begin{figure}[!tbp]
 \centering
-\includegraphics[width=\linewidth]{DistatisWorkFlow}
-\caption{In many classification problems, we can define different distance metrics for the same set of data points to measure how dissimilar they are to each other. In this figure we show three different distance matrices D1, D2, and D3. If we perform principal component analysis (PCA) on them separately (PCA1, PCA2, PCA3), we are not likely to agree on which data points are more similar to each other. In the DISTATIS method, we first standardize the distance matrices by centering and rescaling, to get S1, S2, and S3. If two data points are indeed more similar to each other than they are with the third, then we expect this similarity structure to be reflected in S1, S2, and S3, i.e.~two standardized distance matrices would have very similar patterns of matrix elements. With this in mind, we reshape the matrices S1, S2, and S3 to make them into vectors of distances. We then compute the cross correlations between these vectors, before performing PCA on the correlation matrix C. This PCA tells us which distance matrices agree with each other more, and which less. The result is a consensus between different distance metrics, based on which a single PCA will discover the similarity structure between the data points.}
+\includegraphics[width=\linewidth]{MotionPlanner/DISTATISWorkFlow}
+\caption[Visualization of DISTATIS workflow]{In many classification problems, we can define different distance metrics for the same set of data points to measure how dissimilar they are to each other. In this figure we show three different distance matrices D1, D2, and D3. If we perform principal component analysis (PCA) on them separately (PCA1, PCA2, PCA3), we are not likely to agree on which data points are more similar to each other. In the DISTATIS method, we first standardize the distance matrices by centering and rescaling, to get S1, S2, and S3. If two data points are indeed more similar to each other than they are with the third, then we expect this similarity structure to be reflected in S1, S2, and S3, i.e.~two standardized distance matrices would have very similar patterns of matrix elements. With this in mind, we reshape the matrices S1, S2, and S3 to make them into vectors of distances. We then compute the cross correlations between these vectors, before performing PCA on the correlation matrix C. This PCA tells us which distance matrices agree with each other more, and which less. The result is a consensus between different distance metrics, based on which a single PCA will discover the similarity structure between the data points.}
 \label{fig:DISTATIS}
 \end{figure}
 
@@ -196,13 +196,13 @@ Here we show the results for (1) evacuation time (Fig.~\ref{fig:EvacTime}) and (
 As Fig.~\ref{fig:EvacTime} shows, the evacuation time distributions for all models have a uniform sub-distribution in the middle of the evacuation, which signals congestion at the exit, once we have $N > 50$ agents. However, in the RVO2 model this uniform sub-distribution is flanked by two small peaks. These two small peaks suggest a higher evacuation rate \emph{just before} congestion sets in and \emph{just before} congestion dissipates in the RVO2 model. This is not observed in real crowds, and hence is clearly an artifact of the model.
 
 % Evacuation Time Distribution
-\begin{figure*}[htbp]
+\begin{figure*}[!tb]
 \centering
-\subfloat[]{\includegraphics[scale=0.35]{EvacTime/Lattice-EvacTime}\label{fig:LatticeEvacTime}}
+\subfloat[]{\includegraphics[scale=0.35]{MotionPlanner/EvacTime/Lattice-EvacTime}\label{fig:LatticeEvacTime}}
 \hspace{1cm}
-\subfloat[]{\includegraphics[scale=0.35]{EvacTime/SocialForce-EvacTime}\label{fig:SocialForceEvacTime}}\\
-\subfloat[]{\includegraphics[scale=0.35]{EvacTime/RVO2-EvacTime}\label{fig:RVO2EvacTime}}
-\caption{Evacuation time distributions for the (a) lattice gas, (b) social force, and (c) RVO2 models for $N = 50, 100, 150, 200, 300, 500, 1000$ agents. For each model and $N$, the distribution is built from 100 simulations.}
+\subfloat[]{\includegraphics[scale=0.35]{MotionPlanner/EvacTime/SocialForce-EvacTime}\label{fig:SocialForceEvacTime}}\\
+\subfloat[]{\includegraphics[scale=0.35]{MotionPlanner/EvacTime/RVO2-EvacTime}\label{fig:RVO2EvacTime}}
+\caption[Evacuation time distributions]{Evacuation time distributions for the (a) lattice gas, (b) social force, and (c) RVO2 models for $N = 50, 100, 150, 200, 300, 500, 1000$ agents. For each model and $N$, the distribution is built from 100 simulations.}
 \label{fig:EvacTime}
 \end{figure*}
 
@@ -215,13 +215,13 @@ From the movies of the lattice gas and RVO2 simulations, we see that agents from
 
 
 % Zoning Evacuation Distribution
-\begin{figure*}[htbp]
+\begin{figure*}[!tb]
 \centering
-\subfloat[]{\includegraphics[scale=0.35]{ZoningEvac/Lattice1-1000-ZoningEvac}\label{fig:LatticeZoningEvac1000}}
+\subfloat[]{\includegraphics[scale=0.35]{MotionPlanner/ZoningEvac/Lattice1-1000-ZoningEvac}\label{fig:LatticeZoningEvac1000}}
 \hspace{1cm}
-\subfloat[]{\includegraphics[scale=0.35]{ZoningEvac/SocialForce1-1000-ZoningEvac}\label{fig:SocialForceZoningEvac1000}}\\
-\subfloat[]{\includegraphics[scale=0.35]{ZoningEvac/RVO21-1000-ZoningEvac}\label{fig:RVO2ZoningEvac1000}}
-\caption{Zoned evacuation time distributions for the (a) lattice gas, (b) social force, and (c) RVO2 models for $N = 1000$ agents in six zones, with zone 1 closest to the exit and zone 6 furthest away (see Figure~\ref{fig:Zoning}). For each model, the distribution is averaged over 100 simulations.}
+\subfloat[]{\includegraphics[scale=0.35]{MotionPlanner/ZoningEvac/SocialForce1-1000-ZoningEvac}\label{fig:SocialForceZoningEvac1000}}\\
+\subfloat[]{\includegraphics[scale=0.35]{MotionPlanner/ZoningEvac/RVO21-1000-ZoningEvac}\label{fig:RVO2ZoningEvac1000}}
+\caption[Zoned evacuation time distributions]{Zoned evacuation time distributions for the (a) lattice gas, (b) social force, and (c) RVO2 models for $N = 1000$ agents in six zones, with zone 1 closest to the exit and zone 6 furthest away (see Figure~\ref{fig:Zoning}). For each model, the distribution is averaged over 100 simulations.}
 \label{fig:ZoningEvac}
 \end{figure*}
 
@@ -233,13 +233,13 @@ From the movies of the lattice gas and RVO2 simulations, we see that agents from
 \subsection{Passage density}
 
 % Density map
-\begin{figure*}[htbp]
+\begin{figure*}[!tb]
 \centering
-\subfloat[]{\includegraphics[scale=0.35]{DensityMap/Lattice1-1000DensityMap}\label{fig:LatticeDensityMap}}
+\subfloat[]{\includegraphics[scale=0.35]{MotionPlanner/DensityMap/Lattice1-1000DensityMap}\label{fig:LatticeDensityMap}}
 \hspace{2cm}
-\subfloat[]{\includegraphics[scale=0.35]{DensityMap/SocialForce1-1000DensityMap}\label{fig:SocialForceDensityMap}}\\
-\subfloat[]{\includegraphics[scale=0.35]{DensityMap/RVO21-1000DensityMap}\label{fig:RVO2DensityMap}}
-\caption{Passage density maps of $N = 1000$ agents averaged over 100 simulations for the (a) lattice gas, (b) social force, and (c) RVO2 models. In these color maps, the exit is located at the bottom.}
+\subfloat[]{\includegraphics[scale=0.35]{MotionPlanner/DensityMap/SocialForce1-1000DensityMap}\label{fig:SocialForceDensityMap}}\\
+\subfloat[]{\includegraphics[scale=0.35]{MotionPlanner/DensityMap/RVO21-1000DensityMap}\label{fig:RVO2DensityMap}}
+\caption[Passage density maps]{Passage density maps of $N = 1000$ agents averaged over 100 simulations for the (a) lattice gas, (b) social force, and (c) RVO2 models. In these color maps, the exit is located at the bottom.}
 \label{fig:DensityMap}
 \end{figure*}
 
@@ -261,26 +261,26 @@ However, when we compare the distributions of inconveniences in Fig.~\ref{fig:In
 
 
 % Travel Distance Distribution
-\begin{figure*}[htbp]
+\begin{figure*}[!tb]
 \centering
-\subfloat[]{\includegraphics[width=0.45\textwidth]{TravDist/Lattice-TravDist}\label{fig:LatticeTravDist}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{MotionPlanner/TravDist/Lattice-TravDist}\label{fig:LatticeTravDist}}
 \hspace{1cm}
-\subfloat[]{\includegraphics[width=0.45\textwidth]{TravDist/SocialForce-TravDist}\label{fig:SocialForceTravDist}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{MotionPlanner/TravDist/SocialForce-TravDist}\label{fig:SocialForceTravDist}}
 \\
-\subfloat[]{\includegraphics[width=0.45\textwidth]{TravDist/RVO2-TravDist}\label{fig:RVO2TravDist}}
-\caption{Distributions of total distance traveled for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the distribution is averaged over 100 simulations.}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{MotionPlanner/TravDist/RVO2-TravDist}\label{fig:RVO2TravDist}}
+\caption[Distributions of total distance traveled]{Distributions of total distance traveled for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the distribution is averaged over 100 simulations.}
 \label{fig:TravelDist}
 \end{figure*}
 
 % Inconvenience
-\begin{figure*}[htbp]
+\begin{figure*}[!tb]
 \centering
-\subfloat[]{\includegraphics[width=0.45\textwidth]{Incon/Lattice-Incon}\label{fig:LatticeIncon}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{MotionPlanner/Incon/Lattice-Incon}\label{fig:LatticeIncon}}
 \hspace{1cm}
-\subfloat[]{\includegraphics[width=0.45\textwidth]{Incon/SocialForce-Incon}\label{fig:SocialForceIncon}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{MotionPlanner/Incon/SocialForce-Incon}\label{fig:SocialForceIncon}}
 \\
-\subfloat[]{\includegraphics[width=0.45\textwidth]{Incon/RVO2-Incon}\label{fig:RVO2Incon}}
-\caption{Distributions of inconveniences for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the distribution is averaged over 100 simulations.}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{MotionPlanner/Incon/RVO2-Incon}\label{fig:RVO2Incon}}
+\caption[Distributions of inconveniences]{Distributions of inconveniences for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the distribution is averaged over 100 simulations.}
 \label{fig:Incon}
 \end{figure*}
 
@@ -301,21 +301,21 @@ In \url{http://www.youtube.com/watch?v=e1yapP3z_L4}, students were evacuating th
 
 
 % Flow rate
-\begin{figure*}[htbp]
+\begin{figure*}[!tbp]
 \centering
-\subfloat[]{\includegraphics[width=0.45\textwidth]{FlowRate/Lattice-FlowRate}\label{fig:LatticeFlowRate}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{MotionPlanner/FlowRate/Lattice-FlowRate}\label{fig:LatticeFlowRate}}
 \hspace{1cm}
-\subfloat[]{\includegraphics[width=0.45\textwidth]{FlowRate/SocialForce-FlowRate}\label{fig:SocialForceFlowRate}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{MotionPlanner/FlowRate/SocialForce-FlowRate}\label{fig:SocialForceFlowRate}}
 \\
-\subfloat[]{\includegraphics[width=0.45\textwidth]{FlowRate/RVO2-FlowRate}\label{fig:RVO2FlowRate}}
-\caption{Flow rates at the exit as functions of time for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the flow rate is averaged over 100 simulations.}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{MotionPLanner/FlowRate/RVO2-FlowRate}\label{fig:RVO2FlowRate}}
+\caption[Visualization of flow rates]{Flow rates at the exit as functions of time for the (a) lattice gas, (b) social force, and (c) RVO2 models. For each model and $N$, the flow rate is averaged over 100 simulations.}
 \label{fig:FlowRate}
 \end{figure*}
 
-\begin{figure}[htbp]
+\begin{figure}[!tbp]
 \centering
-\includegraphics[width=8cm]{figures/Flowrate}
-\caption{The flow rates for evacuation during the May 2008 Sichuan Earthquake: (top) through the check-out counters of a Walmart supermarket in Chengdu, China (\url{http://www.youtube.com/watch?v=-y38ebiAnQw}); and (bottom) through the narrow exit of a classroom in an elementary school in Sichuan, China (\url{http://www.youtube.com/watch?v=e1yapP3z_L4}).}
+\includegraphics[width=8cm]{MotionPlanner/Flowrate}
+\caption[Flow rates during Sichuan earthquake equation]{The flow rates for evacuation during the May 2008 Sichuan Earthquake: (top) through the check-out counters of a Walmart supermarket in Chengdu, China (\url{http://www.youtube.com/watch?v=-y38ebiAnQw}); and (bottom) through the narrow exit of a classroom in an elementary school in Sichuan, China (\url{http://www.youtube.com/watch?v=e1yapP3z_L4}).}
 \centering
 \label{fig:RealData}
 \end{figure}
@@ -326,29 +326,19 @@ In \url{http://www.youtube.com/watch?v=e1yapP3z_L4}, students were evacuating th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{DISTATIS comparison}
 
-\begin{figure}[htbp]
+\begin{figure}[!tbp]
 \centering
-\includegraphics[scale=0.8]{DistatisFinalDistatisMat1-1000}
-\caption{The DISTATIS analysis of the three models with $N = 1000$ agents. In this plot, $\tau$ is the quality of compromise, and $\lambda$ is the eigenvalue.}
-\label{fig:Distatis1000}
+\includegraphics[scale=0.8]{MotionPlanner/DISTATISFinalDISTATISMat1-1000}
+\caption[DISTATIS analysis of three models]{The DISTATIS analysis of the three models with $N = 1000$ agents. In this plot, $\tau$ is the quality of compromise, and $\lambda$ is the eigenvalue.}
+\label{fig:DISTATIS1000}
 \end{figure}
 
-Finally, we make use of the DISTATIS method explained in Sec.~\ref{sec:distatis} to compare the three models with all six different measurements. Fig.~\ref{fig:Distatis1000} shows the different measurements of the three models projected onto their first two principal components. The barycenters for the three models are also shown. From Fig.~\ref{fig:Distatis1000} we see that based on the total distance traveled (green), the social force and RVO2 models have similar distributions, which are both very different from that of the lattice gas model. On the other hand, the lattice gas and RVO2 models have similar distributions that are significantly different from that of the social force model.
+Finally, we make use of the DISTATIS method explained in Sec.~\ref{sec:DISTATIS} to compare the three models with all six different measurements. Fig.~\ref{fig:DISTATIS1000} shows the different measurements of the three models projected onto their first two principal components. The barycenters for the three models are also shown. From Fig.~\ref{fig:DISTATIS1000} we see that based on the total distance traveled (green), the social force and RVO2 models have similar distributions, which are both very different from that of the lattice gas model. On the other hand, the lattice gas and RVO2 models have similar distributions that are significantly different from that of the social force model.
 
 More importantly, we find the clustering of some observables: evacuation time, passage density, and flow rate all tells us that the lattice gas model is similar to the RVO2 model, and different from the social force model. We also find the inconvenience and zoned evacuation time provide some indication that the three models are qualitatively different. In fact, the DISTATIS method indicates that the zoned evacuation time is one key metric that clearly distinguishes the three models. Therefore, any real world experiments should attempt to measure this as it is this observable maximally discriminates between the three models and therefore it is reasonable to expect it will also discriminate between real-world data and the models.
 
 \section{Conclusion}
 \label{Conclusions}
 
-To conclude, we simulated emergency evacuation from a rectangular room with a single narrow exit using three models: (1) lattice gas, (2) social force, and (3) RVO2, with different starting number of agents in the room. From these simulations, we measured six observables: (1) evacuation time, (2) zoned evacuation time, (3) passage density, (4) total distance traveled, (5) inconvenience and (6) flow rate. Besides qualitative comparison of the various distributions obtained, we also compared the three models quantitatively using the DISTATIS method. Comparing the evacuation time, passage density, and flow rate distributions, we find that the lattice gas and RVO2 models are similar, both of which are very different from the social force model. On the other hand, if we compare the distribution of total distance traveled, the social force and RVO2 models are more similar to each other, and very different from the lattice gas model. We compared the simulated congestion flow rates of the three models to congestion flow rates of school children evacuating from their classroom during the May 2008 Sichuan Earthquake, and find based on this observable that the social force model agrees best with the egress data. Finally, from an analysis of the DISTATIS we have identified the zoned evacuation time as the one observable metric that can best discriminate between these models, and also between models and real-world data.
-
-% \section*{Acknowledgements}
-
-% SAC thanks Zhongliang Wu and Changsheng Jiang of the Institute of Geophysics, China Earthquake Administration for discussions. CEL and SAC acknowledge support from the Nanyang Technological University New Initiatives Grant. PMAS acknowledges the support from the FET-Proactive grant TOPDRIM, number FP7-ICT-318121 and the `SimCity' eScience grant 027.012.104. MHL acknowledges funding by the Nanyang Technological University Startup Grant M58020019. PMAS also acknowledges a grant from the 'Leading Scientist Program' of the Government of the Russian Federation, under contract 11.G34.31.0019.
-
-% \bibliographystyle{IEEEtran}
-% \bibliography{epj.bib}
-
-
-% \end{document}
-
+To conclude, we simulated emergency evacuation from a rectangular room with a single narrow exit using three models: (1) lattice gas, (2) social force, and (3) RVO2, with different starting number of agents in the room. From these simulations, we measured six observables: (1) evacuation time, (2) zoned evacuation time, (3) passage density, (4) total distance traveled, (5) inconvenience and (6) flow rate. Besides qualitative comparison of the various distributions obtained, we also compared the three models quantitatively using the DISTATIS method. Comparing the evacuation time, passage density, and flow rate distributions, we find that the lattice gas and RVO2 models are similar, both of which are very different from the social force model. On the other hand, if we compare the distribution of total distance traveled, the social force and RVO2 models are more similar to each other, and very different from the lattice gas model. We compared the simulated congestion flow rates of the three models to congestion flow rates of school children evacuating from their classroom during the May 2008 Sichuan Earthquake, and find based on this observable that the social force model agrees best with the egress data. Finally, from an analysis of the DISTATIS we have identified the zoned evacuation time as the one observable metric that can best discriminate between these models, and also between models and real-world data. This could be invaluable in verifying new models and even existing models when new and more detailed video data is available.
+The next chapter summarizes and concludes the thesis.
